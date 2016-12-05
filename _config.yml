@@ -1,0 +1,32 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# Accessed via {{ site.title }}, {{ site.email }}, and so on.
+
+title: alex bumbu | Front-End Web Engineer
+email: bumbu@github.com
+description: > # this means to ignore newlines until "baseurl:"
+  Personal website of Alex Bumbu. Here you can find the blog,
+  development articles, experiments and learning.
+baseurl: ""
+url: "https://bumbu.github.io"
+twitter_username: bumbualex
+github_username:  bumbu
+google_analytics: UA-34516109-2
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+permalink: /:title/
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - npm-debug.log
+  - node_modules/
+  - gulpfile.js
+  - package.json

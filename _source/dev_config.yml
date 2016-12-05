@@ -1,0 +1,2 @@
+url: "" # blank in development
+development: true # allows using in liquid tag conditionals
