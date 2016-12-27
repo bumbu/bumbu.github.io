@@ -1,17 +1,20 @@
 // Sort alphabetically
 const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
+const exec = require('child_process').exec
 const gulp = require('gulp')
 const gutil = require('gulp-util')
-const plumber = require('gulp-plumber')
+const livereload = require('gulp-livereload')
 const nib = require('nib')
-const run = require('gulp-run')
+const path = require('path')
+const plumber = require('gulp-plumber')
 const sourcemaps = require('gulp-sourcemaps')
 const stylus = require('gulp-stylus')
 const webpackStream = require('webpack-stream')
 
 const PATHS = {
   SRC: '_source',
+  SITE: '_site',
   CSS: {
     SRC: '_source/styles/',
     DIST: 'assets/css/',
@@ -32,7 +35,9 @@ gulp.task('dev:styles', function() {
     .pipe(sourcemaps.init())
     .pipe(stylus({use: [nib()], 'include css': true}))
     .pipe(sourcemaps.write())
+    .pipe(gulp.dest(path.join(PATHS.SITE, PATHS.CSS.DIST)))
     .pipe(gulp.dest(PATHS.CSS.DIST))
+    .pipe(livereload());
 })
 
 gulp.task('build:styles', function() {
@@ -83,11 +88,12 @@ gulp.task('build:scripts', function() {
  */
 
 gulp.task('dev:jekyll', function() {
-  var shellCommand = 'bundle exec jekyll serve --config _config.yml,_source/dev_config.yml'
+  const shellCommand = 'bundle exec jekyll serve --config _config.yml,_source/dev_config.yml'
+  const executed = exec(shellCommand);
 
-  return gulp.src('.')
-    .pipe(run(shellCommand))
-    .on('error', gutil.log)
+  executed.stdout.on('data', function (data) {
+    console.log(data.toString());
+  });
 })
 
 /**
@@ -95,10 +101,10 @@ gulp.task('dev:jekyll', function() {
  */
 
 gulp.task('dev:watch', function() {
+  livereload.listen();
   gulp.watch([PATHS.JS.SRC + '**/*.js'], ['dev:scripts'])
     .on('change', function(event) {
       gutil.log('File changed', event.path);
-      // console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
   gulp.watch([PATHS.CSS.SRC + '**/*.styl'], ['dev:styles']);
 })
