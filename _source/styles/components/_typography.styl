@@ -1,0 +1,86 @@
+a
+  text-decoration none
+  color $colorLink
+
+  &:visited
+    color $colorLinkAccented
+
+a
+  &:hover,
+  &:focus
+    text-decoration underline
+
+h1, h2, h3, h4
+  font-family $headingsFontFamily
+  font-weight $headingsFontWeight
+  line-height 1.2
+
+  // &:first-child
+  //   padding-top 0
+
+h1
+  font-size $fontSizeH1
+  margin ($fontSizeH1 * 1) 0 12px
+
+h2
+  font-size $fontSizeH2
+  margin ($fontSizeH2 * 1) 0 12px
+
+h3
+  font-size $fontSizeH3
+  margin ($fontSizeH3 * 1.2) 0 12px
+
+h4
+  font-size $fontSizeH4
+  margin ($fontSizeH4 * 1.2) 0 12px
+
+p
+  margin: 15px 0;
+
+  &:after
+    content ''
+    clear both
+    display table
+
+strong
+  font-weight 600
+
+em
+  font-style italic
+
+blockquote
+  margin 13px 0
+  padding: 0 0 0 17px;
+  border-left: 3px solid $colorLink;
+  font-style: italic;
+
+ol
+  padding-left 20px
+  list-style-type decimal
+
+ul
+  padding-left: 33px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li
+    padding: 2px 0 0 20px;
+    position: relative;
+
+    &:first-child
+      margin-top: 0;
+    &:before
+      content: '';
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 5px;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #adadad;
+      border-top-color: #bebebe;
+      border-bottom-color: #adadad;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background #fcfdfe

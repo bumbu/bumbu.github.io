@@ -1,0 +1,97 @@
+.post
+  max-width 620px
+  margin 0 auto
+
+  &__title
+    font-family: $headingsFontFamily;
+    font-weight: $headingsFontWeight;
+    font-size: $fontSizeH1;
+    line-height: 1.2;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border: 0;
+
+    a
+      text-decoration none
+      color $colorText
+
+  // &__header,
+  // &__content,
+  // &__footer
+  //   max-width 620px
+
+  &__footer
+    text-align right
+
+  &__date
+    font-style italic
+
+  code
+    color $colorCodeSnippet
+    border 1px solid #e1e1e8
+    background #f7f7f9
+    border-radius 3px
+    font-family $codeFontFamily
+    font-size $codeFontSize
+    padding 0px 3px 1px
+
+  pre
+    font-family $codeFontFamily
+    font-size $codeFontSize
+    clear both
+
+    code
+      backround #f5f2f0
+      padding: 0.5em 0
+      display block;
+      border 0
+      border-radius 0
+
+    code[class*='language-']
+      color #000
+      border 0
+      background none
+      border-radius 0
+      padding 0
+
+  .prettyprint
+    font-size: $codeFontSize
+    font-family $codeFontFamily
+    margin 6px 0 12px
+    padding 0 6px 2px
+    overflow auto
+    background #f5f2f0
+
+    &.linenums
+      padding 0
+
+    ol
+      padding-left: 6px
+
+    code
+      font-size: $codeFontSize
+      border 0
+      background none
+      padding 0
+
+  p + .prettyprint
+    margin-top: -9px;
+
+  .prettyprint + p
+    margin-top: 24px;
+
+  img
+    max-width 100%
+    height auto
+    margin 16px 0 12px
+
+    &.alignleft,
+    &.alignright
+      margin 0
+
+    &.alignleft
+      float left
+
+    &.alignright
+      float right

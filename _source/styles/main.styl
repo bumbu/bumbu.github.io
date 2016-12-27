@@ -1,5 +1,15 @@
-body
-  margin 10px
-  padding 20px
-  background red
-  display flex
+@import 'nib'
+@import '_variables'
+global-reset()
+
+// Components (should come first)
+@import 'components/_mixins'
+@import 'components/_utils'
+@import 'components/_typography'
+@import 'components/_layout'
+
+// Sort these components
+@import 'components/_listing'
+@import 'components/_post'
+@import 'components/_sidebar'
+@import 'components/_trigger'

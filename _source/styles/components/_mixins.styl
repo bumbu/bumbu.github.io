@@ -1,0 +1,45 @@
+size(w, args...)
+  width w
+
+  if args[0] is a 'unit'
+    height args[0]
+  else
+    height w
+
+trbl(t, args...)
+  // Top
+  top t
+
+  // Right
+  if length(args) > 0
+    right args[0]
+  else
+    right t
+
+  // Bottom
+  if length(args) > 1
+    bottom args[1]
+  else
+    bottom t
+
+  // Left
+  if length(args) > 2
+    left args[2]
+  else if length(args) > 0
+    left args[0]
+  else
+    left t
+
+bp(target = null)
+  // If mobile
+  if target == m
+    $mobileBreakPoint = $desktopBreakPoint - 1
+    condition = 'max-width: ' + $mobileBreakPoint
+    @media({condition})
+      {block}
+
+  // If desktop
+  else if target == d
+    condition = 'min-width: ' + $desktopBreakPoint
+    @media({condition})
+      {block}

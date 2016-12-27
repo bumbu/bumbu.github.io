@@ -1,0 +1,47 @@
+.sidebar
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  width $widthIconsSidebar
+  min-height 200px
+  border-right 1px solid $colorSidebar
+
+  &__icons
+    width $widthIconsSidebar
+
+  &__icon
+    display inline-block
+    color $colorSidebar
+    fill $colorSidebar
+    font-size 27px
+    padding 8px
+    size 27px
+
+    &.active
+      background $colorSidebarBg
+      border-top 1px solid $colorSidebar
+      border-bottom 1px solid $colorSidebar
+      margin -1px 0
+      position relative
+
+      // Don't highlight on hover
+      &,
+      &:hover
+        color $colorText
+        fill $colorText
+
+      &:after
+        background $colorSidebarBg
+        bottom 0
+        content ''
+        display block
+        position absolute
+        right -1px
+        top 0
+        width 1px
+
+    &:hover,
+    &:focus
+      color $colorLink
+      fill $colorLink

@@ -1,0 +1,48 @@
+html, body
+  color $colorText
+  background $colorBg
+  min-height 400px
+  height 100%
+  font-family $baseFontFamily
+  font-size $baseFontSize
+  line-height $baseLineHeight
+  margin 0
+  padding 0
+
+body.sidebar-open
+  overflow hidden
+
+.page__header
+  background $colorBg
+  font-family $headingsFontFamily
+  margin 0
+  position fixed
+  trbl 0 auto 0 0
+  width $widthSidebar
+
+  +bp(m)
+    // width 100%
+    z-index $zIndexSidebar
+    left 0
+    width 100%
+    margin-left -100%
+    transition margin 0.5s ease
+
+    .sidebar-open &
+      margin-left 0
+
+.main
+  padding 23px
+  width auto
+  margin-left $widthSidebar
+
+  +bp(m)
+    margin-left 0
+
+    .sidebar-open &
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      overflow hidden

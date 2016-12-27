@@ -1,11 +1,4 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-  </div>
-
-</footer>
-
 <script src='{{ "/assets/js/main.js" | relative_url }}'></script>
+{% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+{% endif %}
