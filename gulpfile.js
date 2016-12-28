@@ -59,6 +59,20 @@ gulp.task('dev:scripts', function() {
       output: {
         filename: 'main.js',
       },
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+            include: __dirname,
+            query: {
+              presets: ["react", "es2015"],
+              plugins: ['transform-decorators-legacy'],
+            }
+          }
+        ]
+      }
     }))
     .on('error', function handleError() {
       this.emit('end'); // Recover from errors
@@ -78,7 +92,21 @@ gulp.task('build:scripts', function() {
               warnings: false
           }
         })
-      ]
+      ],
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+            include: __dirname,
+            query: {
+              presets: ["react", "es2015"],
+              plugins: ['transform-decorators-legacy'],
+            }
+          }
+        ]
+      }
     }))
     .pipe(gulp.dest(PATHS.JS.DIST))
 })
