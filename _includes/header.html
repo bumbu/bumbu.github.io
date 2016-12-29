@@ -1,30 +1,19 @@
 <a href="#" class="trigger" data-action="toggle-sidebar"><span class="trigger__lines"></span></a>
 <header class="page__header">
-  <div class="sidebar">
+  <div class="sidebar" data-element="sidebar-icons">
     <nav class="sidebar__icons">
-      <a class="sidebar__icon" href="/" title="Home">{% include icons/bumbu.svg %}</a>
-      <a class="sidebar__icon active" href="/dev/" title="Blog">{% include icons/daily-newspaper.svg %}</a>
-      <a class="sidebar__icon" href="/dev/" title="Development">{% include icons/small-light-bulb.svg %}</a>
-      <a class="sidebar__icon" href="/dev/" title="Experiments">{% include icons/chemistry.svg %}</a>
-      <a class="sidebar__icon" href="/dev/" title="Learning">{% include icons/graduation-cap.svg %}</a>
-      <a class="sidebar__icon" href="/dev/" title="About">{% include icons/user-avatar.svg %}</a>
-      <a class="sidebar__icon" href="/dev/" title="Search">{% include icons/zoom-tool.svg %}</a>
+      <a class="sidebar__icon active" data-element="sidebar-icon" data-id="home" href="/" title="Home">{% include icons/bumbu.svg %}</a>
+      <a class="sidebar__icon" data-element="sidebar-icon" data-id="blog" href="/blog/" title="Blog">{% include icons/daily-newspaper.svg %}</a>
+      <a class="sidebar__icon" data-element="sidebar-icon" data-id="development" href="/development/" title="Development">{% include icons/small-light-bulb.svg %}</a>
+      <a class="sidebar__icon" data-element="sidebar-icon" data-id="experiments" href="/experiments/" title="Experiments">{% include icons/chemistry.svg %}</a>
+      <a class="sidebar__icon" data-element="sidebar-icon" data-id="learning" href="/learning/" title="Learning">{% include icons/graduation-cap.svg %}</a>
+      <a class="sidebar__icon" data-element="sidebar-icon" data-id="about" href="/about/" title="About">{% include icons/user-avatar.svg %}</a>
+      <a class="sidebar__icon" data-element="sidebar-icon" data-id="search" href="/search/" title="Search">{% include icons/zoom-tool.svg %}</a>
     </nav>
   </div>
-  <div class="listing">
+  <div class="listing" data-element="sidebar-listing">
     <div class="listing__header">
-      <h1>Blog</h1>
-      <!-- <form class="listing__form" action="#">
-        <input type="text" class="listing__form-input">
-        <button type="submit" class="listing__form-button"></button>
-      </form> -->
-    </div>
-    <div class="listing__items">
-      <!-- <span class="listing__item listing__item--alert">No posts found matching your search criteria. Please try another request</span> -->
-      <a class="listing__item" href="#">Creating a custom data dashboard for tracking progress</a>
-      <a class="listing__item listing__item--active" href="#">Decrease typing lag in WebStorm (or any IDEA product)</a>
-      <a class="listing__item" href="#">Creating a dashboard for tracking progress</a>
-      <a class="listing__item" href="#">Typing lag while running from a house into WebStorm (or any IDEA product)</a>
+      <h1>Loading...</h1>
     </div>
   </div>
 </header>
