@@ -27,6 +27,31 @@
   &__date
     font-style italic
 
+  &__excerpt
+    a
+      color $colorText
+
+      &:hover,
+      &:focus
+        text-decoration none
+        color $colorLink
+
+    &:after
+      content ''
+      display table
+      clear both
+
+  &__excerpt-link
+    border 1px solid $colorSidebar
+    border-radius 2px
+    display inline-block
+    margin 0
+    padding 4px 10px
+
+    &:hover,
+    &:focus
+      border 1px solid $colorText
+
   code
     color $colorCodeSnippet
     border 1px solid #e1e1e8
