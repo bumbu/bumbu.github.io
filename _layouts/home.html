@@ -2,24 +2,14 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Portofolio</h1>
-
-  <h1 class="page-heading">Last articles</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+<section class="portofolio">
+  <h1 class="portofolio__header">Recent projects</h1>
+  <div class="portofolio__items">
+    {% for post in site.categories['portofolio'] limit:3 %}
+      <a class="portofolio__item" href="{{ post.url | relative_url }}">
+        <img src="{{ post.previewThumbnail }}" alt="">
+        <span class="portofolio__item-title">{{ post.previewTitle }}</span>
+      </a>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+  </div>
+</section>

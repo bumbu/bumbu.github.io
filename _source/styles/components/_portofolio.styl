@@ -1,0 +1,43 @@
+.portofolio
+  font-family $headingsFontFamily
+
+  &__header
+    margin 15px 0 25px
+
+  &__items
+    display block
+    column-count 2
+    column-gap 0px
+
+    +bp(m)
+      column-count 1
+
+  &__item
+    display block
+    position relative
+    min-height 70px
+
+    img
+      width 100%
+      min-height 100%
+      display block
+
+    &:before
+      content ''
+      position absolute
+      trbl 0
+      background-image linear-gradient(bottom, $colorPortofolioOverlay 0%, transparent 70px, transparent 100%)
+
+  &__item-title
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    color $colorTextInverted
+    padding 7px 10px
+    font-size 18px
+    text-shadow 0px 0px 2px $colorPortofolioShadow
+
+    +bp(m)
+      font-size 22px
+      padding 10px 14px
