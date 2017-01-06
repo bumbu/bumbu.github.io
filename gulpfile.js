@@ -54,6 +54,10 @@ for (let i = 0; i < highlighterFilesJs.length; i++) {
   highlighterFilesJs[i] = PATHS.HG.SRC + highlighterFilesJs[i]
 }
 
+highlighterFilesJs.push('node_modules/jquery/dist/jquery.min.js')
+highlighterFilesJs.push('node_modules/imagelightbox/dist/imagelightbox.min.js')
+highlighterFilesJs.push('_source/scripts/inpage.js')
+
 const highlighterFilesCss = [
   PATHS.HG.SRC + 'themes/prism.css',
   // Plugins
