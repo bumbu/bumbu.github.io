@@ -1,5 +1,6 @@
 // Sort alphabetically
 const autoprefixer = require('gulp-autoprefixer')
+const concat = require('gulp-concat')
 const babel = require('gulp-babel')
 const exec = require('child_process').exec
 const gulp = require('gulp')
@@ -15,6 +16,9 @@ const webpackStream = require('webpack-stream')
 const PATHS = {
   SRC: '_source',
   SITE: '_site',
+  HG: { // Highlighter
+    SRC: './node_modules/prismjs/'
+  },
   CSS: {
     SRC: '_source/styles/',
     DIST: 'assets/css/',
@@ -24,6 +28,56 @@ const PATHS = {
     DIST: 'assets/js/',
   },
 }
+
+/**
+ * Highlighter
+ */
+
+let highlighterFilesJs = ['prism.js']
+
+// Languages
+const highlighterLangs = ['bash', 'clike', 'coffeescript', 'c', 'cpp', 'css', 'css-extras', 'elixir', 'git', 'haml', 'handlebars', 'java', 'javascript', 'json', 'jsx', 'less', 'markdown', 'markup', 'php', 'processing', 'python', 'ruby', 'sass', 'scss', 'sql', 'stylus', 'swift', 'typescript', 'yaml']
+for (let lang of highlighterLangs) {
+  highlighterFilesJs.push(`components/prism-${lang}.js`)
+}
+
+// Plugins
+highlighterFilesJs.push('plugins/line-highlight/prism-line-highlight.js')
+highlighterFilesJs.push('plugins/line-numbers/prism-line-numbers.js')
+highlighterFilesJs.push('plugins/autolinker/prism-autolinker.js')
+highlighterFilesJs.push('plugins/toolbar/prism-toolbar.js')
+highlighterFilesJs.push('plugins/show-language/prism-show-language.js')
+highlighterFilesJs.push('plugins/normalize-whitespace/prism-normalize-whitespace.js')
+
+// Add folder prefix
+for (let i = 0; i < highlighterFilesJs.length; i++) {
+  highlighterFilesJs[i] = PATHS.HG.SRC + highlighterFilesJs[i]
+}
+
+const highlighterFilesCss = [
+  PATHS.HG.SRC + 'themes/prism.css',
+  // Plugins
+  PATHS.HG.SRC + 'plugins/line-highlight/*.css',
+  PATHS.HG.SRC + 'plugins/line-numbers/*.css',
+  PATHS.HG.SRC + 'plugins/autolinker/*.css',
+  PATHS.HG.SRC + 'plugins/show-language/*.css',
+  PATHS.HG.SRC + 'plugins/toolbar/*.css'
+]
+
+gulp.task('build:highlighter', ['build:highlighter:js', 'build:highlighter:css'])
+
+gulp.task('build:highlighter:js', function() {
+  return gulp.src(highlighterFilesJs)
+    .pipe(concat('highlighter.js'))
+    .pipe(gulp.dest(PATHS.JS.DIST))
+})
+
+gulp.task('build:highlighter:css', function() {
+  return gulp.src(highlighterFilesCss)
+    .pipe(concat('highlighter.css'))
+    // .pipe(csso(false))
+    .pipe(gulp.dest(PATHS.CSS.DIST))
+})
 
 /**
  * Styles
@@ -137,5 +191,5 @@ gulp.task('dev:watch', function() {
   gulp.watch([PATHS.CSS.SRC + '**/*.styl'], ['dev:styles']);
 })
 
-gulp.task('default', ['dev:styles', 'dev:scripts', 'dev:watch', 'dev:jekyll'])
-gulp.task('build', ['build:styles', 'build:scripts'])
+gulp.task('default', ['build:highlighter', 'dev:styles', 'dev:scripts', 'dev:watch', 'dev:jekyll'])
+gulp.task('build', ['build:highlighter', 'build:styles', 'build:scripts'])

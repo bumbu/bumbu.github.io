@@ -29,7 +29,8 @@
 
   window.ACTIVE_POST = '{{ page.slug | replace: "'", "\\'" }}'
 </script>
-<script src='{{ "/assets/js/main.js" | relative_url }}'></script>
+<script src='{{ "/assets/js/main.js" | relative_url }}' async></script>
+<script src='{{ "/assets/js/highlighter.js" | relative_url }}'></script>
 {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
 {% endif %}
