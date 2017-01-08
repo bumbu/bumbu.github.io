@@ -6,7 +6,7 @@ layout: post
 permalink: /check-list-of-basic-things-that-you-should-know-about-html/
 categories: blog
 ---
-<a href="http://bumbu.me/wp-content/uploads/2012/07/w3html.png"><img class="alignright size-full wp-image-125" title="w3html" src="http://bumbu.me/wp-content/uploads/2012/07/w3html.png" alt="" width="100" height="131" /></a>After you moved over HTML <a title="W3C School HTML Tutorial" href="http://www.w3schools.com/html/default.asp" target="_blank">tutorial from WCS</a>, check this list to see if you get all this things, if no, just move back and try them once more time:
+<a href="{{site.root}}/assets/images/2012/07/w3html.png"><img class="alignright size-full wp-image-125" title="w3html" src="{{site.root}}/assets/images/2012/07/w3html.png" alt="" width="100" height="131" /></a>After you moved over HTML <a title="W3C School HTML Tutorial" href="http://www.w3schools.com/html/default.asp" target="_blank">tutorial from WCS</a>, check this list to see if you get all this things, if no, just move back and try them once more time:
 <ol>
 	<li>What is HTML</li>
 	<li>HTML Tags (XML like structure)</li>

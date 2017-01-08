@@ -21,7 +21,7 @@ So let's go step by step and see what that diagram means.
 
 ### State
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/redux-state.png" alt="redux-state" width="130" height="41" class="alignright size-full wp-image-1027" />Any application has a state. Some store their state in a database, some store their state in multiple places. In Redux you store the state in a single object. It knows which page is curently open, a set of items, current user and so on. It may be normalized or denormalized, but it should know enough so that you can save the state (say as JSON) and when loaded in a different browser - it will render the same app (same page, same items, same user...).
+![Redux state]({{site.root}}/assets/images/2016/10/redux-state.png){: .alignright width="130" height="41"}Any application has a state. Some store their state in a database, some store their state in multiple places. In Redux you store the state in a single object. It knows which page is curently open, a set of items, current user and so on. It may be normalized or denormalized, but it should know enough so that you can save the state (say as JSON) and when loaded in a different browser - it will render the same app (same page, same items, same user...).
 
 Let's define our state for a counter app:
 
@@ -31,7 +31,7 @@ var initialState = {counter: 0}
 
 ### Rendering
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/redux-render-300x78.png" alt="redux-render" width="300" height="78" class="alignright size-medium wp-image-1026" />Redux works very well with React.js, but it can be rendered with anything else. We'll render the state using plain JS:
+<img src="{{site.root}}/assets/images/2016/10/redux-render-300x78.png" alt="redux-render" width="300" height="78" class="alignright size-medium wp-image-1026" />Redux works very well with React.js, but it can be rendered with anything else. We'll render the state using plain JS:
 
 ```html
 <div id="counter">-</div>
@@ -45,7 +45,7 @@ function render(state) {
 
 ### Actions
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/redux-action-300x138.png" alt="redux-action" width="300" height="138" class="alignright size-medium wp-image-1024" />If application state changes, that's because of actions. They could be user actions, asynchronous actions, scheduled actions and so on. We'll define a button that will trigger an action.
+<img src="{{site.root}}/assets/images/2016/10/redux-action-300x138.png" alt="redux-action" width="300" height="138" class="alignright size-medium wp-image-1024" />If application state changes, that's because of actions. They could be user actions, asynchronous actions, scheduled actions and so on. We'll define a button that will trigger an action.
 
 ```html
 <button id="button">Increment</button>
@@ -57,7 +57,7 @@ document.getElementById('button').addEventListener('click', incrementCounter)
 
 ### Store and reducer
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/redux-store-300x130.png" alt="redux-store" width="300" height="130" class="alignright size-medium wp-image-1028" />Actions don't change the state directly. A Redux store is responsible for that:
+<img src="{{site.root}}/assets/images/2016/10/redux-store-300x130.png" alt="redux-store" width="300" height="130" class="alignright size-medium wp-image-1028" />Actions don't change the state directly. A Redux store is responsible for that:
 
 ```js|hl=1,4
 var store = Redux.createStore(reducer, initialState)
@@ -69,7 +69,7 @@ function incrementCounter() {
 }
 ```
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/redux-reducer-300x131.png" alt="redux-reducer" width="300" height="131" class="alignright size-medium wp-image-1025" />The Redux store holds the current state, and reacts to actions. When an action is dispatched (line 4), the store updates the state by passing current state and current action to the reducer, and the state is updated with what the reducer returned:
+<img src="{{site.root}}/assets/images/2016/10/redux-reducer-300x131.png" alt="redux-reducer" width="300" height="131" class="alignright size-medium wp-image-1025" />The Redux store holds the current state, and reacts to actions. When an action is dispatched (line 4), the store updates the state by passing current state and current action to the reducer, and the state is updated with what the reducer returned:
 
 ```js
 function reducer(state, action) {

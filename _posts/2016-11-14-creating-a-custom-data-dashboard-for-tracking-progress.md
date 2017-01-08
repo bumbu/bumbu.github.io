@@ -10,7 +10,7 @@ Say you want to build a number (say 200) of paper-planes in 3 months. Or you wan
 
 You may say that you're going to do 200/90 = 2 challenges/day (sometimes 3). But that's really not going to work well for most people. What if instead you'd have a graph that would look like:
 
-<img src="http://bumbu.me/wp-content/uploads/2016/11/progress-graph-265x300.png" alt="Progress graph" width="265" height="300" class="alignnone size-medium wp-image-1047" /><img src="http://bumbu.me/wp-content/uploads/2016/11/progress-graph-tooltip-267x300.png" alt="Progression graph - Tooltip" width="267" height="300" class="alignnone size-medium wp-image-1050" />
+<img src="{{site.root}}/assets/images/2016/11/progress-graph-265x300.png" alt="Progress graph" width="265" height="300" class="alignnone size-medium wp-image-1047" /><img src="{{site.root}}/assets/images/2016/11/progress-graph-tooltip-267x300.png" alt="Progression graph - Tooltip" width="267" height="300" class="alignnone size-medium wp-image-1050" />
 
 Where the green line would represent _the plan_, blue line would represent actual progress, and the red line would represent the prediction based on last X (say 7) days. This gives a much better overview current situation. And as long the prediction line (red) is above the expected line (green) - you're on track. Whenever the red line is below, you know that you have to push a bit more.
 
@@ -18,7 +18,7 @@ Where the green line would represent _the plan_, blue line would represent actua
 
 Here's the entire dashboard:
 
-<a href="http://bumbu.me/wp-content/uploads/2016/11/progression-dashboard.png"><img src="http://bumbu.me/wp-content/uploads/2016/11/progression-dashboard-1024x450.png" alt="Progression dashboard" width="640" height="281" class="alignnone size-large wp-image-1052" target="_blank" /></a>
+<a href="{{site.root}}/assets/images/2016/11/progression-dashboard.png"><img src="{{site.root}}/assets/images/2016/11/progression-dashboard-1024x450.png" alt="Progression dashboard" width="640" height="281" class="alignnone size-large wp-image-1052" target="_blank" /></a>
 
 On the left you can see overall progression progress.
 On the right you can see the average progression during last 7 days, and the required average to finish your target on time.
@@ -27,7 +27,7 @@ On the right you can see the average progression during last 7 days, and the req
 
 I wanted to have it very simple and fast. A Google Spreadsheets was a perfect solution for that (document data is public).
 
-<a href="http://bumbu.me/wp-content/uploads/2016/11/data-source.png"><img src="http://bumbu.me/wp-content/uploads/2016/11/data-source-1024x510.png" alt="Google Spreadsheets as data source" width="640" height="319" class="alignnone size-large wp-image-1057" target="_blank"/></a>
+<a href="{{site.root}}/assets/images/2016/11/data-source.png"><img src="{{site.root}}/assets/images/2016/11/data-source-1024x510.png" alt="Google Spreadsheets as data source" width="640" height="319" class="alignnone size-large wp-image-1057" target="_blank"/></a>
 
 ## Dashboard platform
 

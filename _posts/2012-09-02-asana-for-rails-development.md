@@ -6,7 +6,7 @@ layout: post
 permalink: /asana-for-rails-development/
 categories: blog
 ---
-<a href="http://bumbu.me/wp-content/uploads/2012/09/asana-logo.png"><img class="alignright  wp-image-208" title="asana-logo" alt="" src="http://bumbu.me/wp-content/uploads/2012/09/asana-logo.png" width="244" height="83" /></a>At work we use Asana as a Task Management System. It's not only about Rails, but about any MVC based system, or any other system in which responsibilities are well divided.
+<a href="{{site.root}}/assets/images/2012/09/asana-logo.png"><img class="alignright  wp-image-208" title="asana-logo" alt="" src="{{site.root}}/assets/images/2012/09/asana-logo.png" width="244" height="83" /></a>At work we use Asana as a Task Management System. It's not only about Rails, but about any MVC based system, or any other system in which responsibilities are well divided.
 
 We work on a project in team of 5 people:
 <ul>
@@ -24,7 +24,7 @@ Last two guys are working on invisible part of web app, providing high speed and
 <h3>How is everything set:</h3>
 We have one workspace for our department with all projects on which we work or which we support.
 
-<a href="http://bumbu.me/wp-content/uploads/2012/09/asana-usage-11.png"><img class="alignnone size-full wp-image-199" title="asana-usage-1" alt="" src="http://bumbu.me/wp-content/uploads/2012/09/asana-usage-11.png" width="500" height="268" /></a>
+<a href="{{site.root}}/assets/images/2012/09/asana-usage-11.png"><img class="alignnone size-full wp-image-199" title="asana-usage-1" alt="" src="{{site.root}}/assets/images/2012/09/asana-usage-11.png" width="500" height="268" /></a>
 
 Tags are used to mark tasks with special status ordered by their priority as following:
 <ul>
@@ -44,7 +44,7 @@ Tasks with <em>for future</em> tag are things that have low priority and were no
 
 All tasks are divided into pages by priority headings. For example if our app has a page with companies list, and a company details page, then tasks list may look like this:
 
-<a href="http://bumbu.me/wp-content/uploads/2012/09/asana-usage-2.png"><img class="alignnone size-full wp-image-200" title="asana-usage-2" alt="" src="http://bumbu.me/wp-content/uploads/2012/09/asana-usage-2.png" width="575" height="427" /></a>
+<a href="{{site.root}}/assets/images/2012/09/asana-usage-2.png"><img class="alignnone size-full wp-image-200" title="asana-usage-2" alt="" src="{{site.root}}/assets/images/2012/09/asana-usage-2.png" width="575" height="427" /></a>
 
 There also can be some other priority headings (ex. <em>General</em> for tasks related to whole project). Priority heading has in their description all main details about that page with screenshots attached and any other useful documents.
 
@@ -56,7 +56,7 @@ Every task has 5 main things which we are using widely:
 	<li>Tags</li>
 	<li>Comments</li>
 </ul>
-<a href="http://bumbu.me/wp-content/uploads/2012/09/asana-usage-3.png"><img class="alignnone size-full wp-image-201" title="asana-usage-3" alt="" src="http://bumbu.me/wp-content/uploads/2012/09/asana-usage-3.png" width="445" height="315" /></a>
+<a href="{{site.root}}/assets/images/2012/09/asana-usage-3.png"><img class="alignnone size-full wp-image-201" title="asana-usage-3" alt="" src="{{site.root}}/assets/images/2012/09/asana-usage-3.png" width="445" height="315" /></a>
 
 All tasks have sub tasks set in description as a list of item with preceding empty square brackets. Each sub task has the name of the person which should implement it. Sub sub tasks are done by preceding an item from the list with two spaces. Additionally tasks may contain links to other tasks or docs.
 

@@ -6,7 +6,7 @@ layout: post
 permalink: /get-list-of-all-email-addresses-who-ever-wrote-to-you/
 categories: blog
 ---
-<a href="http://bumbu.me/wp-content/uploads/2012/08/emailer.png"><img class="alignleft size-medium wp-image-185" title="emailer" src="http://bumbu.me/wp-content/uploads/2012/08/emailer-300x225.png" alt="" width="300" height="225" /></a>There are lot of people that don't get the idea of BCC (blank carbon copy) and while sending an email to multiple people, expose all email to every reciever. It is a nice leak for those who collect email addresses.
+<a href="{{site.root}}/assets/images/2012/08/emailer.png"><img class="alignleft size-medium wp-image-185" title="emailer" src="{{site.root}}/assets/images/2012/08/emailer-300x225.png" alt="" width="300" height="225" /></a>There are lot of people that don't get the idea of BCC (blank carbon copy) and while sending an email to multiple people, expose all email to every reciever. It is a nice leak for those who collect email addresses.
 
 Being interested how many uniqe email addresses I have on my GMail account, I did the following stept to find it out:
 

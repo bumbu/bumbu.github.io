@@ -12,12 +12,12 @@ In order to set a custom filter for Backlog issues follow these steps:
 <ol>
 	<li>Go to main issues page</li>
 	<li>Search for the type of issues you want to see in backlog (ex. #{Assigned to me} #Unresolved #Unscheduled)
-<a href="http://bumbu.me/wp-content/uploads/2014/09/Save-search.png"><img class="alignleft size-full wp-image-628" src="http://bumbu.me/wp-content/uploads/2014/09/Save-search.png" alt="Save search" width="419" height="77" /></a></li>
+<a href="{{site.root}}/assets/images/2014/09/Save-search.png"><img class="alignleft size-full wp-image-628" src="{{site.root}}/assets/images/2014/09/Save-search.png" alt="Save search" width="419" height="77" /></a></li>
 	<li>Save search (ex. My Unscheduled)</li>
 	<li>Go to Agile Boards</li>
 	<li>Open settings panel
-<a href="http://bumbu.me/wp-content/uploads/2014/09/Agile-boards-settings.png"><img class="alignleft size-full wp-image-630" src="http://bumbu.me/wp-content/uploads/2014/09/Agile-boards-settings.png" alt="Agile boards settings" width="311" height="75" /></a></li>
+<a href="{{site.root}}/assets/images/2014/09/Agile-boards-settings.png"><img class="alignleft size-full wp-image-630" src="{{site.root}}/assets/images/2014/09/Agile-boards-settings.png" alt="Agile boards settings" width="311" height="75" /></a></li>
 	<li>Set <em>Saved search to show as backlog:</em> to your previously saved search
-<a href="http://bumbu.me/wp-content/uploads/2014/09/Backlog.png"><img class="alignleft size-full wp-image-631" src="http://bumbu.me/wp-content/uploads/2014/09/Backlog.png" alt="Backlog" width="212" height="76" /></a></li>
+<a href="{{site.root}}/assets/images/2014/09/Backlog.png"><img class="alignleft size-full wp-image-631" src="{{site.root}}/assets/images/2014/09/Backlog.png" alt="Backlog" width="212" height="76" /></a></li>
 </ol>
 Now you have in backlog only tasks assigned to you that are not resolved and that are unscheduled.

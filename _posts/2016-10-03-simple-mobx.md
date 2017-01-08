@@ -12,13 +12,13 @@ This is a post that tries to explain the the basics of MobX. We'll build a minim
 
 From documentation: Simple, scalable state management. Basically MobX is meant to handle and organize application state/data while being simple and scalable. Which it does pretty well. Let's take a look at the diagram:
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/mobx-diagram-300x144.png" alt="mobx-diagram" width="300" height="144" class="alignnone size-medium wp-image-1036" />
+<img src="{{site.root}}/assets/images/2016/10/mobx-diagram-300x144.png" alt="mobx-diagram" width="300" height="144" class="alignnone size-medium wp-image-1036" />
 
 Let's go through each diagram step by step and build a simple application.
 
 ### State
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/mobx-store-150x150.png" alt="mobx-store" width="150" height="150" class="alignright size-thumbnail wp-image-1040" />In MobX you can have one or multiple states' storages. Let's go with one:
+<img src="{{site.root}}/assets/images/2016/10/mobx-store-150x150.png" alt="mobx-store" width="150" height="150" class="alignright size-thumbnail wp-image-1040" />In MobX you can have one or multiple states' storages. Let's go with one:
 
 ```js
 var store = mobx.observable({
@@ -30,7 +30,7 @@ We initialize our store with just one state data - `counter`. Your object may be
 
 ### Rendering
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/mobx-render-300x139.png" alt="mobx-render" width="300" height="139" class="alignright size-medium wp-image-1039" />MobX plays really well with React.js, but it may be used virtually with any renderer. Let's use some plain JS:
+<img src="{{site.root}}/assets/images/2016/10/mobx-render-300x139.png" alt="mobx-render" width="300" height="139" class="alignright size-medium wp-image-1039" />MobX plays really well with React.js, but it may be used virtually with any renderer. Let's use some plain JS:
 
 ```html
 <div id="counter">-</div>
@@ -46,7 +46,7 @@ Here we get the state and use it to update the view.
 
 ### Actions
 
-<img src="http://bumbu.me/wp-content/uploads/2016/10/mobx-action-300x138.png" alt="mobx-action" width="300" height="138" class="alignright size-medium wp-image-1038" />We can directly change the state whan an action happens:
+<img src="{{site.root}}/assets/images/2016/10/mobx-action-300x138.png" alt="mobx-action" width="300" height="138" class="alignright size-medium wp-image-1038" />We can directly change the state whan an action happens:
 
 ```html
 <button id="button">Increment</button>

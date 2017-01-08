@@ -6,7 +6,7 @@ layout: post
 permalink: /check-list-of-basic-things-that-you-should-know-about-css/
 categories: blog
 ---
-<a href="http://bumbu.me/wp-content/uploads/2012/07/w3css.png"><img class="alignright size-full wp-image-131" title="w3css" src="http://bumbu.me/wp-content/uploads/2012/07/w3css.png" alt="" width="100" height="131" /></a>After you moved over <a title="W3C School CSS Tutorial" href="http://www.w3schools.com/css/" target="_blank">CSS tutorial from WCS</a>, check this list to see if you get all this things, if no, just move back and try them once more time.
+<a href="{{site.root}}/assets/images/2012/07/w3css.png"><img class="alignright size-full wp-image-131" title="w3css" src="{{site.root}}/assets/images/2012/07/w3css.png" alt="" width="100" height="131" /></a>After you moved over <a title="W3C School CSS Tutorial" href="http://www.w3schools.com/css/" target="_blank">CSS tutorial from WCS</a>, check this list to see if you get all this things, if no, just move back and try them once more time.
 <ol>
 <ol>
 	<li>What is CSS</li>

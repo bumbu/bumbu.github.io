@@ -24,19 +24,19 @@ I did build 3 paper prototypes before starting building the actual wallet. From 
 	<li>A wallet will feel much slimmer if coins pocket will be outside of wallet</li>
 </ul>
 
-<img class="aligncenter wp-image-818 size-large" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3508-1024x768.jpg" alt="Wallet materials and tools" width="640" height="480" />
+<img class="aligncenter wp-image-818 size-large" src="{{site.root}}/assets/images/2015/12/IMG_3508-1024x768.jpg" alt="Wallet materials and tools" width="640" height="480" />
 
 Having all this in mind the work was started. It took 2 months to finish it because I wasn't working on it every day and you could do only 1-2 pieces a day as the glue had to stick for 24 hours under pressure. I think I spent around 40-50 hours working on it. Sometimes it was relaxing, other times it was boring, but it was going forward.
 
-<img class="alignleft wp-image-820 size-medium" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3516-300x225.jpg" alt="Wallet sections" width="300" height="225" /><img class="alignleft wp-image-819 size-medium" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3511-300x225.jpg" alt="Wallet sections and todo-list" width="300" height="225" />
+<img class="alignleft wp-image-820 size-medium" src="{{site.root}}/assets/images/2015/12/IMG_3516-300x225.jpg" alt="Wallet sections" width="300" height="225" /><img class="alignleft wp-image-819 size-medium" src="{{site.root}}/assets/images/2015/12/IMG_3511-300x225.jpg" alt="Wallet sections and todo-list" width="300" height="225" />
 
 At some point I had an ordered TODO list for the wallet to be able to track the progress and not make mistakes.
 
-<img class="aligncenter wp-image-822 size-large" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3785-1024x768.jpg" alt="Open wallet" width="640" height="480" />
+<img class="aligncenter wp-image-822 size-large" src="{{site.root}}/assets/images/2015/12/IMG_3785-1024x768.jpg" alt="Open wallet" width="640" height="480" />
 
 I'm using it now for 2 months and it is definitely lighter than my previous wallet. I do have 3 cards: one bank debit card and 2 for accessing the office. Because most payments are contact-less there are only some back-up money which I almost never touch. Also I do keep home token and key in coins section. So when I get out of home I have to be sure that I got only my wallet (instead of checking for wallet, key, tokens and access cards).
 
-<img class="alignleft size-medium wp-image-825" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3788-300x225.jpg" alt="Wallet's coins compartment" width="300" height="225" /> <img class="alignleft size-medium wp-image-824" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3787-300x225.jpg" alt="Wallet's main compartment" width="300" height="225" /> <img class="alignleft size-medium wp-image-823" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3786-300x225.jpg" alt="Wallet's back" width="300" height="225" /> <img class="alignleft size-medium wp-image-821" src="http://bumbu.me/wp-content/uploads/2015/12/IMG_3784-300x225.jpg" alt="Wallet's front" width="300" height="225" />
+<img class="alignleft size-medium wp-image-825" src="{{site.root}}/assets/images/2015/12/IMG_3788-300x225.jpg" alt="Wallet's coins compartment" width="300" height="225" /> <img class="alignleft size-medium wp-image-824" src="{{site.root}}/assets/images/2015/12/IMG_3787-300x225.jpg" alt="Wallet's main compartment" width="300" height="225" /> <img class="alignleft size-medium wp-image-823" src="{{site.root}}/assets/images/2015/12/IMG_3786-300x225.jpg" alt="Wallet's back" width="300" height="225" /> <img class="alignleft size-medium wp-image-821" src="{{site.root}}/assets/images/2015/12/IMG_3784-300x225.jpg" alt="Wallet's front" width="300" height="225" />
 
 However there are some things that could be better. This wallet is more of an universal wallet. But if you want to go really minimal you have to make one specific for your use-case. Because currently I'm in London where most of the payments are contact-less and the only thing I have to take out of wallet is my home key I did compile a new list of requirements for my next wallet:
 <ul>
@@ -52,4 +52,4 @@ It may be hard to imagine this wallet but basically it should be a 3D printed wi
 Looking forward to build this wallet.
 
 p.s. <a href="http://www.carryology.com/wallets/wallet-shapes-functions/" target="_blank">Here is a nice article</a> explaining different wallets shapes.
-<img src="http://bumbu.me/wp-content/uploads/2015/12/Carryolog-Wallets-Shape-1600-1024x769.jpg" alt="Wallets Shapes" width="640" height="481" class="aligncenter size-large wp-image-839" />
+<img src="{{site.root}}/assets/images/2015/12/Carryolog-Wallets-Shape-1600-1024x769.jpg" alt="Wallets Shapes" width="640" height="481" class="aligncenter size-large wp-image-839" />

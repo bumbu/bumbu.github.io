@@ -15,7 +15,7 @@ I'm usually typing in <a href="http://en.wikipedia.org/wiki/Romanian_alphabet">R
 </ul>
 By searching a bit I understood that it will be faster and more efficient to remap these letters in order to get what I need.
 
-<img class="alignleft size-full wp-image-347" alt="ColemaRo" src="http://bumbu.me/wp-content/uploads/2013/04/ColemaRo.png" width="735" height="314" />
+<img class="alignleft size-full wp-image-347" alt="ColemaRo" src="{{site.root}}/assets/images/2013/04/ColemaRo.png" width="735" height="314" />
 
 I remapped necessary letters like in image above.
 

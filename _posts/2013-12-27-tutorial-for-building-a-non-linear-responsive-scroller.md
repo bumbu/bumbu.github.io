@@ -21,7 +21,7 @@ The whole title would be: Developing a jQuery powered curved-path infinite respo
 </ul>
 To make things more clear we'll build this:
 
-<a href="http://bumbu.me/wp-content/uploads/2013/12/scroller.png"><img class="alignnone size-large wp-image-577" alt="scroller" src="http://bumbu.me/wp-content/uploads/2013/12/scroller-1024x222.png" width="640" height="138" /></a>
+<a href="{{site.root}}/assets/images/2013/12/scroller.png"><img class="alignnone size-large wp-image-577" alt="scroller" src="{{site.root}}/assets/images/2013/12/scroller-1024x222.png" width="640" height="138" /></a>
 
 &nbsp;
 <h2>Planning and Building HTML/CSS Skeleton</h2>
@@ -31,7 +31,7 @@ This can be done in many ways, but one of the most popular (and probably efficie
 
 In following image red rectangle is inner container. Green rectangle is main container. Inner elements are depicted as blue circles.
 
-<a href="http://bumbu.me/wp-content/uploads/2013/12/scroller-scheme.png"><img class="alignnone size-full wp-image-581" alt="scroller-scheme" src="http://bumbu.me/wp-content/uploads/2013/12/scroller-scheme.png" width="683" height="123" /></a>
+<a href="{{site.root}}/assets/images/2013/12/scroller-scheme.png"><img class="alignnone size-full wp-image-581" alt="scroller-scheme" src="{{site.root}}/assets/images/2013/12/scroller-scheme.png" width="683" height="123" /></a>
 
 It is an efficient solution because while scrolling we have to change only inner container <em>left</em> value. Other solutions would imply to manipulate with each element independently but it is cumbersome and it is very likely to have unsynchronised animation where some elements will move faster then others. It will look awful.
 
@@ -39,7 +39,7 @@ All the other things may be done in whatever way. But one important thing is to 
 
 In following examples I'll use only 2 images: default and active, but in real world version you can set custom images for each element.
 
-<img class="alignnone size-full wp-image-582" alt="scroller_image_active" src="http://bumbu.me/wp-content/uploads/2013/12/scroller_image_active.png" width="99" height="102" /> <img class="alignnone size-large wp-image-583" alt="scroller_image_default" src="http://bumbu.me/wp-content/uploads/2013/12/scroller_image_default.png" width="99" height="102" />
+<img class="alignnone size-full wp-image-582" alt="scroller_image_active" src="{{site.root}}/assets/images/2013/12/scroller_image_active.png" width="99" height="102" /> <img class="alignnone size-large wp-image-583" alt="scroller_image_default" src="{{site.root}}/assets/images/2013/12/scroller_image_default.png" width="99" height="102" />
 
 For me the final result of HTML+CSS looks like:
 

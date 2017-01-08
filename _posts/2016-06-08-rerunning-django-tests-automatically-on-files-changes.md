@@ -15,7 +15,7 @@ One such thing is automating tests running. Normally if you work on a Django (Py
 
 Automating first 2 is a bit problematic (for now) but 3rd one seems like a perfect canditate for that.
 
-<img src="http://bumbu.me/wp-content/uploads/2016/06/automation-1.jpg" alt="automation" width="1280" height="791" class="aligncenter size-full wp-image-995" />
+<img src="{{site.root}}/assets/images/2016/06/automation-1.jpg" alt="automation" width="1280" height="791" class="aligncenter size-full wp-image-995" />
 
 ### Simple way of automating tests running
 

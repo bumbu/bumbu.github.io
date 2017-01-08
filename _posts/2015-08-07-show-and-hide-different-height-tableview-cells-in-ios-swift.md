@@ -8,7 +8,7 @@ categories: development
 ---
 If you have a tableView with predefined cells (rows) of different height and you want to dynamically hide some of them.
 
-<img class="aligncenter size-medium wp-image-743" src="http://bumbu.me/wp-content/uploads/2015/08/iOS-tableView-different-heights-cells-241x300.png" alt="iOS tableView different heights cells" width="241" height="300" />
+<img class="aligncenter size-medium wp-image-743" src="{{site.root}}/assets/images/2015/08/iOS-tableView-different-heights-cells-241x300.png" alt="iOS tableView different heights cells" width="241" height="300" />
 
 In my case I want to hide <em>Quantity</em> row when type is set as <em>Second</em>. It could be done by setting this cell height to 0. Like this:
 <pre class="prettyprint lang-swift"><code>override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
@@ -35,7 +35,7 @@ As you can see there are almost no changes from previous code. We only updated t
   self.tableView.reloadData()
 }</code></pre>
 But this may result in cells overlap like this
-<img class="aligncenter size-medium wp-image-746" src="http://bumbu.me/wp-content/uploads/2015/08/iOS-tableView-different-heights-cells-overlap-243x300.png" alt="iOS tableView different heights cells overlap" width="243" height="300" />
+<img class="aligncenter size-medium wp-image-746" src="{{site.root}}/assets/images/2015/08/iOS-tableView-different-heights-cells-overlap-243x300.png" alt="iOS tableView different heights cells overlap" width="243" height="300" />
 
 In order to fix that we can additionally hide the cell when <em>Type</em> value changes:
 <pre class="prettyprint lang-swift"><code>@IBAction func changeType(sender: UISegmentedControl) {
@@ -52,4 +52,4 @@ In order to fix that we can additionally hide the cell when <em>Type</em> value 
 }</code></pre>
 That's it. Now our tableView looks as intended.
 
-<img class="aligncenter size-medium wp-image-748" src="http://bumbu.me/wp-content/uploads/2015/08/iOS-tableView-different-heights-cells-hidden-243x300.png" alt="iOS tableView different heights cells hidden" width="243" height="300" />
+<img class="aligncenter size-medium wp-image-748" src="{{site.root}}/assets/images/2015/08/iOS-tableView-different-heights-cells-hidden-243x300.png" alt="iOS tableView different heights cells hidden" width="243" height="300" />

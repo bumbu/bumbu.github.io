@@ -25,7 +25,7 @@ circle.stroke-yellow {
 }</code></pre>
 This way we get a circle with yellow stroke
 
-<a href="http://bumbu.me/wp-content/uploads/2014/08/multicolor-one.png"><img class="size-full wp-image-497 alignnone" alt="multicolor-one" src="http://bumbu.me/wp-content/uploads/2014/08/multicolor-one.png" width="214" height="212" /></a>
+<a href="{{site.root}}/assets/images/2014/08/multicolor-one.png"><img class="size-full wp-image-497 alignnone" alt="multicolor-one" src="{{site.root}}/assets/images/2014/08/multicolor-one.png" width="214" height="212" /></a>
 
 Next step is to add second layer of color (red):
 <pre class="language-html"><code>&lt;svg xmlns="http://www.w3.org/2000/svg" height="220"&gt;
@@ -48,7 +48,7 @@ circle.stroke-red {
 }</code></pre>
 Now red color is dominating.
 
-<a href="http://bumbu.me/wp-content/uploads/2014/08/multicolor-two.png"><img class="size-full wp-image-499 alignnone" alt="multicolor-two" src="http://bumbu.me/wp-content/uploads/2014/08/multicolor-two.png" width="213" height="215" /></a>
+<a href="{{site.root}}/assets/images/2014/08/multicolor-two.png"><img class="size-full wp-image-499 alignnone" alt="multicolor-two" src="{{site.root}}/assets/images/2014/08/multicolor-two.png" width="213" height="215" /></a>
 
 The last step is to cover half of red color with blue:
 <pre class="language-html"><code>&lt;svg xmlns="http://www.w3.org/2000/svg" height="220"&gt;
@@ -77,7 +77,7 @@ circle.stroke-blue {
 }</code></pre>
 This way we got a circle with multicolor stroke.
 
-<a href="http://bumbu.me/wp-content/uploads/2014/08/multicolor-three.png"><img class="size-full wp-image-498 alignnone" alt="multicolor-three" src="http://bumbu.me/wp-content/uploads/2014/08/multicolor-three.png" width="216" height="212" /></a>
+<a href="{{site.root}}/assets/images/2014/08/multicolor-three.png"><img class="size-full wp-image-498 alignnone" alt="multicolor-three" src="{{site.root}}/assets/images/2014/08/multicolor-three.png" width="216" height="212" /></a>
 
 There are 2 things to take in account:
 <ul>
@@ -93,4 +93,4 @@ There are 2 things to take in account:
 </ul>
 </li>
 </ul>
-[caption id="attachment_501" align="alignnone" width="210"]<a href="http://bumbu.me/wp-content/uploads/2014/08/multicolor-circle.png"><img class="size-full wp-image-501 " alt="multicolor-circle" src="http://bumbu.me/wp-content/uploads/2014/08/multicolor-circle.png" width="210" height="211" /></a> Circle with multicolor stroke. Some stroke dashes seem to be bordered by darker colors (ex. yellow)[/caption]
+[caption id="attachment_501" align="alignnone" width="210"]<a href="{{site.root}}/assets/images/2014/08/multicolor-circle.png"><img class="size-full wp-image-501 " alt="multicolor-circle" src="{{site.root}}/assets/images/2014/08/multicolor-circle.png" width="210" height="211" /></a> Circle with multicolor stroke. Some stroke dashes seem to be bordered by darker colors (ex. yellow)[/caption]

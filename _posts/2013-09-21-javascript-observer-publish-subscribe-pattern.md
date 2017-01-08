@@ -15,7 +15,7 @@ Taking in account previous patterns this pattern adds one more principle:
 </ul>
 So the main idea is that we have one main object to which you subscribe (Subject/Observable) and a lot of objects (Observers) that subscribe and wait for events.
 
-<a href="http://bumbu.me/wp-content/uploads/2013/09/Drawing1.png"><img class="alignnone size-full wp-image-549" alt="Drawing1" src="http://bumbu.me/wp-content/uploads/2013/09/Drawing1.png" width="170" height="224" /></a>
+<a href="{{site.root}}/assets/images/2013/09/Drawing1.png"><img class="alignnone size-full wp-image-549" alt="Drawing1" src="{{site.root}}/assets/images/2013/09/Drawing1.png" width="170" height="224" /></a>
 
 One very important thing to remember is that objects may receive messages in random order, so you shouldn't rely on the order in which you added Observers.
 <h2>Basic Observer Example</h2>

@@ -12,4 +12,4 @@ In case that you need to translate a point from one quadrilateral to another (fo
 
 Here is an example of points translation:
 
-<img class="aligncenter size-full wp-image-767" src="http://bumbu.me/wp-content/uploads/2015/10/quadrilateral-translation.png" alt="quadrilateral-translation" width="600" height="180" />
+<img class="aligncenter size-full wp-image-767" src="{{site.root}}/assets/images/2015/10/quadrilateral-translation.png" alt="quadrilateral-translation" width="600" height="180" />

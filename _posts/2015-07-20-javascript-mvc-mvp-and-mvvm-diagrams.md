@@ -8,6 +8,6 @@ categories: blog development
 ---
 MVC, MVP and MVVM diagrams
 
-<a href="http://bumbu.me/wp-content/uploads/2015/07/mvc-mvp-mvvm.jpg"><img class="aligncenter size-large wp-image-717" src="http://bumbu.me/wp-content/uploads/2015/07/mvc-mvp-mvvm-1024x791.jpg" alt="mvc-mvp-mvvm" width="640" height="494" /></a>
+<a href="{{site.root}}/assets/images/2015/07/mvc-mvp-mvvm.jpg"><img class="aligncenter size-large wp-image-717" src="{{site.root}}/assets/images/2015/07/mvc-mvp-mvvm-1024x791.jpg" alt="mvc-mvp-mvvm" width="640" height="494" /></a>
 
 &nbsp;

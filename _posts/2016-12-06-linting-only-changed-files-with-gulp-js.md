@@ -106,7 +106,7 @@ function lintFile(file) {
 ```
 
 That will trigger following system notification:
-<img src="http://bumbu.me/wp-content/uploads/2016/12/sass-linting-warnings.png" alt="sass-linting-warnings" width="341" height="86" class="alignnone size-full wp-image-1080" />
+<img src="{{site.root}}/assets/images/2016/12/sass-linting-warnings.png" alt="sass-linting-warnings" width="341" height="86" class="alignnone size-full wp-image-1080" />
 
 You can see that we passed the `file` attribute to the notifier. It is actually not necessary, but we'll use it to have a one more nice functionality - clicking on the notification will open that file in the editor (you have to set up in your system preferences to open `.scss` files by default with your preferred editor).
 

@@ -6,7 +6,7 @@ layout: post
 permalink: /rating-stars-with-memoization-without-any-javascript/
 categories: experiments
 ---
-<a href="http://bumbu.me/wp-content/uploads/2012/10/rating_stars.png"><img class="alignright size-full wp-image-263" title="rating_stars" src="http://bumbu.me/wp-content/uploads/2012/10/rating_stars.png" alt="" width="150" height="92" /></a>The idea is pretty simple - a rating element that will:
+<a href="{{site.root}}/assets/images/2012/10/rating_stars.png"><img class="alignright size-full wp-image-263" title="rating_stars" src="{{site.root}}/assets/images/2012/10/rating_stars.png" alt="" width="150" height="92" /></a>The idea is pretty simple - a rating element that will:
 <ul>
   <li>Display simple and clear (we'll use stars)</li>
   <li>Display general state of rating</li>

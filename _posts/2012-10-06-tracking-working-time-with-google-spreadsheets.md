@@ -8,7 +8,7 @@ categories: blog
 ---
 One way to get paid is by hour. I use this method for projects that need small/middle updates from time to time. There are around 10 such websites, and I have to trask time for them all. At some point, to gamificate my work, I stated to track all work in one Google Spreadsheet. For one site it is a table with months on top row, some statistical numbers in top, month dates one the left and worked hours per day on this project in middle cells:
 
-<a href="http://bumbu.me/wp-content/uploads/2012/10/Site-working-stats.png"><img class="alignnone  wp-image-222" title="Site-working-stats" src="http://bumbu.me/wp-content/uploads/2012/10/Site-working-stats.png" alt="" width="728" height="310" /></a>
+<a href="{{site.root}}/assets/images/2012/10/Site-working-stats.png"><img class="alignnone  wp-image-222" title="Site-working-stats" src="{{site.root}}/assets/images/2012/10/Site-working-stats.png" alt="" width="728" height="310" /></a>
 
 To gain statistics for one month in one sheet is really easy.
 
@@ -22,11 +22,11 @@ All other values are introduced by hands.
 <h2>Gamification work statistics</h2>
 To make things more interesting, and to have overall statistics about all projects revenue and debt, I created one more sheet that was collecting all that data.
 
-<a href="http://bumbu.me/wp-content/uploads/2012/10/Spreadsheet-gamification.png"><img class="alignnone size-full wp-image-225" title="Spreadsheet gamification" src="http://bumbu.me/wp-content/uploads/2012/10/Spreadsheet-gamification.png" alt="" width="611" height="622" /></a>
+<a href="{{site.root}}/assets/images/2012/10/Spreadsheet-gamification.png"><img class="alignnone size-full wp-image-225" title="Spreadsheet gamification" src="{{site.root}}/assets/images/2012/10/Spreadsheet-gamification.png" alt="" width="611" height="622" /></a>
 
 Here I used colors to visually indicate wich days were more productive, and which not.
 
-<a href="http://bumbu.me/wp-content/uploads/2012/10/workload-colors.png"><img class="alignnone size-full wp-image-226" title="workload colors" src="http://bumbu.me/wp-content/uploads/2012/10/workload-colors.png" alt="" width="128" height="103" /></a>
+<a href="{{site.root}}/assets/images/2012/10/workload-colors.png"><img class="alignnone size-full wp-image-226" title="workload colors" src="{{site.root}}/assets/images/2012/10/workload-colors.png" alt="" width="128" height="103" /></a>
 
 Also on the left (second column) I put month days. Them are used by the functions which populate this sheet with data.
 <h2>Populating Google Spreadsheet using provided functions</h2>

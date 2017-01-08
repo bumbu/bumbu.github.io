@@ -12,8 +12,8 @@ The game scene is projected on the wall, and a ball is used to shoot. The ball i
 
 More detailed description and source code available at <a href="https://github.com/9-volt/ghost_land" target="_blank">9-volt/ghost_land</a>.
 
-<img class="aligncenter wp-image-757 size-full" src="http://bumbu.me/wp-content/uploads/2015/10/ghoster-land-gameplay.jpeg" alt="ghoster-land-gameplay" width="800" height="600" />
+<img class="aligncenter wp-image-757 size-full" src="{{site.root}}/assets/images/2015/10/ghoster-land-gameplay.jpeg" alt="ghoster-land-gameplay" width="800" height="600" />
 
-<img class="aligncenter wp-image-758 size-full" src="http://bumbu.me/wp-content/uploads/2015/10/ghoster-land-overview.jpeg" alt="ghoster-land-overview" width="800" height="524" />
+<img class="aligncenter wp-image-758 size-full" src="{{site.root}}/assets/images/2015/10/ghoster-land-overview.jpeg" alt="ghoster-land-overview" width="800" height="524" />
 
 https://www.youtube.com/watch?v=Psrh_SsXb38

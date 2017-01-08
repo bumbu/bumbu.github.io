@@ -6,7 +6,7 @@ layout: post
 permalink: /how-to-write-best-motivational-letter/
 categories: blog
 ---
-<a href="http://bumbu.me/wp-content/uploads/2011/10/BEST_Chisinau_logo.png"><img class="alignright size-medium wp-image-145" title="BEST_Chisinau_logo" src="http://bumbu.me/wp-content/uploads/2011/10/BEST_Chisinau_logo-300x152.png" alt="" width="300" height="152" /></a>Keep in mind that your letter will be read by other students like you so try to write it like something you would like to read. Here is some help:
+<a href="{{site.root}}/assets/images/2011/10/BEST_Chisinau_logo.png"><img class="alignright size-medium wp-image-145" title="BEST_Chisinau_logo" src="{{site.root}}/assets/images/2011/10/BEST_Chisinau_logo-300x152.png" alt="" width="300" height="152" /></a>Keep in mind that your letter will be read by other students like you so try to write it like something you would like to read. Here is some help:
 <ol>
 <ol>
 	<li>Don't forget to write why you want to come to BEST event you are applying for. Let the organizers know that you are interested in the event. If you have any knowledge useful for that event, write that also.</li>

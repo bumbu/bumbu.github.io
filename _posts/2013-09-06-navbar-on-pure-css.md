@@ -14,11 +14,11 @@ Elements in navigation bar can have 2 states:
 There are 3 different arrows between these states (there are 4 but we're using only 3):
 <ul>
 	<li>inactive-inactive
-<img class="alignnone size-full wp-image-501" alt="navigation-bar-1" src="http://bumbu.me/wp-content/uploads/2013/09/navigation-bar-1.png" width="127" height="180" /></li>
+<img class="alignnone size-full wp-image-501" alt="navigation-bar-1" src="{{site.root}}/assets/images/2013/09/navigation-bar-1.png" width="127" height="180" /></li>
 	<li>active-inactive
-<img class="alignnone size-full wp-image-502" alt="navigation-bar-2" src="http://bumbu.me/wp-content/uploads/2013/09/navigation-bar-2.png" width="127" height="176" /></li>
+<img class="alignnone size-full wp-image-502" alt="navigation-bar-2" src="{{site.root}}/assets/images/2013/09/navigation-bar-2.png" width="127" height="176" /></li>
 	<li>active-active
-<img class="alignnone size-full wp-image-503" alt="navigation-bar-3" src="http://bumbu.me/wp-content/uploads/2013/09/navigation-bar-3.png" width="127" height="173" /></li>
+<img class="alignnone size-full wp-image-503" alt="navigation-bar-3" src="{{site.root}}/assets/images/2013/09/navigation-bar-3.png" width="127" height="173" /></li>
 </ul>
 In order not to use z-index I set elements in opposite order.
 
