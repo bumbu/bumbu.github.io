@@ -33,7 +33,7 @@ In order to know when all the APIs' data were fetched - we have to register the
 
 ## Aborting slow API requests
 
-In a well designed application it will display it's state in an incremental way: if there is just one piece of information - it will display just that. At least your application shouldn't crash if some data is missing. Knowing that, we can wrap API fetches with a timeout. And if API fetches don't return within given time-frame - we'll simply abort remaining API fetches and render the app with whatever information we have, and the missing information will be loaded on the client.
+In a well designed application it will display it's state in an incremental way: if there is just one piece of information - it will display just that. At least your application shouldn't crash if some data is missing. Knowing that, we can wrap API fetches with a timeout. And if API fetches don't return within given time-frame - we'll [simply abort remaining API fetches]({{site.root}}/abortable-promises-for-api-requests/) and render the app with whatever information we have, and the missing information will be loaded on the client.
 
 ## Time-bounded server render
 

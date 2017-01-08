@@ -14,7 +14,7 @@ You may want an abortable promise for different reasons, but those used for asyn
 
 Making a promise abortable is actually very easy. In this example we're using `jQuery.ajax` for managing ajax requests.
 
-```js|hl=6,10,14
+```js
 function constructRequest(options) {
   const request = jQuery.ajax(options)
 
@@ -39,5 +39,6 @@ const { abort, promise } = constructRequest({
   method: 'GET'
 })
 ```
+{: data-line="6,10,14"}
 
 So basically you have to wrap your async processor into a promise, and call its `resolve` and `reject` provided functions appropriately. Also provide a proxy into aborting mechanism.

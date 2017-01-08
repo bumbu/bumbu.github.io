@@ -17,7 +17,9 @@ Let's go with an example. Let's say that your application displays youtube video
 	<li>YouTube API (last resort)</li>
 </ul>
 One important thing to take into account is that some requests may be asynchronous (the last 2). So we have to use callbacks or Promises. Actually using Promises we'll be able to handle rejections and errors.
-<pre class="prettyprint"><code>function step1() {
+
+```js
+function step1() {
   return new Promise(function(resolve, reject) {
     console.log('step1')
     // setTimeout(resolve, 1000)
@@ -49,29 +51,47 @@ step1()
   })
   .catch(function(){
     console.log('failed')
-  })</code></pre>
-In this case you'll get
-<pre class="prettyprint"><code>step1
+  })
+```
+
+In this case you'll get following output:
+
+```shell
+step1
 step2
 step3
-done</code></pre>
+done
+```
+
 Changing the <code>step2</code> to succeed will output
-<pre class="prettyprint"><code>step1
+
+```shell
+step1
 step2
-done</code></pre>
+done
+```
+
 And making all steps to fail will output
-<pre class="prettyprint"><code>step1
+
+```shell
+step1
 step2
 step3
-fail</code></pre>
+fail
+```
+
 So the idea is that each next step is called only if all previous steps failed. If at least one point succeeds then function passed to <code>then</code> is called, otherwise function passed to last <code>catch</code> is called.
 
 And in order to pass data from steps to function passed to <code>then</code> you simply have to call <code>resolve</code> function with your data:
-<pre class="prettyprint"><code>function step2() {
+
+```js
+function step2() {
   return new Promise(function(resolve, reject) {
     resolve({done: true})
   })
-}</code></pre>
+}
+```
+
 <h2>Sources</h2>
 <ol>
 	<li>(article) <a href="http://c2.com/cgi/wiki?ChainOfResponsibilityPattern" target="_blank">Chain or Responsibility pattern</a></li>

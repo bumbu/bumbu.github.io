@@ -59,7 +59,7 @@ document.getElementById('button').addEventListener('click', incrementCounter)
 
 <img src="{{site.root}}/assets/images/2016/10/redux-store-300x130.png" alt="redux-store" width="300" height="130" class="alignright size-medium wp-image-1028" />Actions don't change the state directly. A Redux store is responsible for that:
 
-```js|hl=1,4
+```js
 var store = Redux.createStore(reducer, initialState)
 
 function incrementCounter() {
@@ -68,6 +68,7 @@ function incrementCounter() {
   })
 }
 ```
+{: data-line="1,4"}
 
 <img src="{{site.root}}/assets/images/2016/10/redux-reducer-300x131.png" alt="redux-reducer" width="300" height="131" class="alignright size-medium wp-image-1025" />The Redux store holds the current state, and reacts to actions. When an action is dispatched (line 4), the store updates the state by passing current state and current action to the reducer, and the state is updated with what the reducer returned:
 

@@ -13,6 +13,7 @@ Everyone knows that using `innerHTML` is not set. Right? React blog describes it
 So it is really hard to make a safe `innerHTML`.
 
 Some alternatives for using `innerHTML` are:
+
 1. Parsing the HTML string as the browser would and creating DOM nodes based on that
 1. Instead of writing HTML strings - describing nodes properties (as objects) and passing them to a builder function.
 

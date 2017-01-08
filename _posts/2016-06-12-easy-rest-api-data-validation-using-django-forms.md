@@ -13,6 +13,7 @@ If your Django application has a REST API and you're not using Django REST frame
 If your API matches a model then use Django ModelForm class.
 
 Say you have following `Item` class:
+
 ```python
 from django.forms import ModelForm
 from django.models import Model
@@ -29,6 +30,7 @@ class ItemForm(ModelForm):
 ```
 
 Then validating the data is simply done by checking if the form is valid:
+
 ```python
 import json
 from django.http import JsonResponse
@@ -60,6 +62,7 @@ class ItemForm(Form):
 ```
 
 And the code for validation is basically the same:
+
 ```python
 import json
 from django.http import JsonResponse

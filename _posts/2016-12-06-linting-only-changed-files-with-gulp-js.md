@@ -31,6 +31,7 @@ gulp.task('default, ['sass', 'sass-lint', 'watch']);
 ```
 
 While this setup is fine, it has few drawbacks:
+
 * If you have lots of SASS files and a not-so-powerful computer, then linting all the files may be significantly slow (for one project I had 3 seconds solely for this task). This, paired with SASS compilation slows down the development as with most projects I get instant feedback on my changes (with the help of livereload/browsersync/hot modules).
 * Adding linting to a project that has a significant amount of files will spit lots of warnings. Most probably developers will tend to ignore warnings instead of trying to fix them for those files they're working on.
 
@@ -62,7 +63,7 @@ You can see that we're listening only for added/changed events. We're not intere
 
 If you're working with a SCM system (e.g. GIT) then you may end up with lots of files changing really quick (e.g. when you switch between branches). That may have an unpleasant surprise of slowing your computer as multiple lint task will run in parallel. A solution is to debounce gulp.watch:
 
-```js|hl=2
+```js
 gulp.task('watch', function() {
   gulp.watch(SASS_FILES, {debounceDelay: 200}, function(ev) {
       if (ev.type === 'added' || ev.type === 'changed') {
@@ -71,6 +72,7 @@ gulp.task('watch', function() {
   });
 }
 ```
+{: data-line="2"}
 
 ## Showing system notifications for linting warnings
 
@@ -111,6 +113,7 @@ That will trigger following system notification:
 You can see that we passed the `file` attribute to the notifier. It is actually not necessary, but we'll use it to have a one more nice functionality - clicking on the notification will open that file in the editor (you have to set up in your system preferences to open `.scss` files by default with your preferred editor).
 
 For that we'll need this piece of code:
+
 ```js
 notifier.on('click', function (notifierObject, options) {
   if (options.file) {

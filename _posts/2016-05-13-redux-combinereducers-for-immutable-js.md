@@ -7,6 +7,7 @@ permalink: /redux-combinereducers-for-immutable-js/
 categories: development
 ---
 Let's say that you use Immutable.js Map as a data-structure of your state and you have following reducers:
+
 ```js
 import { Map } from 'immutable'
 
@@ -22,6 +23,7 @@ const reducers = Map({
 Default `combineReducers` function that comes with Redux will not work as it doesn't know how to read and create new versions of state.
 
 But it is easy to write you own `combineReducers` for Immutable.js:
+
 ```js
 const combineReducers = function(state = initialState, action) {
   reducers.forEach((reducer, key) => {
@@ -33,6 +35,7 @@ const combineReducers = function(state = initialState, action) {
 ```
 
 on in a more readable way:
+
 ```js
 const combineReducers = function(state = initialState, action) {
   reducers.forEach((reducer, key) => {
@@ -48,6 +51,7 @@ const combineReducers = function(state = initialState, action) {
 ## Reducers that get entire state instead of a single attribute
 
 If for some reason you need a reducer to get entire state as an attribute then it's easy to do with a simple convention: is a reducer name starts with an asterisk `*` then that reducer will receive entire state as first argument:
+
 ```js
 const reducers = Map({
   '*all': everythingReducer, // <== this reducer will receive entire state as first argument
@@ -57,6 +61,7 @@ const reducers = Map({
 ```
 
 and the `combineReducers` for that is:
+
 ```js
 const combineReducers = function(state = initialState, action) {
   reducers.forEach((reducer, key) => {
@@ -77,4 +82,5 @@ const combineReducers = function(state = initialState, action) {
 But this is an antipattern. I was using this function initially as I thought that I need it so that an action could change multiple attributes of state. But there is a better way.
 
 ## Same action can change multiple state attributes
+
 If you have an action (say `CHANGE_CURRENT_PAGE`) that should modify multiple state top-level attributes (say `sidebarShown` and `currentPage`) then you're much better off by checking for the same action in 2 separate reducers. This way each reducer will be responsible for it's own part of the state.

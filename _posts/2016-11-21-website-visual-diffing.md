@@ -9,6 +9,7 @@ categories: development experiments
 If you ever worked with CSS/HTML then most probably you had the situation when you were supposed to change one thing, but in fact your changes affected other parts of the website (other elements or elements on other pages).
 
 There are many factors that lead to these problems:
+
 * CSS doetn's have modules/namespaces - basically any definition is global. And if you don't have some simulation of namespaces and modules (e.g. [BEM](https://en.bem.info/)) then it becomes very hard to control the code
 * Many developers seem to ignore the fact that front-end code needs testing (or is testable). Which is especially currious when it comes from back-end developers who have a strong culture of writing tests for back-end code.
 * Front-end often changes fast and often. Every project tends to have an infinite number of _small_ adjustments.
@@ -16,6 +17,7 @@ There are many factors that lead to these problems:
 ## Websites' front-end tests
 
 Websites' front-end tests can be split into:
+
 * Unit tests - ujualy useful for JavaScript code
 * Functional/E2E tests - checking that different scenarios work as expected
 * Accessibility tests - contrasts, keyboard navigation, hands-free navigation, voice-over...
@@ -28,6 +30,7 @@ And for visual tests - those are most often done manually. And as industry prove
 ## Visual diffing
 
 One way (and IMHO the simplest way) of doing visual testing is through visual diffing. The concept is super simple:
+
 * You have a state you want to achieve/maintain (STABLE)
 * Whenever there are changes - those are checked against the STABLE state
 
@@ -78,6 +81,7 @@ In this image we can see that the page header also moved. Now we know that we ch
 ## Other visual diffing use-cases
 
 Some other use cases:
+
 * You can use original designs as STABLE (_source of truth_) for your website (sort of TDD)
 * You can use the tool simply to make screenshots of how your website looked on each commit (or when branches got merged into master)
 * Making screenshots of entire pages may be costly, and diffing them may be even more costly. So instead of making and comparing screenshots of entire pages - you could do that for specific elements (e.g. header, footer, sign-in button...) using [PhantomCSS](https://github.com/Huddle/PhantomCSS).
@@ -85,6 +89,7 @@ Some other use cases:
 ## Visual diffing presentation
 
 Here is my presentation about the tool that I did:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bvoXWQiOdxM" frameborder="0" allowfullscreen></iframe>
 
 ## Resources

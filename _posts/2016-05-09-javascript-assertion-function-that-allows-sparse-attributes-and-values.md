@@ -7,6 +7,7 @@ permalink: /javascript-assertion-function-that-allows-sparse-attributes-and-valu
 categories: development
 ---
 Most JavaScript assertion libraries allow you to compare if objects are [equal](https://github.com/mjackson/expect#toequal), if they [match](https://github.com/mjackson/expect#tomatch) or if [one includes the other](https://github.com/mjackson/expect#toinclude). But sometimes you don't wont to compare in all the objects properties math or if all array items match. Say you want to test for the array of objects
+
 ```js
 let actual = [{
   type: FETCH_ORDERS,
@@ -38,6 +39,7 @@ let actual = [{
 ```
 
 when in fact you're only interested only in
+
 ```js
 [{
   type: FETCH_ORDERS,
@@ -51,7 +53,8 @@ when in fact you're only interested only in
 ```
 
 For example if using [mjackson/expect](https://github.com/mjackson/expect) library you can check for that by doing:
-```js|highlight-lines=10-15
+
+```js
 let asserted = [{
   type: FETCH_ORDERS,
   status: 'before',
@@ -68,11 +71,13 @@ expect(actual[1]).toInclude(asserted[1])
 // Check if the key is present
 expect(actual[1]).toIncludeKey('payload')
 ```
+{: data-line="10-15"}
 
 ## Asserting sparse attributes and values by using a placeholder
 
 Our goal is to achieve testing by specifing which values can be anything as long as they are present:
-```js|highlight-lines=8,11
+
+```js
 let asserted = [{
   type: FETCH_ORDERS,
   status: 'before',
@@ -85,22 +90,26 @@ let asserted = [{
 
 expectLooseEquality(actual, asserted)
 ```
+{: data-line="8,11"}
 
 You can see that we marked the `payload` as a mandatory attribute which can have any value. That's our placeholder. If we don't care what the 2nd object should be then we can write the `asserted` value as:
-```js|highlight-lines=5
+
+```js
 let asserted = [{
   type: FETCH_ORDERS,
   status: 'before',
   payload: {},
 }, Any]
 ```
+{: data-line="5"}
 
 and it should pass the assertion.
 
 ## Assertion function that allows sparse attributes and values
 
 The whole code for the assertion is:
-```js|highlight-lines=3,5
+
+```js
 import expect from 'expect'
 
 export const Any = Symbol('Any')
@@ -162,10 +171,10 @@ function compareObjects(assert, actual) {
   return allEqual
 }
 ```
+{:data-line="3,5"}
 
 We define `Any` (line 3) as a symbol so that it will be unique (a plain object would work as well). Then we use this symbol whenever we need the attribute to be present but don't care about its value.
 
 Then we use `expectLooseEquality` (line 5) to make the assertion. It's not the same syntax as `expect` provides, but it uses its `assert` method so it hooks nicely into the library.
 
 This way you can save few lines of code and drastically improve tests readability.
-

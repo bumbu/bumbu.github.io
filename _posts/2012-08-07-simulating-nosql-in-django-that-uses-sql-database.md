@@ -13,6 +13,7 @@ We tried to solve that by successfully simulating a noSQL (document) database by
 For that a proxy Django Model was used that can be used in the same way as normal Django Models (get, set, save, delete) work but with an \*infinite vertical storage.
 
 Following 2 Django Models were used for that:
+
 ```python
 class User(models.Model):
   name = models.CharField(max_length=15)
@@ -26,6 +27,7 @@ class UserMeta(models.Model):
 ```
 
 The task was to have a model object with following functionality:
+
 * accessing user attributes and meta attributes as they where normal model attributes (ex `user.age`)
 * setting user attributes and meta attributes as they where nowmal model attributes (ex `user.age = 25`)
 * autosaving attributes in the database (on set and delete)
@@ -33,6 +35,7 @@ The task was to have a model object with following functionality:
 * deleting model object should also delete all its meta attributes  (`del user`)
 
 Following class was used as a proxy for the model:
+
 ```python
 class UserExtended():
   def __init__(self, user_id=0):

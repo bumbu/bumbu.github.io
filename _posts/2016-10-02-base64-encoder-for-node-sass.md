@@ -11,7 +11,7 @@ We'll have to define a `encodeBase64` function and pass it to sass compiler.
 
 If you're using gulp than it will look something like this:
 
-```js|hl=5-12
+```js
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var nodeSass = require('node-sass');
@@ -30,6 +30,7 @@ gulp.src(source)
   .pipe(destination)
 )
 ```
+{: data-line="5-12"}
 
 The main bit here are lines 5-12 were we define options for SASS compiler. In SASS that can be used as
 
