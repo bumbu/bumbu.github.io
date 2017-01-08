@@ -145,9 +145,14 @@ gulp.task('build:scripts', function() {
         filename: 'main.js',
       },
       plugins: [
+        new webpackStream.webpack.DefinePlugin({
+          'process.env': {
+            NODE_ENV: JSON.stringify('production')
+          }
+        }),
         new webpackStream.webpack.optimize.UglifyJsPlugin({
           compress: {
-              warnings: false
+            warnings: false
           }
         })
       ],
