@@ -24,7 +24,7 @@ kramdown:
 theme: minima
 gems:
   - jekyll-feed
-permalink: /:title/
+permalink: /:slug/
 include:
   - _pages
 exclude:
@@ -34,3 +34,37 @@ exclude:
   - node_modules/
   - gulpfile.js
   - package.json
+  - _source/
+  - jsconfig.json
+  - TODO.md
+  - .editorconfig
+  - .gitignore
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://bumbu.github.io'
+  media: 'assets/images'
+  metadata:
+    _posts:
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'post'
+      - name: 'category'
+        field:
+          element: 'select'
+          label: 'Add Categories'
+          placeholder: 'Choose Tags'
+          options:
+            - name: 'Blog'
+              value: 'blog'
+            - name: 'Development'
+              value: 'development'
+            - name: 'Experiments'
+              value: 'experiments'
+            - name: 'Learning'
+              value: 'learning'
+            - name: 'About'
+              value: 'about'
+            - name: 'Projects'
+              value: 'projects'
