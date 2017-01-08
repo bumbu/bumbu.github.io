@@ -10,6 +10,7 @@ export default class ListingHeader extends Component {
     return (
       <form className="listing__form" action="#">
         <input
+          autoFocus
           type="text"
           className="listing__form-input"
           value={searchTerm}
