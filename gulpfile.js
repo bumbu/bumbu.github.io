@@ -54,9 +54,11 @@ for (let i = 0; i < highlighterFilesJs.length; i++) {
   highlighterFilesJs[i] = PATHS.HG.SRC + highlighterFilesJs[i]
 }
 
-highlighterFilesJs.push('node_modules/jquery/dist/jquery.min.js')
-highlighterFilesJs.push('node_modules/imagelightbox/dist/imagelightbox.min.js')
-highlighterFilesJs.push('_source/scripts/inpage.js')
+// Secondary scripts
+let secondaryJs = []
+secondaryJs.push('node_modules/jquery/dist/jquery.min.js')
+secondaryJs.push('node_modules/imagelightbox/dist/imagelightbox.min.js')
+secondaryJs.push('_source/scripts/inpage.js')
 
 const highlighterFilesCss = [
   PATHS.HG.SRC + 'themes/prism.css',
@@ -68,15 +70,17 @@ const highlighterFilesCss = [
   PATHS.HG.SRC + 'plugins/toolbar/*.css'
 ]
 
-gulp.task('build:highlighter', ['build:highlighter:js', 'build:highlighter:css'])
+gulp.task('build:secondary', ['build:secondary:js', 'build:secondary:css'])
 
-gulp.task('build:highlighter:js', function() {
-  return gulp.src(highlighterFilesJs)
-    .pipe(concat('highlighter.js'))
+gulp.task('build:secondary:js', function() {
+  const sources = [].concat(highlighterFilesJs).concat(secondaryJs)
+
+  return gulp.src(sources)
+    .pipe(concat('secondary.js'))
     .pipe(gulp.dest(PATHS.JS.DIST))
 })
 
-gulp.task('build:highlighter:css', function() {
+gulp.task('build:secondary:css', function() {
   return gulp.src(highlighterFilesCss)
     .pipe(concat('highlighter.css'))
     // .pipe(csso(false))
@@ -200,5 +204,5 @@ gulp.task('dev:watch', function() {
   gulp.watch([PATHS.CSS.SRC + '**/*.styl'], ['dev:styles']);
 })
 
-gulp.task('default', ['build:highlighter', 'dev:styles', 'dev:scripts', 'dev:watch', 'dev:jekyll'])
-gulp.task('build', ['build:highlighter', 'build:styles', 'build:scripts'])
+gulp.task('default', ['build:secondary', 'dev:styles', 'dev:scripts', 'dev:watch', 'dev:jekyll'])
+gulp.task('build', ['build:secondary', 'build:styles', 'build:scripts'])
