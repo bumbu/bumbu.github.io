@@ -1,5 +1,6 @@
 import mobx from 'mobx'
 import SidebarIcons from '../modules/SidebarIcons'
+import { idByPath } from '../utils/posts'
 import { isCategory, trimPath, idToPath, pathToId } from '../utils/categories'
 
 export function observe (stores, history) {
@@ -21,7 +22,7 @@ function _observeHistory(history, stores) {
         if (isCategory(path)) {
           stores.sidebar.activeCategory = pathToId(path)
         } else {
-          stores.sidebar.activePost = path
+          stores.sidebar.activePost = idByPath(stores.sidebar.allPosts, path)
         }
     })
 }
