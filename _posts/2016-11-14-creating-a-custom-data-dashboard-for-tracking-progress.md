@@ -4,7 +4,9 @@ date: 2016-11-14T22:54:45+00:00
 author: bumbu
 layout: post
 permalink: /creating-a-custom-data-dashboard-for-tracking-progress/
-categories: blog
+previewTitle: "Progress Tracker Custom Dashboard"
+previewThumbnail: /assets/images/2016/11/progress-graph--thumbnail.png
+categories: blog portofolio
 ---
 Say you want to build a number (say 200) of paper-planes in 3 months. Or you want to watch 200 movies. Or you want to solve 200 coding challenges. It is easy to think of that, but it's quite challenging to stay on track.
 

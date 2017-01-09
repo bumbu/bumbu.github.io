@@ -1,5 +1,6 @@
 .portofolio
   font-family $headingsFontFamily
+  max-width $postMaxWidth
 
   &__header
     margin 15px 0 25px
@@ -7,7 +8,7 @@
   &__items
     display block
     column-count 2
-    column-gap 0px
+    column-gap 2px
 
     +bp(m)
       column-count 1
@@ -16,6 +17,7 @@
     display block
     position relative
     min-height 70px
+    margin 2px 0
 
     img
       width 100%

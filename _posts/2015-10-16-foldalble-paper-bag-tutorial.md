@@ -12,6 +12,6 @@ Here is a template with foldable lines that you can print (click on it).<a href=
 
 Here is a template with foldable lines, fold directions and sizes that you can print (click on it).<a href="{{site.root}}/assets/images/2015/10/Paper-bag-template-with-sizes.pdf" target="_blank"><img class="aligncenter wp-image-776 size-medium" src="{{site.root}}/assets/images/2015/10/Paper-bag-template-with-sizes-thumbnail-300x216.png" alt="" width="300" height="216" /></a>
 
-https://www.youtube.com/watch?v=2QIJaw-2Iv0
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=2QIJaw-2Iv0" frameborder="0" allowfullscreen></iframe>
 
 If you want more ready templates you can find some <a href="http://www.e-print.com.hk/en_download_bag" target="_blank">in this catalog</a> (they seem to be free).

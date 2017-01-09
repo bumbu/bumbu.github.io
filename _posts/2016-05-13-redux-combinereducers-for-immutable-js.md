@@ -4,7 +4,7 @@ date: 2016-05-13T08:57:44+00:00
 author: bumbu
 layout: post
 permalink: /redux-combinereducers-for-immutable-js/
-categories: development
+categories: development home
 ---
 Let's say that you use Immutable.js Map as a data-structure of your state and you have following reducers:
 

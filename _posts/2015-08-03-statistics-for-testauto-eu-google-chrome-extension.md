@@ -14,7 +14,7 @@ You can find the <a href="https://chrome.google.com/webstore/detail/statistics-f
 
 <img class="aligncenter wp-image-726 size-full" src="{{site.root}}/assets/images/2015/08/testauto.eu_.screen2.jpg" alt="testauto.eu.screen2" width="758" height="597" />
 
-One thing I was missing were statistics. Because there are more then 700 different questions, it is quite hard to remember which one were answered right and which not. Checking through questions that were answered wrong may dramatically improve success rate and knowledge.
+One thing I was missing were statistics. Because there are more then 700 different questions, it is quite hard to remember which ones were answered right and which ones were not. Checking through questions that were answered wrong may dramatically improve success rate and knowledge.
 
 <img class="aligncenter size-full wp-image-733" src="{{site.root}}/assets/images/2015/08/testauto.eu_.sceen4_.jpg" alt="testauto.eu.sceen4" width="799" height="739" />
 

@@ -5,9 +5,9 @@ layout: default
 <section class="portofolio">
   <h1 class="portofolio__header">Recent projects</h1>
   <div class="portofolio__items">
-    {% for post in site.categories['portofolio'] limit:3 %}
+    {% for post in site.categories['portofolio'] limit:10 %}
       <a class="portofolio__item" href="{{ post.url | relative_url }}">
-        <img src="{{ post.previewThumbnail }}" alt="">
+        <img src="{{site.root}}{{ post.previewThumbnail }}" alt="">
         <span class="portofolio__item-title">{{ post.previewTitle }}</span>
       </a>
     {% endfor %}

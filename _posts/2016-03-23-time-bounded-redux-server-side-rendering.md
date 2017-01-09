@@ -4,7 +4,7 @@ date: 2016-03-23T20:21:15+00:00
 author: bumbu
 layout: post
 permalink: /time-bounded-redux-server-side-rendering/
-categories: development
+categories: development home
 ---
 The beauty of any universal app is that you can write code one time and use it both on server and client. I'll use Redux as an example. A global overview of the data-flow looks like this:
 

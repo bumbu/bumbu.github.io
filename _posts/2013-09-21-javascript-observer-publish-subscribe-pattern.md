@@ -4,7 +4,7 @@ date: 2013-09-21T18:39:00+00:00
 author: bumbu
 layout: post
 permalink: /javascript-observer-publish-subscribe-pattern/
-categories: learning
+categories: learning home
 ---
 That's the pattern that I love. It seems to be a core part of JavaScript. And it gives ability of quite many ways of implementing it depending on requirements.
 <h2>Definition</h2>
