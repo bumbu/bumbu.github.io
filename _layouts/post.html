@@ -15,6 +15,12 @@ layout: default
     {% if page.hide_date != true %}
     <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
     {% endif %}
+
+    {% if page.next.url %}
+      <div class="post__related">
+        You may also like: <a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
+      </div>
+    {% endif %}
   </footer>
 
 </article>
