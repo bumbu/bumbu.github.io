@@ -93,4 +93,7 @@ There are 2 things to take in account:
 </ul>
 </li>
 </ul>
-[caption id="attachment_501" align="alignnone" width="210"]<a href="{{site.root}}/assets/images/2014/08/multicolor-circle.png"><img class="size-full wp-image-501 " alt="multicolor-circle" src="{{site.root}}/assets/images/2014/08/multicolor-circle.png" width="210" height="211" /></a> Circle with multicolor stroke. Some stroke dashes seem to be bordered by darker colors (ex. yellow)[/caption]
+
+<img alt="multicolor-circle" class="aligncenter" src="{{site.root}}/assets/images/2014/08/multicolor-circle.png" width="210" height="211" /> 
+
+_A circle with a multicolor stroke. Some stroke's dashes seem to be bordered by darker colors (ex. blue border around yellow)_
