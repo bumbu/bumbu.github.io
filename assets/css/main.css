@@ -847,6 +847,7 @@ pre.code-toolbar > .toolbar span:focus {
 }
 .portofolio {
   font-family: 'Lato', 'Proxima Nova', Verdana, Geneva, Arial, sans-serif;
+  max-width: 642px;
 }
 .portofolio__header {
   margin: 15px 0 25px;
@@ -855,8 +856,8 @@ pre.code-toolbar > .toolbar span:focus {
   display: block;
   -moz-column-count: 2;
   column-count: 2;
-  -moz-column-gap: 0px;
-  column-gap: 0px;
+  -moz-column-gap: 2px;
+  column-gap: 2px;
 }
 @media (max-width: 839px) {
   .portofolio__items {
@@ -868,6 +869,7 @@ pre.code-toolbar > .toolbar span:focus {
   display: block;
   position: relative;
   min-height: 70px;
+  margin: 2px 0;
 }
 .portofolio__item img {
   width: 100%;
@@ -881,7 +883,7 @@ pre.code-toolbar > .toolbar span:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 70px, transparent 100%);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 70px, transparent 100%);
 }
 .portofolio__item-title {
   position: absolute;
@@ -900,7 +902,7 @@ pre.code-toolbar > .toolbar span:focus {
   }
 }
 .post {
-  max-width: 620px;
+  max-width: 642px;
   margin: 0 auto;
 }
 .post__title {
@@ -917,11 +919,15 @@ pre.code-toolbar > .toolbar span:focus {
   text-decoration: none;
   color: #111;
 }
-.post__footer {
-  text-align: right;
-}
 .post__date {
   font-style: italic;
+  text-align: right;
+  display: block;
+}
+.post__related {
+  border-top: 1px solid #888;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 .post__excerpt a {
   color: #111;
