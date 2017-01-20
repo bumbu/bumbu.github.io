@@ -1,12 +1,8 @@
 <script>
   window.CATEGORIES = [
-    {id: 'home', path: '', name: 'Home'},
-    {id: 'blog', path: 'blog', name: 'Blog'},
-    {id: 'development', path: 'development', name: 'Development'},
-    {id: 'experiments', path: 'experiments', name: 'Experiments'},
-    {id: 'learning', path: 'learning', name: 'Learning'},
-    {id: 'about', path: 'about', name: 'About'},
-    {id: 'search', path: 'search', name: 'Search'},
+    {% for category in site.sidebar.categories %}
+      {id: '{{ category[1].id }}', path: '{{ category[1].path }}', name: '{{ category[1].name }}'},
+    {% endfor %}
   ];
 
   window.POSTS = [];
@@ -19,14 +15,7 @@
     });
   {% endfor %}
 
-  {% if page.category %}
-    window.ACTIVE_CATEGORY = '{{page.category}}'
-  {% elsif page.categories %}
-    window.ACTIVE_CATEGORY = '{{page.categories | first}}'
-  {% else %}
-    window.ACTIVE_CATEGORY = 'home'
-  {% endif %}
-
+  window.ACTIVE_CATEGORY = '{{ activeCategory }}'
   window.ACTIVE_POST = '{{ page.slug | replace: "'", "\\'" }}'
 </script>
 <script src='{{ "/assets/js/main.js" | relative_url }}' async></script>

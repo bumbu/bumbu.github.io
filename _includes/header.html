@@ -2,18 +2,33 @@
 <header class="page__header">
   <div class="sidebar" data-element="sidebar-icons">
     <nav class="sidebar__icons">
-      <a class="sidebar__icon active" data-element="sidebar-icon" data-id="home" href="/" title="Home">{% include icons/bumbu.svg %}</a>
-      <a class="sidebar__icon" data-element="sidebar-icon" data-id="blog" href="/blog/" title="Blog">{% include icons/daily-newspaper.svg %}</a>
-      <a class="sidebar__icon" data-element="sidebar-icon" data-id="development" href="/development/" title="Development">{% include icons/small-light-bulb.svg %}</a>
-      <a class="sidebar__icon" data-element="sidebar-icon" data-id="experiments" href="/experiments/" title="Experiments">{% include icons/chemistry.svg %}</a>
-      <a class="sidebar__icon" data-element="sidebar-icon" data-id="learning" href="/learning/" title="Learning">{% include icons/graduation-cap.svg %}</a>
-      <a class="sidebar__icon" data-element="sidebar-icon" data-id="about" href="/about/" title="About">{% include icons/user-avatar.svg %}</a>
-      <a class="sidebar__icon" data-element="sidebar-icon" data-id="search" href="/search/" title="Search">{% include icons/zoom-tool.svg %}</a>
+      {% for category in site.sidebar.categories %}
+        {% assign iconPath = category[1].icon %}
+        {% assign activeClass = '' %}
+        {% if category[1].id == activeCategory %}
+          {% assign activeClass = 'active' %}
+        {% endif %}
+        <a class="sidebar__icon {{ activeClass }}" data-element="sidebar-icon" data-id="{{ category[1].id }}" href="/{{ category[1].path }}/" title="{{ category[1].name }}">{% include {{ iconPath }} %}</a>
+      {% endfor %}
     </nav>
   </div>
   <div class="listing" data-element="sidebar-listing">
+
     <div class="listing__header">
+    {% if site.sidebar.categories[activeCategory] %}
+      <h1>{{ site.sidebar.categories[activeCategory].name }}</h1>
+    {% else %}
       <h1>Loading...</h1>
+    {% endif %}
+    </div>
+    <div class="listing__items">
+      {% for item in site.categories[activeCategory] limit:10 %}
+        {% assign activeClass = '' %}
+        {% if item.slug == page.slug %}
+          {% assign activeClass = 'listing__item--active' %}
+        {% endif %}
+        <a class="listing__item {{ activeClass }}" href="{{item.url}}">{{item.title}}</a>
+      {% endfor %}
     </div>
   </div>
 </header>

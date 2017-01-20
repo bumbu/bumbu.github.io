@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="portofolio">
-  <h1 class="portofolio__header">Recent projects</h1>
+  <h1 class="portofolio__header">Last Projects</h1>
   <div class="portofolio__items">
     {% for post in site.categories['portofolio'] limit:10 %}
       <a class="portofolio__item" href="{{ post.url | relative_url }}">

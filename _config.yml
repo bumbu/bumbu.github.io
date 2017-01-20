@@ -15,6 +15,45 @@ twitter_username: bumbualex
 github_username:  bumbu
 google_analytics: UA-34516109-2
 
+# Content settings
+sidebar:
+  categories:
+    home:
+      id: home
+      path: ''
+      name: Home
+      icon: icons/bumbu.svg
+    blog:
+      id: blog
+      path: blog
+      name: Blog
+      icon: icons/daily-newspaper.svg
+    development:
+      id: development
+      path: development
+      name: Development
+      icon: icons/small-light-bulb.svg
+    experiments:
+      id: experiments
+      path: experiments
+      name: Experiments
+      icon: icons/chemistry.svg
+    learning:
+      id: learning
+      path: learning
+      name: Learning
+      icon: icons/graduation-cap.svg
+    about:
+      id: about
+      path: about
+      name: About
+      icon: icons/user-avatar.svg
+    search:
+      id: search
+      path: search
+      name: Search
+      icon: icons/zoom-tool.svg
+
 # Build settings
 markdown: kramdown
 kramdown:

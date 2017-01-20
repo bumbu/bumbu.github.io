@@ -2,6 +2,14 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
   <body>
+    {% if page.category %}
+      {% assign activeCategory = page.category %}
+    {% elsif page.categories %}
+      {% assign activeCategory = page.categories | first %}
+    {% else %}
+      {% assign activeCategory = 'home' %}
+    {% endif %}
+
     {% include header.html %}
     <main class="main" aria-label="Content">
       {{ content }}
