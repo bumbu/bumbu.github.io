@@ -55,12 +55,12 @@ lowest or the highest gears' speed - and it will assist you depending on the mod
 and on how much force there is needed (based on feedback tension from pedals).
 
 > It is quite hard to describe the feeling, but one way to imagine it is to think of riding
-on a horizontal surface, and if you would turn on the standard assist mode - the pedaling would
+on a flat surface, and if you would turn on the standard assist mode - the pedaling would
 feel like you're going downhill. Respectively if you go uphill, with standard mode you'd
-feel like you're cycling on a horizontal surface. 
+feel like you're cycling on a flat surface.
 
 It is advertised that you can get up to 65 miles/105 km with assist mode. But I'd expect that to 
-be on horizontal surface with most of the cycling done in ECO mode. Going uphill in ECO mode
+be on flat surface with most of the cycling done in ECO mode. Going uphill in ECO mode
 you can expect it to do no more than 50 km, if interchanging with standard more or high - you
 should expect less distance. A solution for that is having spare batteries or a charger.
 
