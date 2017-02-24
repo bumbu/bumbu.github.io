@@ -5,6 +5,7 @@ export function filterByCategory(posts, category) {
 }
 
 export function filterBySearch(posts, query) {
+  query = query.toLowerCase()
   return posts.filter((post) => {
     return post.title.toLowerCase().indexOf(query) !== -1
   })
