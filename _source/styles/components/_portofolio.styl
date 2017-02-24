@@ -6,40 +6,117 @@
     margin 15px 0 25px
 
   &__items
-    display block
-    column-count 2
-    column-gap 2px
-
-    +bp(m)
-      column-count 1
+    display flex
+    flex-wrap wrap
+    justify-content space-between
 
   &__item
     display block
-    position relative
-    min-height 70px
-    margin 2px 0
-
-    img
-      width 100%
-      min-height 100%
-      display block
-
-    &:before
-      content ''
-      position absolute
-      trbl 0
-      background-image linear-gradient(bottom, $colorPortofolioOverlay 0%, transparent 70px, transparent 100%)
-
-  &__item-title
-    position absolute
-    bottom 0
-    left 0
-    right 0
-    color $colorTextInverted
-    padding 7px 10px
-    font-size 18px
-    text-shadow 0px 0px 2px $colorPortofolioShadow
+    width 47%
 
     +bp(m)
-      font-size 22px
-      padding 10px 14px
+      width 100%
+
+    &:after
+      content ''
+      display table
+      clear both
+      height 1px
+
+
+  &__item-image-container
+    position relative
+    display block
+    overflow hidden
+    height 0
+    padding-bottom 62%
+    background #f4f4f4
+    transition opacity 0.2s
+
+    &:hover,
+    &:focus
+      opacity .9
+
+    &--browser
+      .portofolio__item-image-header
+        display block
+
+      .portofolio__item-image-wrapper
+        box-shadow 5px 5px 40px -5px rgba(0, 0, 0, 0.3)
+        height auto
+
+  &__item-image
+    position absolute
+    trbl 10% 15%
+    display flex
+    align-items center
+    justify-content center
+
+    +bp(m)
+      trbl 6% 13%
+
+    img
+      max-width 100%
+      max-height 100%
+      display block
+
+  &__item-image-wrapper
+    display block
+    position relative
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+
+  &__item-image-header
+    display none
+    height 8px
+    background #e3e3e3
+    position absolute
+    trbl -@height 0 auto 0
+    border-top-left-radius 3px
+    border-top-right-radius 3px
+    padding-left 4px
+
+    +bp(m)
+      height 10px
+      top -10px
+
+    i
+      display inline-block
+      size 4px
+      background $colorTextInverted
+      border-radius 50%
+      margin 2px 2px 0 0
+      opacity .9
+      float left
+
+      +bp(m)
+        margin-top 3px
+
+  &__item-description
+    font-size 17px
+    margin 18px 0 60px
+    display inline-block
+
+    &,
+    &:hover,
+    &:focus,
+    &:visited
+      text-decoration none
+      color $colorText
+
+  &__item-title,
+  &__item-subtitle
+    display block
+
+  &__item-title
+    display block
+    margin 5px 0
+    font-size 20px
+    font-weight bold
+    font-family $headingsFontFamily
+
+  &__item-subtitle
+    display block
+    text-decoration none

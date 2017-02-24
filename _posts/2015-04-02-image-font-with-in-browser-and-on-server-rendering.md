@@ -5,7 +5,10 @@ author: bumbu
 layout: post
 permalink: /image-font-with-in-browser-and-on-server-rendering/
 previewTitle: "InBrowser Image Font"
-previewThumbnail: /assets/images/2015/04/image-font--thumbnail.gif
+previewDescription: "Live typing with fonts made of real sugar"
+previewThumbnail: /assets/images/portofolio/image-font.jpg
+previewColor: "#ea872f"
+previewType: browser
 categories: experiments portofolio
 ---
 This is a post about <a title="Mesaje Dulci" href="http://mesajedulci.suedzucker.md/" target="_blank">Mesaje Dulci</a> (sweet messages) - a single page website where you can write a <em>sweet</em> message using <em>sugar</em> fonts. It supports latin letters and some symbols. An example:

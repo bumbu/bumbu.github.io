@@ -5,7 +5,10 @@ author: bumbu
 layout: post
 permalink: /ghost-land-virtual-reality-game/
 previewTitle: "Virtual Reality Game"
-previewThumbnail: /assets/images/2015/10/ghoster-land-gameplay.jpeg
+previewDescription: "Use a real ball to kill virtual ghosts"
+previewThumbnail: /assets/images/portofolio/ghoster-land-gameplay.jpg
+previewType: browser
+previewColor: "#463e56"
 categories: blog experiments portofolio
 ---
 <strong>Ghost Land</strong> is a virtual reality shooter game. The goal of the game is to shoot as many ghosts before they reach the house.

@@ -4,8 +4,10 @@ date: 2016-11-21T18:40:47+00:00
 author: bumbu
 layout: post
 permalink: /website-visual-diffing/
-previewTitle: "Website Visual Testing"
+previewTitle: "Website Visual Diffing"
+previewDescription: "Regresion testing using website screenshots"
 previewThumbnail: /assets/images/2016/11/visual-diff-differences--thumbnail.jpg
+previewType: browser
 categories: development experiments portofolio
 ---
 If you ever worked with CSS/HTML then most probably you had the situation when you were supposed to change one thing, but in fact your changes affected other parts of the website (other elements or elements on other pages).

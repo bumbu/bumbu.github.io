@@ -853,53 +853,160 @@ pre.code-toolbar > .toolbar span:focus {
   margin: 15px 0 25px;
 }
 .portofolio__items {
-  display: block;
-  -moz-column-count: 2;
-  column-count: 2;
-  -moz-column-gap: 2px;
-  column-gap: 2px;
-}
-@media (max-width: 839px) {
-  .portofolio__items {
-    -moz-column-count: 1;
-    column-count: 1;
-  }
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .portofolio__item {
   display: block;
-  position: relative;
-  min-height: 70px;
-  margin: 2px 0;
-}
-.portofolio__item img {
-  width: 100%;
-  min-height: 100%;
-  display: block;
-}
-.portofolio__item:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 70px, transparent 100%);
-}
-.portofolio__item-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-  padding: 7px 10px;
-  font-size: 18px;
-  text-shadow: 0px 0px 2px rgba(0,0,0,0.6);
+  width: 47%;
 }
 @media (max-width: 839px) {
-  .portofolio__item-title {
-    font-size: 22px;
-    padding: 10px 14px;
+  .portofolio__item {
+    width: 100%;
   }
+}
+.portofolio__item:after {
+  content: '';
+  display: table;
+  clear: both;
+  height: 1px;
+}
+.portofolio__item-image-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 62%;
+  background: #f4f4f4;
+  transition: opacity 0.2s;
+}
+.portofolio__item-image-container:hover,
+.portofolio__item-image-container:focus {
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+}
+.portofolio__item-image-container--browser .portofolio__item-image-header {
+  display: block;
+}
+.portofolio__item-image-container--browser .portofolio__item-image-wrapper {
+  box-shadow: 5px 5px 40px -5px rgba(0,0,0,0.3);
+  height: auto;
+}
+.portofolio__item-image {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  bottom: 10%;
+  left: 15%;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 839px) {
+  .portofolio__item-image {
+    top: 6%;
+    right: 13%;
+    bottom: 6%;
+    left: 13%;
+  }
+}
+.portofolio__item-image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.portofolio__item-image-wrapper {
+  display: block;
+  position: relative;
+  height: 100%;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.portofolio__item-image-header {
+  display: none;
+  height: 8px;
+  background: #e3e3e3;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding-left: 4px;
+}
+@media (max-width: 839px) {
+  .portofolio__item-image-header {
+    height: 10px;
+    top: -10px;
+  }
+}
+.portofolio__item-image-header i {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 2px 2px 0 0;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  float: left;
+}
+@media (max-width: 839px) {
+  .portofolio__item-image-header i {
+    margin-top: 3px;
+  }
+}
+.portofolio__item-description {
+  font-size: 17px;
+  margin: 18px 0 60px;
+  display: inline-block;
+}
+.portofolio__item-description,
+.portofolio__item-description:hover,
+.portofolio__item-description:focus,
+.portofolio__item-description:visited {
+  text-decoration: none;
+  color: #111;
+}
+.portofolio__item-title,
+.portofolio__item-subtitle {
+  display: block;
+}
+.portofolio__item-title {
+  display: block;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Lato', 'Proxima Nova', Verdana, Geneva, Arial, sans-serif;
+}
+.portofolio__item-subtitle {
+  display: block;
+  text-decoration: none;
 }
 .post {
   max-width: 642px;
