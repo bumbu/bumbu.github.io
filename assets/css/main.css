@@ -1129,6 +1129,25 @@ pre.code-toolbar > .toolbar span:focus {
 .post img.alignright {
   float: right;
 }
+.post .grid-tile {
+  width: 25%;
+  display: inline-block;
+}
+@media (max-width: 839px) {
+  .post .grid-tile {
+    width: 33%;
+  }
+}
+.post .grid-tile img {
+  max-width: 100%;
+}
+.post .grid-tile-large {
+  width: 50%;
+  display: inline-block;
+}
+.post .grid-tile-large img {
+  max-width: 100%;
+}
 .sidebar {
   position: absolute;
   top: 0;
