@@ -902,6 +902,10 @@ pre.code-toolbar > .toolbar span:focus {
   box-shadow: 5px 5px 40px -5px rgba(0,0,0,0.3);
   height: auto;
 }
+.portofolio__item-image-container--art {
+  border: 1px solid #eee;
+  margin: -1px;
+}
 .portofolio__item-image {
   position: absolute;
   top: 10%;
