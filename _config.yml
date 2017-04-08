@@ -14,6 +14,7 @@ url: "https://bumbu.github.io"
 twitter_username: bumbualex
 github_username:  bumbu
 google_analytics: UA-34516109-2
+assets_path: "https://bumbu.github.io/assets/images/"
 
 # Content settings
 sidebar:
