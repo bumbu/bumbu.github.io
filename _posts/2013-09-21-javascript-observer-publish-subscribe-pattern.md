@@ -161,9 +161,9 @@ In order not to create multiple observable objects it is much better to add topi
 <pre class="language-js"><code>var Observable = {
     observers: []
   , addObserver: function(topic, observer) {
-      this.observers[topic] || (this.observers[topic] = [])
-
-      this.observers[topic].push(observer)
+      if (this.observers[topic] || (this.observers[topic] = []){
+        this.observers[topic].push(observer)
+      }
     }
   , removeObserver: function(topic, observer) {
       if (!this.observers[topic])
