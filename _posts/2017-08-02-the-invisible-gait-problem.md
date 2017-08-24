@@ -138,7 +138,7 @@ So the step-by-step solution would look like:
 
 1. Get _proper_ shoes. [Here's a huge list of shoes that will work](https://www.correcttoes.com/foot-help/shoe-list/natural-foot-approved/) and you can even find [dress shoes](https://www.vivobarefoot.com/uk/mens/everyday/handcut-lisbon-mens?colour=Black). Or if you want to search by yourself - [here's what you should be looking for](https://www.correcttoes.com/foot-help/shoes-101/).
 2. Work on aligning your toes back. There are many ways, but the easies should be [exercises](https://www.correcttoes.com/foot-help/video-library/exercises/) and [correct toes](https://www.correcttoes.com/foot-help/tips-and-how-tos/wearing-your-correct-toes/).
-3. [Work on you correct gait](https://xeroshoes.com/barefoot-running-tips/how-to-walk-barefoot/).
+3. Work on you correct gait: [first a short article](https://xeroshoes.com/barefoot-running-tips/how-to-walk-barefoot/) and then an [entire video course with tasks](https://www.youtube.com/playlist?list=PL_9nz1t13g7rc1V5Xu81AhZdYAgAdv4t0).
 
 ## Current stage
 
