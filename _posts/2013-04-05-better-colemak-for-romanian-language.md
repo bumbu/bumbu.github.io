@@ -8,7 +8,7 @@ categories: blog
 ---
 Colemak is a great layout, but if you have to type letters with diacritics then you may feel like you're slowed down by them. Colemak tries to make everybody happy by using transformers (you type AltGr + [some key] of AltGr + [dead key] [some key] ). It is a necessary evil if you want to have access to all diacritics, but if you only care about few, then a better way is to have your layout customized. That should increase typing speed and typing pleasure.
 
-Most often I type in English, with ocasional writings in <a href="http://en.wikipedia.org/wiki/Romanian_alphabet">Romanian (Română)</a>, and there are 2 main problems with it on Colemak:
+Most often I type in English, with occasional writings in <a href="http://en.wikipedia.org/wiki/Romanian_alphabet">Romanian (Română)</a>, and there are 2 main problems with it on Colemak:
 <ul>
 	<li><span style="line-height: 13px;">for 4 out 5 letters with diacritics I have to use 3 keys in order to get the desired character</span></li>
 	<li>with Colemak it's impossible to have 2 letters (șț) as it supports cedilla, and not the comma-below</li>
@@ -25,7 +25,7 @@ The idea behind such positioning is:
 	<li>Each letter with a diacritic can be typed with 2 simultaneous key presses</li>
 	<li>Letters "<em>ășțî"</em> are in the same place as respective letters without diacritics</li>
 	<li>Letter "<em>ă"</em> can be additionally typed using letter "<em>r</em>". That is to allow easier typing of the caps letter by using left Shift key</li>
-	<li>Letter "<em>â</em>" can de typed using letter "<em>e</em>" as it is next easiest available key to be pressed when holding AltGr</li>
+	<li>Letter "<em>â</em>" can be typed using letter "<em>e</em>" as it is next easiest available key to be pressed when holding AltGr</li>
 </ul>
 
 <h2>Windows version</h2>
