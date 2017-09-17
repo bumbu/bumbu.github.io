@@ -1132,6 +1132,11 @@ pre.code-toolbar > .toolbar span:focus {
 .post img.alignright {
   float: right;
 }
+.post img + .caption {
+  display: block;
+  text-align: right;
+  font-size: 90%;
+}
 .post .grid-tile {
   width: 25%;
   display: inline-block;
