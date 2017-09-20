@@ -6,7 +6,8 @@ permalink: /facebook-engineering-interview
 categories: blog learning home
 og_image: $/whiteboard-coding.jpg
 og_image_alt: "Whiteboard coding"
-og_description: "A guide on how to prepare for an engineering interview (including front-end) for Facebook (and other big companies like Google, Amazon...). It is based on my experience and the experiences of a dozen people that shared it with me. "
+og_description: "A guide on how to prepare for an engineering interview (including front-end) for Facebook (and other big companies like Google, Amazon...). It is based on my experience and the experiences of a dozen people that shared it with me."
+comments: true
 ---
 
 {% capture assets_path %}{{site.assets_path}}{{page.date | date: "%Y/%m"}}{% endcapture %}
