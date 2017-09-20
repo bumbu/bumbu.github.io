@@ -16,7 +16,7 @@
   {% if page.og_image %}
     {% capture og_image_prefix %}{{page.og_image | slice: 0,1}}{% endcapture %}
     {% if og_image_prefix == '$' %}
-      <meta property="og:image" content="{{site.assets_path}}{{page.date | date: '%Y/%m'}}{{page.og_image}}" />
+      <meta property="og:image" content="{{site.assets_path}}{{page.date | date: '%Y/%m'}}{{page.og_image | slice: 1,9999}}" />
     {% else %}
       <meta property="og:image" content="{{page.og_image}}" />
     {% endif %}
