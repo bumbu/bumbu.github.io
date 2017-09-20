@@ -13,4 +13,19 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:100,300|Droid+Serif:400,700,400italic&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  {% if page.og_image %}
+    {% capture og_image_prefix %}{{page.og_image | slice: 0,1}}{% endcapture %}
+    {% if og_image_prefix == '$' %}
+      <meta property="og:image" content="{{site.assets_path}}{{page.date | date: '%Y/%m'}}{{page.og_image}}" />
+    {% else %}
+      <meta property="og:image" content="{{page.og_image}}" />
+    {% endif %}
+  {% endif %}
+  {% if page.og_image_alt %}
+      <meta property="og:image:alt" content="{{page.og_image_alt}}" />
+  {% endif %}
+  {% if page.og_description %}
+      <meta property="og:description" content="{{page.og_description}}" />
+  {% endif %}
+
 </head>

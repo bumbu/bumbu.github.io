@@ -4,12 +4,15 @@ date: 2017-09-16 12:00:00 +0000
 layout: post
 permalink: /facebook-engineering-interview
 categories: blog learning home
+og_image: $/whiteboard-coding.jpg
+og_image_alt: "Whiteboard coding"
+og_description: "A guide on how to prepare for an engineering interview (including front-end) for Facebook (and other big companies like Google, Amazon...). It is based on my experience and the experiences of a dozen people that shared it with me. "
 ---
 
 {% capture assets_path %}{{site.assets_path}}{{page.date | date: "%Y/%m"}}{% endcapture %}
 {% capture caption_1 %}_Illustration by [Chip](https://instagram.com/Rian.pie){: target="_blank"}_{: class="caption"}{% endcapture %}
 
-This article is a guide on how to prepare for an engineering (including front-end) interview for Facebook (and other big companies like Google, Amazon...). 
+This article is a guide on how to prepare for an engineering interview (including front-end) for Facebook (and other big companies like Google, Amazon...). 
 It is based on my experience and the experiences of a dozen people that shared it with me. 
 
 It is in no way an official guide, and if you do everything written in here - it doesn't mean that you'll automatically get the job. But it will increase your chances considerably.
