@@ -25,16 +25,16 @@ At the end you'll find a step-by-step guide on [how to practice](#how-to-practic
 
 Let's begin!
 
-## Brush-up your knowledge
+## Brush-up on your knowledge
 
-![Brush-up your knowledge illustration]({{ assets_path }}/brush-up-your-knowledge.jpg)
+![Brush-up on your knowledge illustration]({{ assets_path }}/brush-up-your-knowledge.jpg)
 {{caption_1}}
 
 Without knowing the basics - you're not going to get far in the interview process. 
 So it's a good idea to revisit fundamental computer science concepts. 
 But it will be different based on your experience and skill set:
 
-* **For recently graduated**: revisit algorithms and data structures. Learn [system design][system-design-course]{: target="_blank"}
+* **Recent graduates**: revisit algorithms and data structures. Learn [system design][system-design-course]{: target="_blank"}
 * **For experienced**: revisit algorithms, data structures, system design and your domain of expertise 
 * **For front-enders**: revisit algorithms, data structures, JS and product design
 
@@ -73,21 +73,21 @@ It is easy to confuse Product Design with drawing interfaces, but in fact you're
 * "How would you implement a news-feed (which has only posts of text and pictures)?"
 * "How would you implement a photos album?"
 
-These are very vague questions, that's why you should have a dialog with your interviewer for the entire time. 
+These are very vague questions, that's why you should have a dialogue with your interviewer for the entire time. 
 
 I haven't yet found any good resources on product design, but it follows the same pattern as the system design:
 
 * Ask questions and clarifications on vague bits
 * Make assumptions and state them where you don't have enough information
 * Provide multiple possible solutions starting with the most obvious one
-* Make it a dialog, and the interviewer will guide you through your assumptions
+* Make it a dialogue, and the interviewer will guide you through your assumptions
 
 ## Practice whiteboard coding 
 
 ![Whiteboard coding illustration]({{ assets_path }}/whiteboard-coding.jpg)
 {{caption_1}}
 
-You may think - well, I wrote code for X years, so I'll have no trouble writing some code on a whiteboard. 
+You may think - well, I've written code for X years, so I'll have no trouble writing some code on a whiteboard. 
 But if you never did it before, you may be surprised how different it is.
 No highlighting, no linting, no auto-complete and you can't run it. 
 And editing 2 lines above is just painful. 
