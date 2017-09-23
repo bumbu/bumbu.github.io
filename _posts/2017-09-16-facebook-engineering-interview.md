@@ -18,7 +18,7 @@ It is based on my experience and the experiences of a dozen people that shared i
 
 It is in no way an official guide, and if you do everything written in here - it doesn't mean that you'll automatically get the job. But it will increase your chances considerably.
 
-Before you read this article, go and check the official ["Preparing for your Software Engineering Interview at Facebook"](https://www.facebook.com/careers/life/preparing-for-your-software-engineering-interview-at-facebook/){: target="_blank"} page. It describes very well the interview timeline and what to expect at each step.
+Before you read this article, go and check the official ["Preparing for your Software Engineering Interview at Facebook"](https://www.facebook.com/careers/life/preparing-for-your-software-engineering-interview-at-facebook/){: target="_blank"} page. It describes the interview timeline and what to expect at each step very well.
 
 This article is an addition to the official guide and is focused mostly on coding questions preparation. 
 At the end you'll find a step-by-step guide on [how to practice](#how-to-practice). 
@@ -27,7 +27,7 @@ Let's begin!
 
 ## Brush-up on your knowledge
 
-![Brush-up on your knowledge illustration]({{ assets_path }}/brush-up-your-knowledge.jpg)
+![Brush-up on your knowledge illustration]({{ assets_path }}/brush-up-your-knowledge.jpg){: .aligncenter style="max-height: 400px;"}
 {{caption_1}}
 
 Without knowing the basics - you're not going to get far in the interview process. 
@@ -53,7 +53,7 @@ For algorithms and data structures you can pick any of the following books:
 I recommend [Cracking the Coding Interview][cracking-the-coding-interview]{: target="_blank"} because:
 
 * It teaches you how to think about coding questions
-* It covers very well the main algorithms and data structures
+* It covers the main algorithms and data structures very well
 * It has solutions (Java in the book, a dozen of languages [here](https://github.com/careercup/CtCI-6th-Edition){: target="_blank"})
 * It also has hints that you can use when you get stuck but don't want to check the provided solution yet
 
@@ -84,7 +84,7 @@ I haven't yet found any good resources on product design, but it follows the sam
 
 ## Practice whiteboard coding 
 
-![Whiteboard coding illustration]({{ assets_path }}/whiteboard-coding.jpg)
+![Whiteboard coding illustration]({{ assets_path }}/whiteboard-coding.jpg){: .aligncenter style="max-height: 400px;"}
 {{caption_1}}
 
 You may think - well, I've written code for X years, so I'll have no trouble writing some code on a whiteboard. 
@@ -147,7 +147,7 @@ It's more efficient than solving 20 exercises during the weekend and then forget
 
 ## Side effects
 
-![Side effects illustration]({{ assets_path }}/side-effects.jpg)
+![Side effects illustration]({{ assets_path }}/side-effects.jpg){: .aligncenter style="max-height: 400px;"}
 {{caption_1}}
 
 I began preparing long before I had the interview.
