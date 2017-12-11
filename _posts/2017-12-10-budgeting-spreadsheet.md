@@ -4,6 +4,7 @@ date: 2017-12-10 10:00:00 +0000
 layout: post
 permalink: /doing-your-finances-by-using-a-smart-spreadsheet
 categories: blog
+comments: true
 ---
 
 {% capture assets_path %}{{site.assets_path}}{{page.date | date: "%Y/%m"}}{% endcapture %}
