@@ -43,7 +43,7 @@ If I do it on 2nd or 3rd day of the month, then I try to write down values that 
 
 ## Advanced Features
 
-It seem that's easy to track how muck money you have.
+It seem that's easy to track how much money you have.
 In my specific case there were few complications.
 
 ### Multiple currencies
