@@ -22,6 +22,8 @@ But this is a very common feature among many other tools that support multiple t
 
 > NOTE: You may have to repeat the procedure (from step 4) every time you edit shortcuts or restart Chrome.
 
+> NOTE2: Apparently this doens't work anymore in latest Chrome versions
+
 1. Install an extension:
   * [CLUT: Cycle Last Used Tabs](https://chrome.google.com/webstore/detail/clut-cycle-last-used-tabs/cobieddmkhhnbeldhncnfcgcaccmehgn)
   * [Toggle Switch Recent Last Tabs](https://chrome.google.com/webstore/detail/toggle-switch-recent-last/odhjcgnlbagjllfbilicalpigimhdcll) - will cycle between last 2 used tabs only
