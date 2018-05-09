@@ -42,4 +42,5 @@ Other types of fun codding
 	<li><a href="http://programthis.net/challenges/">programthis.net/challenges</a> Few challenges, help in comments, looking for creative solutions</li>
 	<li><a href="http://www.ocf.berkeley.edu/~wwu/riddles/intro.shtml">ocf.berkeley.edu/~wwu/riddles</a> Problems collected from many places, many of them from job interviews</li>
 	<li><a href="http://programmingpraxis.com/">programmingpraxis.com</a> List of problems to maintain your skill and brain</li>
+	<li><a href="http://www.smartscholar.com/computer-science-guide/">smartscholar.com/computer-science-guide</a> Computer science resources for students</li>
 </ul>
