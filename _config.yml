@@ -10,11 +10,11 @@ description: > # this means to ignore newlines until "baseurl:"
   Personal website of Alex Bumbu. Here you can find the blog,
   development articles, experiments and learning.
 baseurl: ""
-url: "https://bumbu.github.io"
+url: "https://bumbu.me"
 twitter_username: bumbualex
 github_username:  bumbu
 google_analytics: UA-34516109-2
-assets_path: "https://bumbu.github.io/assets/images/"
+assets_path: "https://bumbu.me/assets/images/"
 
 # Content settings
 sidebar:
@@ -82,7 +82,7 @@ exclude:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'https://bumbu.github.io'
+  siteurl: 'https://bumbu.me'
   media: 'assets/images'
   metadata:
     _posts:
