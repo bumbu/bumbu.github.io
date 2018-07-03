@@ -22,8 +22,7 @@ layout: default
       </div>
     {% endif %}
   </footer>
-
-  {% if page.comments %}
+  {% if page.comments and jekyll.environment != "development" %}
   <div class="post__comments">
     <div id="disqus_thread"></div>
     <script>
