@@ -4,5 +4,6 @@ $(function() {
     overlay: true,
     activity: true,
     button: true,
+    caption: true,
   });
 })
