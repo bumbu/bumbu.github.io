@@ -415,6 +415,11 @@ pre[data-line] {
 		bottom: .4em;
 	}
 
+.line-numbers .line-highlight:before,
+.line-numbers .line-highlight:after {
+	content: none;
+}
+
 pre.line-numbers {
 	position: relative;
 	padding-left: 3.8em;
@@ -423,6 +428,7 @@ pre.line-numbers {
 
 pre.line-numbers > code {
 	position: relative;
+    white-space: inherit;
 }
 
 .line-numbers .line-numbers-rows {
@@ -523,15 +529,22 @@ pre.code-toolbar > .toolbar span:focus {
     cursor: pointer;
     position: fixed;
     z-index: 10000;
+    top: 50%;
     -ms-touch-action: none;
         touch-action: none;
     box-shadow: 0 0 3.125em rgba(0, 0, 0, .75); /* 50 */
 }
 
 .imagelightbox-scroll-lock {
-    overflow:hidden;
+    overflow: hidden;
 }
 
+.imagelightbox-disable-select {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
 
 /* WITH ACTIVITY INDICATION */
 

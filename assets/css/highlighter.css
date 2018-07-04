@@ -181,6 +181,11 @@ pre[data-line] {
 		bottom: .4em;
 	}
 
+.line-numbers .line-highlight:before,
+.line-numbers .line-highlight:after {
+	content: none;
+}
+
 pre.line-numbers {
 	position: relative;
 	padding-left: 3.8em;
@@ -189,6 +194,7 @@ pre.line-numbers {
 
 pre.line-numbers > code {
 	position: relative;
+    white-space: inherit;
 }
 
 .line-numbers .line-numbers-rows {
