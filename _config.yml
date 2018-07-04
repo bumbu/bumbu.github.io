@@ -15,6 +15,7 @@ twitter_username: bumbualex
 github_username:  bumbu
 google_analytics: UA-34516109-2
 assets_path: "https://bumbu.me/assets/images/"
+assets_cache_buster: "_=1"
 
 # Content settings
 sidebar:

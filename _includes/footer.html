@@ -18,8 +18,8 @@
   window.ACTIVE_CATEGORY = '{{ activeCategory }}'
   window.ACTIVE_POST = '{{ page.slug | replace: "'", "\\'" }}'
 </script>
-<script src='{{ "/assets/js/main.js" | relative_url }}' async></script>
-<script src='{{ "/assets/js/secondary.js" | relative_url }}' async></script>
+<script src='{{ "/assets/js/main.js" | relative_url }}?{{site.assets_cache_buster}}' async></script>
+<script src='{{ "/assets/js/secondary.js" | relative_url }}?{{site.assets_cache_buster}}' async></script>
 {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
 {% endif %}

@@ -9,7 +9,7 @@
   <meta property="og:image" content="{{site.url}}{{page.previewThumbnail}}" />
   {% endif %}
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}?{{site.assets_cache_buster}}">
   <link href='https://fonts.googleapis.com/css?family=Lato:100,300|Droid+Serif:400,700,400italic&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">

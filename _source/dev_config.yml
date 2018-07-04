@@ -1,3 +1,4 @@
 url: "" # blank in development
 development: true # allows using in liquid tag conditionals
 assets_path: "/assets/images/"
+assets_cache_buster: ""
