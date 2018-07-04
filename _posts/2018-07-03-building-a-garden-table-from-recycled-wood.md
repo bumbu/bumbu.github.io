@@ -1,5 +1,5 @@
 ---
-title: "Building a garden table from recycled wood"
+title: "Building a garden table from recycled wood for 39£"
 date: 2018-07-03 10:00:00 +0000
 layout: post
 permalink: /building-a-garden-table-from-recycled-wood
@@ -15,10 +15,11 @@ All in all in numbers:
 
 * A week of work after work hours + the weekend
 * All the wood was found left on the street as garbage
-* Spent 33£/$44 on:
+* Spent 39£/$52 on:
   * 22£ on [Mouse Detail Sander](https://amzn.to/2MG6Ze4){: target="_blank"} for sanding the old paint and finishing the table top
   * 3£ on [a box of screws](https://amzn.to/2KPbdjm){: target="_blank"}
   * 8£ on [wood stain](https://amzn.to/2IPeopk){: target="_blank"} - more than half still left
+  * 6£ on [wood handsaw](https://amzn.to/2MP0KF0){: target="_blank"} - one time buy, was useful multiple times
 
 
 {% capture picsText %}
