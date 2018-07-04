@@ -9,7 +9,7 @@ og_image: $/20.jpg
 
 {% capture assets_path %}{{site.assets_path}}{{page.date | date: "%Y/%m"}}{% endcapture %}
 
-> This is a story in pictures of building a garden table from scraped wood.
+> This is a story in pictures of building a garden table from scrap wood.
 
 All in all in numbers:
 
