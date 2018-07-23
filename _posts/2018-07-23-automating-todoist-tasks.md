@@ -1,5 +1,5 @@
 ---
-title: "Automating Todoist tasks to change a task when another one is completed"
+title: "Automating Todoist to change a task when another one is completed"
 date: 2018-07-23 10:00:00 +0000
 layout: post
 permalink: /automating-todoist-tasks
