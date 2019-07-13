@@ -12,7 +12,7 @@ export function filterBySearch(posts, query) {
 }
 
 export function idByPath(posts, path) {
-  const url = `/${path}/`
+  const url = `/${path}`
   const match = posts.filter((post) => {
     return post.url === url
   })
