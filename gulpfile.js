@@ -36,7 +36,7 @@ const PATHS = {
 let highlighterFilesJs = ['prism.js']
 
 // Languages
-const highlighterLangs = ['bash', 'clike', 'coffeescript', 'c', 'cpp', 'css', 'css-extras', 'elixir', 'git', 'haml', 'handlebars', 'java', 'javascript', 'json', 'jsx', 'less', 'markdown', 'markup', 'php', 'processing', 'python', 'ruby', 'sass', 'scss', 'sql', 'stylus', 'swift', 'typescript', 'yaml']
+const highlighterLangs = ['bash', 'clike', 'coffeescript', 'c', 'cpp', 'css', 'css-extras', 'elixir', 'git', 'haml', 'html', 'handlebars', 'java', 'javascript', 'json', 'jsx', 'less', 'markdown', 'markup', 'markup-templating', 'php', 'processing', 'python', 'ruby', 'sass', 'scss', 'sql', 'stylus', 'swift', 'typescript', 'yaml']
 for (let lang of highlighterLangs) {
   highlighterFilesJs.push(`components/prism-${lang}.js`)
 }
