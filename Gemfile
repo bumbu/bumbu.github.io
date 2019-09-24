@@ -6,7 +6,7 @@ gem "minima", "~> 2.0"
 
 # To upgrade, run `bundle update github-pages`.
 # Add version as workaround for https://github.com/bundler/bundler/issues/5154
-gem "github-pages", '105', group: :jekyll_plugins
+gem "github-pages", '200', group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
