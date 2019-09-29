@@ -163,6 +163,11 @@ Include the `"oauth2"` field in the extension manifest. Place the generated OAut
 ```
 {: data-line="4-7"}
 
+> You have to reload your extension (different from page reload) every time you make a change to it.
+> It's located at **[Extensions Management](chrome://extensions){: target="_blank"}**.
+> In half of the cases when something doesn't work, it's the extension not being reloaded.
+> ![Extension Reload in Chrome Extensions Management page]({{ assets_path }}/Extensions-Management-extension-reload.png){: .lightbox.grid-tile-large }
+
 ### Test if OAuth is working
 
 Register the `identity` permission in the manifest:
