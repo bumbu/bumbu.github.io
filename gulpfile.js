@@ -4,7 +4,7 @@ const concat = require('gulp-concat')
 const babel = require('gulp-babel')
 const exec = require('child_process').exec
 const gulp = require('gulp')
-const gutil = require('gulp-util')
+const log = require("fancy-log")
 const livereload = require('gulp-livereload')
 const nib = require('nib')
 const path = require('path')
@@ -36,7 +36,7 @@ const PATHS = {
 let highlighterFilesJs = ['prism.js']
 
 // Languages
-const highlighterLangs = ['bash', 'clike', 'coffeescript', 'c', 'cpp', 'css', 'css-extras', 'elixir', 'git', 'haml', 'html', 'handlebars', 'java', 'javascript', 'json', 'jsx', 'less', 'markdown', 'markup', 'markup-templating', 'php', 'processing', 'python', 'ruby', 'sass', 'scss', 'sql', 'stylus', 'swift', 'typescript', 'yaml']
+const highlighterLangs = ['bash', 'clike', 'coffeescript', 'c', 'cpp', 'css', 'css-extras', 'elixir', 'git', 'haml', 'handlebars', 'java', 'javascript', 'json', 'jsx', 'less', 'markdown', 'markup', 'markup-templating', 'php', 'processing', 'python', 'ruby', 'sass', 'scss', 'sql', 'stylus', 'swift', 'typescript', 'yaml']
 for (let lang of highlighterLangs) {
   highlighterFilesJs.push(`components/prism-${lang}.js`)
 }
@@ -70,8 +70,6 @@ const highlighterFilesCss = [
   PATHS.HG.SRC + 'plugins/toolbar/*.css'
 ]
 
-gulp.task('build:secondary', ['build:secondary:js', 'build:secondary:css'])
-
 gulp.task('build:secondary:js', function() {
   const sources = [].concat(highlighterFilesJs).concat(secondaryJs)
 
@@ -86,6 +84,11 @@ gulp.task('build:secondary:css', function() {
     // .pipe(csso(false))
     .pipe(gulp.dest(PATHS.CSS.DIST))
 })
+
+gulp.task(
+  "build:secondary",
+  gulp.parallel("build:secondary:js", "build:secondary:css")
+);
 
 /**
  * Styles
@@ -189,6 +192,9 @@ gulp.task('dev:jekyll', function() {
   executed.stdout.on('data', function (data) {
     console.log(data.toString());
   });
+  executed.stderr.on('data', function (data) {
+    console.error(data.toString());
+  });
 })
 
 /**
@@ -197,12 +203,12 @@ gulp.task('dev:jekyll', function() {
 
 gulp.task('dev:watch', function() {
   livereload.listen();
-  gulp.watch([PATHS.JS.SRC + '**/*.js'], ['dev:scripts'])
+  gulp.watch([PATHS.JS.SRC + '**/*.js'], gulp.parallel('dev:scripts'))
     .on('change', function(event) {
-      gutil.log('File changed', event.path);
+      log("File changed", event.path);
     });
-  gulp.watch([PATHS.CSS.SRC + '**/*.styl'], ['dev:styles']);
+  gulp.watch([PATHS.CSS.SRC + '**/*.styl'], gulp.parallel('dev:styles'));
 })
 
-gulp.task('default', ['build:secondary', 'dev:styles', 'dev:scripts', 'dev:watch', 'dev:jekyll'])
-gulp.task('build', ['build:secondary', 'build:styles', 'build:scripts'])
+gulp.task('default', gulp.parallel('build:secondary', 'dev:styles', 'dev:scripts', 'dev:watch', 'dev:jekyll'))
+gulp.task('build', gulp.parallel('build:secondary', 'build:styles', 'build:scripts'))
