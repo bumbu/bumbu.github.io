@@ -12,6 +12,7 @@ const plumber = require('gulp-plumber')
 const sourcemaps = require('gulp-sourcemaps')
 const stylus = require('gulp-stylus')
 const webpackStream = require('webpack-stream')
+const tsPipeline = require("gulp-webpack-typescript-pipeline");
 
 const PATHS = {
   SRC: '_source',
@@ -25,6 +26,10 @@ const PATHS = {
   },
   JS: {
     SRC: '_source/scripts/',
+    DIST: 'assets/js/',
+  },
+  SAVE_WATER: {
+    SRC: '_source/scripts/save-water',
     DIST: 'assets/js/',
   },
 }
@@ -181,6 +186,13 @@ gulp.task('build:scripts', function() {
     .pipe(gulp.dest(PATHS.JS.DIST))
 })
 
+tsPipeline.registerBuildGulpTasks(gulp, {
+  entryPoints: {
+    ['save-water']: __dirname + '/' + PATHS.SAVE_WATER.SRC + "/main.tsx"
+  },
+  outputDir: __dirname + '/' + PATHS.SAVE_WATER.DIST
+});
+
 /**
  * Jekyll
  */
@@ -210,5 +222,5 @@ gulp.task('dev:watch', function() {
   gulp.watch([PATHS.CSS.SRC + '**/*.styl'], gulp.parallel('dev:styles'));
 })
 
-gulp.task('default', gulp.parallel('build:secondary', 'dev:styles', 'dev:scripts', 'dev:watch', 'dev:jekyll'))
-gulp.task('build', gulp.parallel('build:secondary', 'build:styles', 'build:scripts'))
+gulp.task('default', gulp.parallel('build:secondary', 'dev:styles', 'dev:scripts', 'tsPipeline:build:dev', 'dev:watch', 'tsPipeline:watch', 'dev:jekyll'))
+gulp.task('build', gulp.parallel('build:secondary', 'build:styles', 'build:scripts', 'tsPipeline:build:release'))

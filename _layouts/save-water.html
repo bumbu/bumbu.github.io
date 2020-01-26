@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post__content" itemprop="articleBody" id="save-water-wrapper">
+    Loading...
+  </div>
+</article>
+<script
+  src='{{ "/assets/js/save-water.js" | relative_url }}?{{site.assets_cache_buster}}'
+  async
+></script>
