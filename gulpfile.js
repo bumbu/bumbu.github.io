@@ -6,6 +6,7 @@ const exec = require('child_process').exec
 const gulp = require('gulp')
 const log = require('fancy-log')
 const livereload = require('gulp-livereload')
+const named = require('vinyl-named')
 const nib = require('nib')
 const path = require('path')
 const plumber = require('gulp-plumber')
@@ -26,6 +27,11 @@ const PATHS = {
   },
   JS: {
     SRC: '_source/scripts/',
+    DIST: 'assets/js/',
+    DEV: '_site/assets/js/',
+  },
+  SAVE_WATER: {
+    SRC: '_source/scripts/save-water/',
     DIST: 'assets/js/',
   },
 }
@@ -144,7 +150,7 @@ gulp.task('build:styles', function() {
     .src(PATHS.CSS.SRC + 'main.styl')
     .pipe(plumber())
     .pipe(stylus({ use: [nib()], 'include css': true }))
-    .pipe(autoprefixer({ browsers: ['last 2 versions', 'ie >= 10'] }))
+    .pipe(autoprefixer())
     .pipe(gulp.dest(PATHS.CSS.DIST))
 })
 
@@ -152,44 +158,52 @@ gulp.task('build:styles', function() {
  * Scripts
  */
 
+const webpackDefaultSettings = {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        include: __dirname,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: [['@babel/plugin-proposal-decorators', { legacy: true }]],
+          },
+        },
+      },
+    ],
+  },
+}
+
 gulp.task('dev:scripts', function() {
   return gulp
-    .src(PATHS.JS.SRC + 'main.js')
+    .src([PATHS.JS.SRC + 'main.js', PATHS.SAVE_WATER.SRC + 'save-water.js'])
+    .pipe(named())
     .pipe(
       webpackStream({
+        ...webpackDefaultSettings,
         devtool: 'inline-source-map',
-        output: {
-          filename: 'main.js',
-        },
-        module: {
-          loaders: [
-            {
-              test: /\.js$/,
-              loader: 'babel-loader',
-              exclude: /node_modules/,
-              include: __dirname,
-              query: {
-                presets: ['react', 'es2015'],
-                plugins: ['transform-decorators-legacy'],
-              },
-            },
-          ],
-        },
+        mode: 'development',
       })
     )
     .on('error', function handleError() {
       this.emit('end') // Recover from errors
     })
-    .pipe(gulp.dest(PATHS.JS.DIST))
+    .pipe(gulp.dest(PATHS.JS.DEV))
 })
 
 gulp.task('build:scripts', function() {
   return gulp
-    .src(PATHS.JS.SRC + 'main.js')
+    .src([PATHS.JS.SRC + 'main.js', PATHS.SAVE_WATER.SRC + 'save-water.js'])
+    .pipe(named())
     .pipe(
       webpackStream({
-        output: {
-          filename: 'main.js',
+        ...webpackDefaultSettings,
+        mode: 'production',
+        optimization: {
+          minimize: true,
         },
         plugins: [
           new webpackStream.webpack.DefinePlugin({
@@ -197,26 +211,7 @@ gulp.task('build:scripts', function() {
               NODE_ENV: JSON.stringify('production'),
             },
           }),
-          new webpackStream.webpack.optimize.UglifyJsPlugin({
-            compress: {
-              warnings: false,
-            },
-          }),
         ],
-        module: {
-          loaders: [
-            {
-              test: /\.js$/,
-              loader: 'babel-loader',
-              exclude: /node_modules/,
-              include: __dirname,
-              query: {
-                presets: ['react', 'es2015'],
-                plugins: ['transform-decorators-legacy'],
-              },
-            },
-          ],
-        },
       })
     )
     .pipe(gulp.dest(PATHS.JS.DIST))
