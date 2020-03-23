@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post__content" itemprop="articleBody" id="react-container">
+    Loading...
+  </div>
+</article>
+<script>
+  window.SITE_ROOT = '{{site.root}}'
+</script>
+<script
+  src='{{ "/assets/js/husky-rock.js" | relative_url }}?{{site.assets_cache_buster}}'
+  async
+></script>

@@ -34,6 +34,10 @@ const PATHS = {
     SRC: '_source/scripts/save-water/',
     DIST: 'assets/js/',
   },
+  HUSKY_ROCK: {
+    SRC: '_source/scripts/husky-rock/',
+    DIST: 'assets/js/',
+  },
 }
 
 /**
@@ -179,7 +183,11 @@ const webpackDefaultSettings = {
 
 gulp.task('dev:scripts', function() {
   return gulp
-    .src([PATHS.JS.SRC + 'main.js', PATHS.SAVE_WATER.SRC + 'save-water.js'])
+    .src([
+      PATHS.JS.SRC + 'main.js',
+      PATHS.SAVE_WATER.SRC + 'save-water.js',
+      PATHS.HUSKY_ROCK.SRC + 'husky-rock.js',
+    ])
     .pipe(named())
     .pipe(
       webpackStream({
@@ -196,7 +204,11 @@ gulp.task('dev:scripts', function() {
 
 gulp.task('build:scripts', function() {
   return gulp
-    .src([PATHS.JS.SRC + 'main.js', PATHS.SAVE_WATER.SRC + 'save-water.js'])
+    .src([
+      PATHS.JS.SRC + 'main.js',
+      PATHS.SAVE_WATER.SRC + 'save-water.js',
+      PATHS.HUSKY_ROCK.SRC + 'husky-rock.js',
+    ])
     .pipe(named())
     .pipe(
       webpackStream({
