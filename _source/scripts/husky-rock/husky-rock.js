@@ -42,10 +42,11 @@ const WallPage = props => {
   const query = useQuery()
   const history = useHistory()
   const routeKey = query.get('route')
-  const { wall } = props
+  const isEditMode = !!query.get('edit')
+  let { wall } = props
   // Return selected route, or first otherwise
   const currentRouteKey = routeKey in wall.routes ? routeKey : Object.keys(wall.routes)[0]
-  const currentRoute = wall.routes[currentRouteKey]
+  let currentRoute = wall.routes[currentRouteKey]
   const setRoute = routeKey => {
     history.push(`?wall=${wall.key}&route=${routeKey}`)
   }
@@ -59,6 +60,76 @@ const WallPage = props => {
   const mapWidth = CONTAINER_WIDTH
   const scale = mapWidth / wall.width
   const mapHeight = wall.height * scale
+
+  // Edit mode data
+  const [tempSequence, setTempSequence] = useState([])
+  const [tempRocks, setTempRocks] = useState({})
+  const [prevClick, setPrevClick] = useState(null)
+  if (isEditMode) {
+    currentRoute = {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.EASY,
+      sequence: tempSequence,
+    }
+
+    const newRouteKey =
+      'route' +
+      Object.keys(wall.routes).reduce((acc, curr) => {
+        if (curr.substr(0, 5) === 'route') {
+          const rockIndex = parseInt(curr.substr(5))
+          return isNaN(rockIndex) ? acc : Math.max(acc, rockIndex + 1)
+        }
+        return acc
+      }, 0)
+
+    wall = {
+      ...wall,
+      // Add temp rocks to the wall
+      rocks: Object.assign(wall.rocks, tempRocks),
+      routes: {
+        ...wall.routes,
+        // Att temp route to wall
+        [newRouteKey]: currentRoute,
+      },
+    }
+  }
+  function addRock(ev, rockKey) {
+    ev.preventDefault()
+    ev.stopPropagation()
+    setTempSequence(tempSequence.concat({ key: rockKey }))
+  }
+  function onMapClick(ev) {
+    const clickPoint = {
+      top: (ev.clientY - ev.target.getBoundingClientRect().y) / scale,
+      left: (ev.clientX - ev.target.getBoundingClientRect().x) / scale,
+    }
+    if (prevClick == null) {
+      setPrevClick(clickPoint)
+    } else {
+      // Create new rock
+      const rock = {
+        top: Math.min(clickPoint.top, prevClick.top),
+        left: Math.min(clickPoint.left, prevClick.left),
+        width: Math.abs(clickPoint.left - prevClick.left),
+        height: Math.abs(clickPoint.top - prevClick.top),
+      }
+      // Get next rock index key
+      const newRockKey =
+        'rock' +
+        Object.keys(wall.rocks).reduce((acc, curr) => {
+          if (curr.substr(0, 4) === 'rock') {
+            const rockIndex = parseInt(curr.substr(4))
+            return isNaN(rockIndex) ? acc : Math.max(acc, rockIndex + 1)
+          }
+          return acc
+        }, 0)
+      setTempRocks({ [newRockKey]: rock })
+      setTempSequence(tempSequence.concat({ key: newRockKey }))
+      setPrevClick(null)
+    }
+  }
 
   return (
     <div>
@@ -78,36 +149,23 @@ const WallPage = props => {
         </select>{' '}
         <button onClick={goBack}>Go back</button>
       </div>
-      <div>
-        <ul>
-          {currentRoute.name ? <li>Name: {currentRoute.name}</li> : null}
-          {currentRoute.description ? <li>Description: {currentRoute.description}</li> : null}
-          <li>
-            Grade: {currentRoute.grade.name} ({currentRoute.grade.ydsGrade})
-          </li>
-          <li>
-            Type: {currentRoute.type.key} ({currentRoute.type.name})
-          </li>
-        </ul>
-      </div>
+      {!isEditMode ? (
+        <div>
+          <ul>
+            {currentRoute.name ? <li>Name: {currentRoute.name}</li> : null}
+            {currentRoute.description ? <li>Description: {currentRoute.description}</li> : null}
+            <li>
+              Grade: {currentRoute.grade.name} ({currentRoute.grade.ydsGrade})
+            </li>
+            <li>
+              Type: {currentRoute.type.key} ({currentRoute.type.name})
+            </li>
+          </ul>
+        </div>
+      ) : null}
       <div className="huskyRock__map" width={mapWidth} height={mapHeight}>
         <img src={getImageURI(wall.image)} alt="" width={mapWidth} height={mapHeight} />
-        <div className="huskyRock__mapOverlayRocks">
-          {currentRoute.sequence.map(sequence => {
-            const rock = wall.rocks[sequence.key]
-            return (
-              <div
-                className="huskyRock__mapSequenceStep"
-                key={sequence.key}
-                style={{
-                  top: rock.top * scale,
-                  left: rock.left * scale,
-                  width: rock.width * scale,
-                  height: rock.height * scale,
-                }}></div>
-            )
-          })}
-        </div>
+
         <div className="huskyRock__mapOverlayLines">
           <svg width={mapWidth} height={mapHeight}>
             {currentRoute.sequence.map((sequence, index) => {
@@ -175,7 +233,48 @@ const WallPage = props => {
             })}
           </svg>
         </div>
+
+        <div className="huskyRock__mapOverlayRocks" onClick={onMapClick}>
+          {isEditMode
+            ? Object.entries(wall.rocks).map(([rockKey, rock]) => {
+                return (
+                  <div
+                    className="huskyRock__mapSequenceStep huskyRock__mapSequenceStep--default"
+                    key={rockKey}
+                    style={{
+                      top: rock.top * scale,
+                      left: rock.left * scale,
+                      width: rock.width * scale,
+                      height: rock.height * scale,
+                    }}
+                    onClick={ev => {
+                      addRock(ev, rockKey)
+                    }}></div>
+                )
+              })
+            : currentRoute.sequence.map(sequence => {
+                const rock = wall.rocks[sequence.key]
+                return (
+                  <div
+                    className="huskyRock__mapSequenceStep"
+                    key={sequence.key}
+                    style={{
+                      top: rock.top * scale,
+                      left: rock.left * scale,
+                      width: rock.width * scale,
+                      height: rock.height * scale,
+                    }}></div>
+                )
+              })}
+        </div>
       </div>
+      {isEditMode ? (
+        <textarea
+          value={JSON.stringify(wall, undefined, 2)}
+          readOnly={true}
+          style={{ width: '80%', height: '500px' }}
+        />
+      ) : null}
     </div>
   )
 }
