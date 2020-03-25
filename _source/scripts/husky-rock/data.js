@@ -38,6 +38,27 @@ const WALLS = {
         left: 12,
         type: 'edge',
       },
+      edge2: {
+        width: 10,
+        height: 30,
+        top: 412,
+        left: 294,
+        type: 'edge',
+      },
+      pocket1: {
+        width: 6,
+        height: 6,
+        left: 123,
+        top: 352,
+        type: 'pocket',
+      },
+      pocket2: {
+        top: 237,
+        left: 132,
+        width: 6,
+        height: 6,
+        type: 'pocket',
+      },
       rock1: {
         width: 11,
         height: 13,
@@ -67,13 +88,6 @@ const WALLS = {
         height: 16,
         top: 383,
         left: 214,
-      },
-      edge2: {
-        width: 10,
-        height: 30,
-        top: 412,
-        left: 294,
-        type: 'edge',
       },
       rock6: {
         width: 31,
@@ -122,12 +136,6 @@ const WALLS = {
         height: 22,
         left: 150,
         top: 140,
-      },
-      pocket1: {
-        width: 6,
-        height: 6,
-        left: 123,
-        top: 352,
       },
       rock14: {
         width: 7,
@@ -200,6 +208,36 @@ const WALLS = {
         left: 182,
         width: 24,
         height: 6,
+      },
+      rock26: {
+        top: 336,
+        left: 24,
+        width: 6,
+        height: 33,
+      },
+      rock27: {
+        top: 360,
+        left: 114,
+        width: 7,
+        height: 17,
+      },
+      rock28: {
+        top: 322,
+        left: 249,
+        width: 16,
+        height: 15,
+      },
+      rock29: {
+        top: 318,
+        left: 200,
+        width: 8,
+        height: 10,
+      },
+      rock30: {
+        top: 310,
+        left: 150,
+        width: 11,
+        height: 8,
       },
     },
     routes: {
@@ -357,6 +395,68 @@ const WALLS = {
           },
           {
             key: 'rock19',
+          },
+        ],
+      },
+      route6: {
+        name: '5.13 Bigwall problem',
+        description: 'Wicked finish',
+        type: ROUTE_TYPES.noF,
+        grade: ROUTE_GRADES.EXTREMELY_HARD,
+        risk: ROUTE_RISKS.LOW,
+        sequence: [
+          {
+            key: 'rock6',
+          },
+          {
+            key: 'pocket1',
+          },
+          {
+            key: 'rock14',
+          },
+          {
+            key: 'rock9',
+          },
+          {
+            key: 'pocket2',
+          },
+          {
+            key: 'rock10',
+          },
+          {
+            key: 'rock19',
+          },
+        ],
+      },
+      route7: {
+        name: 'Albatross',
+        description: null,
+        type: ROUTE_TYPES.ARF,
+        grade: ROUTE_GRADES.VERY_HARD,
+        risk: ROUTE_RISKS.LOW,
+        sequence: [
+          {
+            key: 'rock26',
+            type: 'start',
+          },
+          {
+            key: 'rock27',
+          },
+          {
+            key: 'rock5',
+          },
+          {
+            key: 'rock28',
+          },
+          {
+            key: 'rock29',
+          },
+          {
+            key: 'rock30',
+          },
+          {
+            key: 'rock8',
+            type: 'end',
           },
         ],
       },

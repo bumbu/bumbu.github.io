@@ -29,7 +29,6 @@ function stringifyWall(wall) {
   }
   for (let routeKey in encodedWall.routes) {
     const route = encodedWall.routes[routeKey]
-    console.log(routeKey, route)
     encodedWall.routes[routeKey] = {
       ...route,
       type: `ROUTE_TYPES.${route.type.key}`,
@@ -135,7 +134,6 @@ const WallPage = props => {
       if (tempRocks[rockKey]) {
         const { [rockKey]: _omit, ...newTempRocks } = tempRocks
         // delete tempRocks[rockKey]
-        console.log(tempRocks, newTempRocks)
         setTempRocks(newTempRocks)
       }
     } else {

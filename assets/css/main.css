@@ -1381,10 +1381,19 @@ body.sidebar-open .trigger__lines:after {
 }
 .huskyRock__mapSequenceStep {
   position: absolute;
-  background: #f00;
-  opacity: 50%;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5000%)";
-  filter: alpha(opacity=5000%);
+  background: #008000;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  border-radius: 4px;
+}
+.huskyRock__mapSequenceStep {
+  position: absolute;
+  background: #808080;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  border-radius: 4px;
 }
 .huskyRock__mapOverlayLines {
   position: absolute;
