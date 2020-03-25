@@ -65,6 +65,7 @@ const WallPage = props => {
   const [tempSequence, setTempSequence] = useState([])
   const [tempRocks, setTempRocks] = useState({})
   const [prevClick, setPrevClick] = useState(null)
+  // console.log({ tempSequence, tempRocks, prevClick })
   if (isEditMode) {
     currentRoute = {
       name: null,
@@ -87,7 +88,7 @@ const WallPage = props => {
     wall = {
       ...wall,
       // Add temp rocks to the wall
-      rocks: Object.assign(wall.rocks, tempRocks),
+      rocks: { ...wall.rocks, ...tempRocks },
       routes: {
         ...wall.routes,
         // Att temp route to wall
@@ -95,15 +96,35 @@ const WallPage = props => {
       },
     }
   }
-  function addRock(ev, rockKey) {
+  function onRockClick(ev, rockKey) {
     ev.preventDefault()
     ev.stopPropagation()
-    setTempSequence(tempSequence.concat({ key: rockKey }))
+    const rockSelected = tempSequence.some(sequence => {
+      return sequence.key === rockKey
+    })
+    if (rockSelected) {
+      // unselect
+      setTempSequence(
+        tempSequence.filter(sequence => {
+          return sequence.key !== rockKey
+        })
+      )
+      // remove rock from temp rocks
+      if (tempRocks[rockKey]) {
+        const { [rockKey]: _omit, ...newTempRocks } = tempRocks
+        // delete tempRocks[rockKey]
+        console.log(tempRocks, newTempRocks)
+        setTempRocks(newTempRocks)
+      }
+    } else {
+      // select
+      setTempSequence(tempSequence.concat({ key: rockKey }))
+    }
   }
   function onMapClick(ev) {
     const clickPoint = {
-      top: (ev.clientY - ev.target.getBoundingClientRect().y) / scale,
-      left: (ev.clientX - ev.target.getBoundingClientRect().x) / scale,
+      top: Math.round((ev.clientY - ev.target.getBoundingClientRect().y) / scale),
+      left: Math.round((ev.clientX - ev.target.getBoundingClientRect().x) / scale),
     }
     if (prevClick == null) {
       setPrevClick(clickPoint)
@@ -125,7 +146,7 @@ const WallPage = props => {
           }
           return acc
         }, 0)
-      setTempRocks({ [newRockKey]: rock })
+      setTempRocks({ ...tempRocks, [newRockKey]: rock })
       setTempSequence(tempSequence.concat({ key: newRockKey }))
       setPrevClick(null)
     }
@@ -248,7 +269,7 @@ const WallPage = props => {
                       height: rock.height * scale,
                     }}
                     onClick={ev => {
-                      addRock(ev, rockKey)
+                      onRockClick(ev, rockKey)
                     }}></div>
                 )
               })
