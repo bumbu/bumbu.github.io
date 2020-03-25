@@ -278,9 +278,13 @@ const WallPage = props => {
         <div className="huskyRock__mapOverlayRocks" onClick={onMapClick}>
           {isEditMode
             ? Object.entries(wall.rocks).map(([rockKey, rock]) => {
+                const isSelected = currentRoute.sequence.some(sequence => sequence.key === rockKey)
+                const className = isSelected
+                  ? 'huskyRock__mapSequenceStep'
+                  : 'huskyRock__mapSequenceStep huskyRock__mapSequenceStep--default'
                 return (
                   <div
-                    className="huskyRock__mapSequenceStep huskyRock__mapSequenceStep--default"
+                    className={className}
                     key={rockKey}
                     style={{
                       top: rock.top * scale,
