@@ -17,6 +17,12 @@ const ROUTE_GRADES = {
   EXTREME: { key: 'EXTREME', name: 'Extreme', ydsGrade: '5.12+', order: 8 },
 }
 
+const ROUTE_RISKS = {
+  LOW: { key: 'LOW', name: 'Low risk of injury' },
+  MODERATE: { key: 'MODERATE', name: 'Risk of injury' },
+  HIGH: { key: 'HIGH', name: 'Risk of serious injury.' },
+}
+
 const WALLS = {
   ['south-tower']: {
     key: 'south-tower',
@@ -141,6 +147,60 @@ const WALLS = {
         left: 200,
         top: 202,
       },
+      rock17: {
+        top: 325,
+        left: 154,
+        width: 14,
+        height: 16,
+      },
+      rock18: {
+        top: 230,
+        left: 171,
+        width: 18,
+        height: 12,
+      },
+      rock19: {
+        top: 164,
+        left: 181,
+        width: 14,
+        height: 14,
+      },
+      rock20: {
+        top: 124,
+        left: 210,
+        width: 13,
+        height: 18,
+      },
+      rock21: {
+        top: 105,
+        left: 235,
+        width: 14,
+        height: 8,
+      },
+      rock22: {
+        top: 79,
+        left: 194,
+        width: 9,
+        height: 14,
+      },
+      rock23: {
+        top: 47,
+        left: 199,
+        width: 14,
+        height: 7,
+      },
+      rock24: {
+        top: 30,
+        left: 160,
+        width: 13,
+        height: 13,
+      },
+      rock25: {
+        top: 1,
+        left: 182,
+        width: 24,
+        height: 6,
+      },
     },
     routes: {
       route1: {
@@ -148,6 +208,7 @@ const WALLS = {
         description: 'Low traverse, left to right; Tricky beta',
         type: ROUTE_TYPES.ARF,
         grade: ROUTE_GRADES.HARD,
+        risk: ROUTE_RISKS.LOW,
         sequence: [
           {
             key: 'edge1',
@@ -179,6 +240,7 @@ const WALLS = {
         description: 'Stem start to 1st hold',
         type: ROUTE_TYPES.ENG,
         grade: ROUTE_GRADES.VERY_HARD,
+        risk: ROUTE_RISKS.LOW,
         sequence: [
           {
             key: 'rock6',
@@ -213,6 +275,7 @@ const WALLS = {
         description: null,
         type: ROUTE_TYPES.noF,
         grade: ROUTE_GRADES.EXTREMELY_HARD,
+        risk: ROUTE_RISKS.LOW,
         sequence: [
           {
             key: 'rock6',
@@ -237,6 +300,66 @@ const WALLS = {
           },
         ],
       },
+      route4: {
+        name: 'Air to Spare',
+        description: null,
+        type: ROUTE_TYPES.noF,
+        grade: ROUTE_GRADES.VERY_HARD,
+        risk: ROUTE_RISKS.HIGH,
+        sequence: [
+          {
+            key: 'rock17',
+          },
+          {
+            key: 'rock15',
+          },
+          {
+            key: 'rock18',
+          },
+          {
+            key: 'rock19',
+          },
+          {
+            key: 'rock20',
+          },
+          {
+            key: 'rock21',
+          },
+          {
+            key: 'rock22',
+          },
+          {
+            key: 'rock23',
+          },
+          {
+            key: 'rock24',
+          },
+          {
+            key: 'rock25',
+          },
+        ],
+      },
+      route5: {
+        name: 'Four to Flag',
+        description: 'Use cheater rock if short',
+        type: ROUTE_TYPES.noF,
+        grade: ROUTE_GRADES.HARD,
+        risk: ROUTE_RISKS.LOW,
+        sequence: [
+          {
+            key: 'rock17',
+          },
+          {
+            key: 'rock15',
+          },
+          {
+            key: 'rock18',
+          },
+          {
+            key: 'rock19',
+          },
+        ],
+      },
     },
   },
 }
@@ -244,5 +367,6 @@ const WALLS = {
 module.exports = {
   ROUTE_TYPES,
   ROUTE_GRADES,
+  ROUTE_RISKS,
   WALLS,
 }

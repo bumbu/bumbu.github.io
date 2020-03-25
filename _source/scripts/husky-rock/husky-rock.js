@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as ReactDOM from 'react-dom'
 import { BrowserRouter as Router, useLocation, useHistory } from 'react-router-dom'
-import { ROUTE_TYPES, ROUTE_GRADES, WALLS } from './data'
+import { ROUTE_TYPES, ROUTE_GRADES, ROUTE_RISKS, WALLS } from './data'
 
 const CONTAINER_WIDTH = document.querySelector('#react-container').offsetWidth
 
@@ -21,6 +21,27 @@ function getRockCenter(rock, scale = 1) {
 function getRockLabel(rock, scale = 1) {
   // bellow
   return { left: (rock.left + rock.width / 2) * scale, top: (rock.top + rock.height) * scale }
+}
+
+function stringifyWall(wall) {
+  const encodedWall = {
+    ...wall,
+  }
+  for (let routeKey in encodedWall.routes) {
+    const route = encodedWall.routes[routeKey]
+    console.log(routeKey, route)
+    encodedWall.routes[routeKey] = {
+      ...route,
+      type: `ROUTE_TYPES.${route.type.key}`,
+      grade: `ROUTE_GRADES.${route.grade.key}`,
+      risk: `ROUTE_RISKS.${route.risk.key}`,
+    }
+  }
+
+  return JSON.stringify(encodedWall, undefined, 2).replace(
+    /\"ROUTE_(\w+\.\w+)\"/g,
+    (_match, p1) => 'ROUTE_' + p1
+  )
 }
 
 const WallCard = props => {
@@ -72,6 +93,7 @@ const WallPage = props => {
       description: null,
       type: ROUTE_TYPES.AR,
       grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.LOW,
       sequence: tempSequence,
     }
 
@@ -291,7 +313,7 @@ const WallPage = props => {
       </div>
       {isEditMode ? (
         <textarea
-          value={JSON.stringify(wall, undefined, 2)}
+          value={stringifyWall(wall)}
           readOnly={true}
           style={{ width: '80%', height: '500px' }}
         />
