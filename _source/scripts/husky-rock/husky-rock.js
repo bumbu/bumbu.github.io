@@ -240,9 +240,9 @@ const WallPage = props => {
               )
             })}
             {currentRoute.sequence.map((sequence, index) => {
-              const curr = wall.rocks[sequence.key]
-              const labelPosition = getRockLabel(curr, scale)
-              if (sequence.type === 'start') {
+              const rock = wall.rocks[sequence.key]
+              const labelPosition = getRockLabel(rock, scale)
+              if (sequence.type != null || rock.type != null) {
                 return (
                   <text
                     x={labelPosition.left}
@@ -252,20 +252,7 @@ const WallPage = props => {
                     dominantBaseline="hanging"
                     fill="red"
                     textAnchor="middle">
-                    start
-                  </text>
-                )
-              } else if (sequence.type === 'end') {
-                return (
-                  <text
-                    x={labelPosition.left}
-                    y={labelPosition.top}
-                    key={`text-${index}`}
-                    className="small"
-                    dominantBaseline="hanging"
-                    fill="red"
-                    textAnchor="middle">
-                    end
+                    {sequence.type || rock.type}
                   </text>
                 )
               } else {
