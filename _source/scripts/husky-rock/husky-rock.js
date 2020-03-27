@@ -183,7 +183,7 @@ const WallPage = props => {
           {selectorRouteEntries.map(([key, route]) => {
             return (
               <option value={key} key={key}>
-                [{route.grade.name}] {route.name || route.description || route.grade}
+                [{route.grade.name}] {route.name || route.description || 'No name'}
               </option>
             )
           })}
@@ -251,6 +251,9 @@ const WallPage = props => {
                     className="small"
                     dominantBaseline="hanging"
                     fill="red"
+                    stroke="white"
+                    strokeWidth={2}
+                    paintOrder="stroke"
                     textAnchor="middle">
                     {sequence.type || rock.type}
                   </text>
@@ -298,6 +301,23 @@ const WallPage = props => {
                     }}></div>
                 )
               })}
+          {currentRoute.notes &&
+            currentRoute.notes.map(note => {
+              const rock = wall.rocks[note.key]
+              return (
+                <div
+                  className="huskyRock__mapSequenceNote"
+                  key={note.key}
+                  style={{
+                    top: rock.top * scale,
+                    left: rock.left * scale,
+                    width: rock.width * scale,
+                    height: rock.height * scale,
+                  }}>
+                  <div className="huskyRock__mapSequenceNoteText">{note.text}</div>
+                </div>
+              )
+            })}
         </div>
       </div>
       {isEditMode ? (

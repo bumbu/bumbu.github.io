@@ -58,6 +58,26 @@ const southTowerWall = {
       height: 7,
       type: 'edge',
     },
+    edge5: {
+      top: 477,
+      left: 180,
+      width: 32,
+      height: 6,
+    },
+    edge6: {
+      top: 303,
+      left: 233,
+      width: 6,
+      height: 17,
+      type: 'edge',
+    },
+    edge7: {
+      top: 274,
+      left: 287,
+      width: 7,
+      height: 31,
+      type: 'edge',
+    },
     pocket1: {
       width: 6,
       height: 6,
@@ -124,10 +144,11 @@ const southTowerWall = {
       left: 214,
     },
     rock6: {
-      width: 31,
-      height: 22,
+      width: 14,
+      height: 9,
       left: 53,
-      top: 335,
+      top: 348,
+      type: 'bottom edge',
     },
     rock7: {
       width: 8,
@@ -386,6 +407,49 @@ const southTowerWall = {
       left: 266,
       width: 18,
       height: 12,
+    },
+    rock52: {
+      top: 352,
+      left: 33,
+      width: 8,
+      height: 11,
+    },
+    rock53: {
+      top: 229,
+      left: 62,
+      width: 13,
+      height: 13,
+    },
+    rock54: {
+      top: 188,
+      left: 114,
+      width: 14,
+      height: 9,
+    },
+    rock55: {
+      top: 391,
+      left: 186,
+      width: 6,
+      height: 6,
+      type: 'microhold',
+    },
+    rock56: {
+      top: 325,
+      left: 135,
+      width: 8,
+      height: 9,
+    },
+    rock57: {
+      top: 194,
+      left: 165,
+      width: 19,
+      height: 12,
+    },
+    rock58: {
+      top: 322,
+      left: 174,
+      width: 8,
+      height: 10,
     },
   },
   routes: {
@@ -840,6 +904,208 @@ const southTowerWall = {
         },
         {
           key: 'rock51',
+        },
+      ],
+    },
+    route15: {
+      name: 'Airwolf',
+      description: 'Establish on 1st hold; No texture hold; Big block out for feet',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.HIGH,
+      sequence: [
+        {
+          key: 'rock27',
+        },
+        {
+          key: 'rock52',
+        },
+        {
+          key: 'rock8',
+        },
+        {
+          key: 'rock53',
+        },
+        {
+          key: 'rock54',
+        },
+        {
+          key: 'rock13',
+        },
+      ],
+      notes: [
+        {
+          key: 'rock6',
+          text: 'out!',
+        },
+      ],
+    },
+    route16: {
+      name: 'Toasted Harshmellows',
+      description: 'Microedge 1st hold - yikes!',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock55',
+        },
+        {
+          key: 'rock56',
+        },
+        {
+          key: 'rock39',
+        },
+        {
+          key: 'rock57',
+        },
+        {
+          key: 'rock13',
+        },
+      ],
+    },
+    route17: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock56',
+        },
+        {
+          key: 'rock58',
+        },
+        {
+          key: 'rock15',
+        },
+        {
+          key: 'rock39',
+        },
+        {
+          key: 'rock10',
+        },
+        {
+          key: 'rock12',
+        },
+        {
+          key: 'rock19',
+        },
+      ],
+    },
+    route18: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock56',
+        },
+        {
+          key: 'rock58',
+        },
+        {
+          key: 'rock15',
+        },
+        {
+          key: 'rock39',
+        },
+        {
+          key: 'rock10',
+        },
+        {
+          key: 'rock12',
+        },
+        {
+          key: 'rock19',
+        },
+      ],
+    },
+    route19: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock56',
+        },
+        {
+          key: 'rock58',
+        },
+        {
+          key: 'rock15',
+        },
+        {
+          key: 'rock39',
+        },
+        {
+          key: 'rock10',
+        },
+        {
+          key: 'rock12',
+        },
+        {
+          key: 'rock19',
+        },
+      ],
+    },
+    route20: {
+      name: 'Schizo',
+      description: 'Left side of body on left side of crack; Right side on right',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'edge5',
+        },
+        {
+          key: 'rock19',
+        },
+      ],
+    },
+    route21: {
+      name: 'Schizo',
+      description: 'Left side of body on left side of crack; Right side on right',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'edge5',
+        },
+        {
+          key: 'rock19',
+        },
+      ],
+    },
+    route22: {
+      name: 'Adhesion',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock7',
+        },
+        {
+          key: 'rock30',
+        },
+        {
+          key: 'edge6',
+          type: 'left side only',
+        },
+        {
+          key: 'edge7',
         },
       ],
     },

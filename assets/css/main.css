@@ -1387,6 +1387,21 @@ body.sidebar-open .trigger__lines:after {
   filter: alpha(opacity=50);
   border-radius: 4px;
 }
+.huskyRock__mapSequenceNote {
+  position: absolute;
+  background: rgba(255,0,0,0.3);
+  border-radius: 4px;
+}
+.huskyRock__mapSequenceNoteText {
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  left: 0;
+  right: 0;
+  color: #f00;
+  text-align: center;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
 .huskyRock__mapSequenceStep--default {
   background: #808080;
 }
