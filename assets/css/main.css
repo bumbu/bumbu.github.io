@@ -1018,7 +1018,7 @@ div.code-toolbar > .toolbar span:focus {
   height: 8px;
   background: #e3e3e3;
   position: absolute;
-  top: -@height;
+  top: -8px;
   right: 0;
   bottom: auto;
   left: 0;
