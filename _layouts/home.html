@@ -5,6 +5,24 @@ layout: default
 <section class="portofolio">
   <h1 class="portofolio__header">Last Projects</h1>
   <div class="portofolio__items">
+    {% for post in site.pages limit:10 %}
+      {% if post.category == "portofolio" %}
+        <div class="portofolio__item">
+        <a class="portofolio__item-image-container portofolio__item-image-container--{{ post.previewType }}" href="{{ post.url | relative_url }}" {% if post.previewColor %}style="background: {{ post.previewColor }}"{% endif %}>
+          <span class="portofolio__item-image">
+            <span class="portofolio__item-image-wrapper">
+              <span class="portofolio__item-image-header"><i></i><i></i><i></i></span>
+              <img src="{{site.root}}{{ post.previewThumbnail }}" alt="">
+            </span>
+          </span>
+        </a>
+        <a class="portofolio__item-description" href="{{ post.url | relative_url }}">
+          <span class="portofolio__item-title">{{ post.previewTitle }}</span>
+          <span class="portofolio__item-subtitle">{{ post.previewDescription }}</span>
+        </a>
+      </div>
+      {% endif %}
+    {% endfor %}
     {% for post in site.categories['portofolio'] limit:10 %}
       <div class="portofolio__item">
         <a class="portofolio__item-image-container portofolio__item-image-container--{{ post.previewType }}" href="{{ post.url | relative_url }}" {% if post.previewColor %}style="background: {{ post.previewColor }}"{% endif %}>
@@ -23,3 +41,4 @@ layout: default
     {% endfor %}
   </div>
 </section>
+
