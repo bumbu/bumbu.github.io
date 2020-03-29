@@ -1405,6 +1405,7 @@ const northRoof = {
       left: 405,
       width: 40,
       height: 26,
+      type: 'hole in crack',
     },
     rock42: {
       top: 185,
@@ -1754,9 +1755,81 @@ const northRoof = {
   },
 }
 
+const eastSideNorthFacing = {
+  key: 'east-side-south-facing',
+  name: 'East Side, South Facing',
+  image: 'east-side-south-facing.png',
+  width: 1000,
+  height: 1016,
+  rocks: {
+    rock1: {
+      top: 899,
+      left: 946,
+      width: 16,
+      height: 54,
+      type: 'edge',
+    },
+    rock2: {
+      top: 566,
+      left: 922,
+      width: 30,
+      height: 54,
+      type: 'edge',
+    },
+    rock3: {
+      top: 272,
+      left: 748,
+      width: 36,
+      height: 49,
+      type: 'edge',
+    },
+    rock4: {
+      top: 237,
+      left: 642,
+      width: 60,
+      height: 21,
+      type: 'edge',
+    },
+    rock5: {
+      top: 11,
+      left: 191,
+      width: 69,
+      height: 39,
+      type: 'edge',
+    },
+  },
+  routes: {
+    route1: {
+      name: 'Edge traverse',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
+        {
+          key: 'rock1',
+        },
+        {
+          key: 'rock2',
+        },
+        {
+          key: 'rock3',
+        },
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock5',
+        },
+      ],
+    },
+  },
+}
+
 const WALLS = {
   [southTowerWall.key]: southTowerWall,
   [northRoof.key]: northRoof,
+  [eastSideNorthFacing.key]: eastSideNorthFacing,
 }
 
 module.exports = {
