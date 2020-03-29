@@ -314,7 +314,7 @@ const WallPage = props => {
                     width: rock.width * scale,
                     height: rock.height * scale,
                   }}>
-                  <div className="huskyRock__mapSequenceNoteText">{note.text}</div>
+                  <div className="huskyRock__mapSequenceNoteText">{note.label}</div>
                 </div>
               )
             })}

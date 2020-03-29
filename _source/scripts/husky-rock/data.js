@@ -936,7 +936,7 @@ const southTowerWall = {
       notes: [
         {
           key: 'rock6',
-          text: 'out!',
+          label: 'out!',
         },
       ],
     },
@@ -1124,35 +1124,35 @@ const northRoof = {
       left: 451,
       width: 73,
       height: 25,
-      label: 'edge',
+      type: 'edge',
     },
     edge2: {
       top: 16,
       left: 276,
       width: 65,
       height: 27,
-      label: 'edge',
+      type: 'edge',
     },
     edge3: {
       top: 8,
       left: 110,
       width: 85,
       height: 24,
-      label: 'edge',
+      type: 'edge',
     },
     edge4: {
       top: 369,
       left: 807,
       width: 32,
       height: 71,
-      label: 'edge',
+      type: 'edge',
     },
     edge5: {
       top: 4,
       left: 4,
       width: 51,
       height: 30,
-      label: 'edge',
+      type: 'edge',
     },
     rock0: {
       top: 425,
@@ -1405,13 +1405,143 @@ const northRoof = {
       left: 405,
       width: 40,
       height: 26,
-      label: 'hole in crack',
+      type: 'hole in crack',
     },
     rock42: {
       top: 185,
       left: 249,
       width: 42,
       height: 32,
+    },
+    rock43: {
+      top: 160,
+      left: 327,
+      width: 37,
+      height: 30,
+    },
+    rock44: {
+      top: 152,
+      left: 381,
+      width: 30,
+      height: 31,
+    },
+    rock45: {
+      top: 141,
+      left: 424,
+      width: 25,
+      height: 30,
+    },
+    rock46: {
+      top: 89,
+      left: 556,
+      width: 32,
+      height: 37,
+    },
+    rock47: {
+      top: 110,
+      left: 679,
+      width: 48,
+      height: 48,
+      label: 'edge',
+    },
+    rock48: {
+      top: 497,
+      left: 834,
+      width: 42,
+      height: 80,
+      label: 'edge',
+    },
+    rock49: {
+      top: 512,
+      left: 647,
+      width: 50,
+      height: 63,
+    },
+    rock50: {
+      top: 617,
+      left: 826,
+      width: 44,
+      height: 38,
+    },
+    rock51: {
+      top: 461,
+      left: 792,
+      width: 34,
+      height: 32,
+    },
+    rock52: {
+      top: 299,
+      left: 664,
+      width: 31,
+      height: 55,
+    },
+    rock53: {
+      top: 234,
+      left: 447,
+      width: 23,
+      height: 23,
+    },
+    rock54: {
+      top: 291,
+      left: 179,
+      width: 46,
+      height: 33,
+    },
+    rock55: {
+      top: 177,
+      left: 114,
+      width: 44,
+      height: 48,
+    },
+    rock56: {
+      top: 790,
+      left: 251,
+      width: 94,
+      height: 32,
+    },
+    rock57: {
+      top: 27,
+      left: 548,
+      width: 112,
+      height: 26,
+    },
+    rock58: {
+      top: 619,
+      left: 725,
+      width: 69,
+      height: 43,
+    },
+    rock59: {
+      top: 508,
+      left: 308,
+      width: 42,
+      height: 34,
+    },
+    rock60: {
+      top: 289,
+      left: 230,
+      width: 33,
+      height: 23,
+    },
+    rock61: {
+      top: 187,
+      left: 742,
+      width: 38,
+      height: 53,
+      label: 'edge',
+    },
+    rock62: {
+      top: 287,
+      left: 129,
+      width: 33,
+      height: 12,
+      label: 'slot under roof',
+    },
+    rock63: {
+      top: 131,
+      left: 291,
+      width: 29,
+      height: 50,
     },
   },
   routes: {
@@ -1586,7 +1716,7 @@ const northRoof = {
       sequence: [
         {
           key: 'rock21',
-          label: 'start',
+          type: 'start',
         },
         {
           key: 'rock12',
@@ -1659,7 +1789,7 @@ const northRoof = {
       sequence: [
         {
           key: 'rock30',
-          label: 'start',
+          type: 'start',
         },
         {
           key: 'rock31',
@@ -1699,11 +1829,11 @@ const northRoof = {
       sequence: [
         {
           key: 'rock14',
-          label: 'feet only',
+          type: 'feet only',
         },
         {
           key: 'rock36',
-          label: 'feet only',
+          type: 'feet only',
         },
         {
           key: 'rock21',
@@ -1746,6 +1876,281 @@ const northRoof = {
         },
         {
           key: 'rock42',
+        },
+        {
+          key: 'edge2',
+        },
+      ],
+    },
+    route14: {
+      name: 'Gorilla Traverse',
+      description: '(Variation: Out & back - Hard!)',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock8',
+        },
+        {
+          key: 'rock28',
+        },
+        {
+          key: 'rock13',
+        },
+        {
+          key: 'rock24',
+        },
+        {
+          key: 'rock42',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'rock44',
+        },
+        {
+          key: 'rock45',
+        },
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock46',
+        },
+        {
+          key: 'rock47',
+        },
+      ],
+    },
+    route15: {
+      name: null,
+      description: 'Out & back',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock48',
+          label: 'start',
+        },
+        {
+          key: 'rock49',
+        },
+        {
+          key: 'rock31',
+        },
+        {
+          key: 'rock30',
+          label: 'end',
+        },
+      ],
+    },
+    route16: {
+      name: 'Bible Thumper',
+      description: 'Two additional rocks for feet',
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock50',
+          label: 'feet only',
+        },
+        {
+          key: 'rock51',
+        },
+        {
+          key: 'rock52',
+        },
+        {
+          key: 'rock53',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock54',
+        },
+        {
+          key: 'rock55',
+        },
+        {
+          key: 'rock39',
+        },
+        {
+          key: 'edge5',
+        },
+      ],
+      notes: [
+        {
+          key: 'rock8',
+          label: 'feet only',
+        },
+        {
+          key: 'rock22',
+          label: 'feet only',
+        },
+      ],
+    },
+    route17: {
+      name: 'Battle the bulge',
+      description: 'Climb left side of roof to top',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.EASY_MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock56',
+          label: 'start',
+        },
+        {
+          key: 'edge3',
+          label: 'end',
+        },
+      ],
+    },
+    route18: {
+      name: 'Pulling teeth',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock8',
+          label: 'Right side only',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock3',
+        },
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock57',
+        },
+      ],
+    },
+    route19: {
+      name: 'The Final',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock58',
+        },
+        {
+          key: 'rock32',
+        },
+        {
+          key: 'rock59',
+        },
+        {
+          key: 'rock60',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'edge2',
+        },
+      ],
+    },
+    route20: {
+      name: 'The Iron Cross',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock0',
+        },
+        {
+          key: 'rock5',
+        },
+        {
+          key: 'rock8',
+        },
+        {
+          key: 'rock24',
+        },
+        {
+          key: 'edge3',
+        },
+      ],
+    },
+    route21: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock36',
+        },
+        {
+          key: 'rock59',
+        },
+        {
+          key: 'rock5',
+        },
+        {
+          key: 'rock33',
+        },
+        {
+          key: 'rock61',
+        },
+      ],
+    },
+    route22: {
+      name: 'Beer & Loathing',
+      description: '1st hold: bottom edge, 3rd hold: slot under roof',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock8',
+          label: 'bottom edge only',
+        },
+        {
+          key: 'rock27',
+        },
+        {
+          key: 'rock62',
+        },
+        {
+          key: 'rock29',
+        },
+        {
+          key: 'edge3',
+        },
+      ],
+    },
+    route23: {
+      name: 'Concrete Jungle',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock8',
+        },
+        {
+          key: 'rock13',
+        },
+        {
+          key: 'rock63',
         },
         {
           key: 'edge2',

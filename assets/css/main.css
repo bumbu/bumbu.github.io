@@ -1394,8 +1394,7 @@ body.sidebar-open .trigger__lines:after {
 }
 .huskyRock__mapSequenceNoteText {
   position: absolute;
-  top: 50%;
-  margin-top: -11px;
+  top: 100%;
   left: 0;
   right: 0;
   color: #f00;
