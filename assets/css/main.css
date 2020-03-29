@@ -1349,6 +1349,7 @@ body.sidebar-open .trigger__lines:after {
   border: 1px solid #ccc;
   float: left;
   box-sizing: border-box;
+  position: relative;
 }
 .huskyRock__cardImage {
   height: 100px;
@@ -1362,6 +1363,17 @@ body.sidebar-open .trigger__lines:after {
 }
 .huskyRock__cardTitle {
   text-align: center;
+}
+.huskyRock__cardCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  text-align: center;
+  background: #eee;
+  color: #666;
+  padding: 2px;
+  border-bottom-left-radius: 12px;
 }
 .huskyRock__map {
   border: 1px solid #ccc;

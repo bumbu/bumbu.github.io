@@ -48,12 +48,11 @@ const WallCard = props => {
 
   return (
     <div onClick={onClick} className="huskyRock__card">
-      <div onClick={onClick} className="huskyRock__cardImage">
+      <div className="huskyRock__cardImage">
         <img src={getImageURI(wall.image)} alt={wall.name} />
       </div>
-      <div onClick={onClick} className="huskyRock__cardTitle">
-        {wall.name}
-      </div>
+      <div className="huskyRock__cardTitle">{wall.name}</div>
+      <div className="huskyRock__cardCount">{Object.values(wall.routes).length}</div>
     </div>
   )
 }
