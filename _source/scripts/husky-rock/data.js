@@ -35,28 +35,28 @@ const southTowerWall = {
       height: 30,
       top: 387,
       left: 12,
-      type: 'edge',
+      label: 'edge',
     },
     edge2: {
       width: 10,
       height: 30,
       top: 412,
       left: 294,
-      type: 'edge',
+      label: 'edge',
     },
     edge3: {
       top: 1,
       left: 182,
       width: 24,
       height: 6,
-      type: 'edge',
+      label: 'edge',
     },
     edge4: {
       top: 8,
       left: 226,
       width: 20,
       height: 7,
-      type: 'edge',
+      label: 'edge',
     },
     edge5: {
       top: 477,
@@ -69,49 +69,49 @@ const southTowerWall = {
       left: 233,
       width: 6,
       height: 17,
-      type: 'edge',
+      label: 'edge',
     },
     edge7: {
       top: 274,
       left: 287,
       width: 7,
       height: 31,
-      type: 'edge',
+      label: 'edge',
     },
     pocket1: {
       width: 6,
       height: 6,
       left: 123,
       top: 352,
-      type: 'pocket',
+      label: 'pocket',
     },
     pocket2: {
       top: 237,
       left: 132,
       width: 6,
       height: 6,
-      type: 'pocket',
+      label: 'pocket',
     },
     pocket3: {
       top: 383,
       left: 204,
       width: 6,
       height: 6,
-      type: 'pocket',
+      label: 'pocket',
     },
     pocket4: {
       top: 391,
       left: 243,
       width: 6,
       height: 6,
-      type: 'pocket',
+      label: 'pocket',
     },
     notch1: {
       top: 369,
       left: 240,
       width: 4,
       height: 10,
-      type: 'notch',
+      label: 'notch',
     },
     rock1: {
       width: 11,
@@ -148,7 +148,7 @@ const southTowerWall = {
       height: 9,
       left: 53,
       top: 348,
-      type: 'bottom edge',
+      label: 'bottom edge',
     },
     rock7: {
       width: 8,
@@ -431,7 +431,7 @@ const southTowerWall = {
       left: 186,
       width: 6,
       height: 6,
-      type: 'microhold',
+      label: 'microhold',
     },
     rock56: {
       top: 325,
@@ -462,7 +462,7 @@ const southTowerWall = {
       sequence: [
         {
           key: 'edge1',
-          type: 'start',
+          label: 'start',
         },
         {
           key: 'rock1',
@@ -481,7 +481,7 @@ const southTowerWall = {
         },
         {
           key: 'edge2',
-          type: 'end',
+          label: 'end',
         },
       ],
     },
@@ -494,7 +494,7 @@ const southTowerWall = {
       sequence: [
         {
           key: 'rock6',
-          type: 'start',
+          label: 'start',
         },
         {
           key: 'rock7',
@@ -516,7 +516,7 @@ const southTowerWall = {
         },
         {
           key: 'rock13',
-          type: 'end',
+          label: 'end',
         },
       ],
     },
@@ -529,11 +529,11 @@ const southTowerWall = {
       sequence: [
         {
           key: 'rock6',
-          type: 'start',
+          label: 'start',
         },
         {
           key: 'pocket1',
-          type: 'start',
+          label: 'start',
         },
         {
           key: 'rock14',
@@ -546,7 +546,7 @@ const southTowerWall = {
         },
         {
           key: 'rock13',
-          type: 'end',
+          label: 'end',
         },
       ],
     },
@@ -649,7 +649,7 @@ const southTowerWall = {
       sequence: [
         {
           key: 'rock26',
-          type: 'start',
+          label: 'start',
         },
         {
           key: 'rock27',
@@ -668,7 +668,7 @@ const southTowerWall = {
         },
         {
           key: 'rock8',
-          type: 'end',
+          label: 'end',
         },
       ],
     },
@@ -804,7 +804,7 @@ const southTowerWall = {
       sequence: [
         {
           key: 'notch1',
-          type: 'notch below crack only',
+          label: 'notch below crack only',
         },
         {
           key: 'rock15',
@@ -1124,35 +1124,35 @@ const northRoof = {
       left: 451,
       width: 73,
       height: 25,
-      type: 'edge',
+      label: 'edge',
     },
     edge2: {
       top: 16,
       left: 276,
       width: 65,
       height: 27,
-      type: 'edge',
+      label: 'edge',
     },
     edge3: {
       top: 8,
       left: 110,
       width: 85,
       height: 24,
-      type: 'edge',
+      label: 'edge',
     },
     edge4: {
       top: 369,
       left: 807,
       width: 32,
       height: 71,
-      type: 'edge',
+      label: 'edge',
     },
     edge5: {
       top: 4,
       left: 4,
       width: 51,
       height: 30,
-      type: 'edge',
+      label: 'edge',
     },
     rock0: {
       top: 425,
@@ -1405,7 +1405,7 @@ const northRoof = {
       left: 405,
       width: 40,
       height: 26,
-      type: 'hole in crack',
+      label: 'hole in crack',
     },
     rock42: {
       top: 185,
@@ -1586,7 +1586,7 @@ const northRoof = {
       sequence: [
         {
           key: 'rock21',
-          type: 'start',
+          label: 'start',
         },
         {
           key: 'rock12',
@@ -1659,7 +1659,7 @@ const northRoof = {
       sequence: [
         {
           key: 'rock30',
-          type: 'start',
+          label: 'start',
         },
         {
           key: 'rock31',
@@ -1699,11 +1699,11 @@ const northRoof = {
       sequence: [
         {
           key: 'rock14',
-          type: 'feet only',
+          label: 'feet only',
         },
         {
           key: 'rock36',
-          type: 'feet only',
+          label: 'feet only',
         },
         {
           key: 'rock21',
@@ -1767,35 +1767,35 @@ const eastSideNorthFacing = {
       left: 946,
       width: 16,
       height: 54,
-      type: 'edge',
+      label: 'edge',
     },
     rock2: {
       top: 566,
       left: 922,
       width: 30,
       height: 54,
-      type: 'edge',
+      label: 'edge',
     },
     rock3: {
       top: 272,
       left: 748,
       width: 36,
       height: 49,
-      type: 'edge',
+      label: 'edge',
     },
     rock4: {
       top: 237,
       left: 642,
       width: 60,
       height: 21,
-      type: 'edge',
+      label: 'edge',
     },
     rock5: {
       top: 11,
       left: 191,
       width: 69,
       height: 39,
-      type: 'edge',
+      label: 'edge',
     },
   },
   routes: {

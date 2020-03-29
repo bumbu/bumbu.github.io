@@ -242,7 +242,7 @@ const WallPage = props => {
             {currentRoute.sequence.map((sequence, index) => {
               const rock = wall.rocks[sequence.key]
               const labelPosition = getRockLabel(rock, scale)
-              if (sequence.type != null || rock.type != null) {
+              if (sequence.label != null || rock.label != null) {
                 return (
                   <text
                     x={labelPosition.left}
@@ -255,7 +255,7 @@ const WallPage = props => {
                     strokeWidth={2}
                     paintOrder="stroke"
                     textAnchor="middle">
-                    {sequence.type || rock.type}
+                    {sequence.label || rock.label}
                   </text>
                 )
               } else {
