@@ -335,6 +335,7 @@ const Container = () => {
   const history = useHistory()
   const wallKey = query.get('wall')
   const currentWall = wallKey in WALLS ? WALLS[wallKey] : null
+  const [expandedInfo, setExpandedInfo] = useState(null)
 
   const setCurrentWall = wallKey => {
     history.push(`?wall=${wallKey}`)
@@ -346,9 +347,125 @@ const Container = () => {
 
   return currentWall == null ? (
     <div>
-      {Object.entries(WALLS).map(([key, wall]) => {
-        return <WallCard wall={wall} key={key} onClick={() => setCurrentWall(key)} />
-      })}
+      <div className="huskyRock__cardsSection">
+        {Object.entries(WALLS).map(([key, wall]) => {
+          return <WallCard wall={wall} key={key} onClick={() => setCurrentWall(key)} />
+        })}
+      </div>
+      <div className="huskyRock__infoSectionWrapper">
+        <div className="huskyRock__infoSection">
+          <a className="huskyRock__infoTitle" onClick={() => setExpandedInfo('disclaimer')}>
+            Disclaimer (expand)
+          </a>
+          {expandedInfo === 'disclaimer' ? (
+            <div className="huskyRock__infoContent">
+              <p>
+                Rock climbing and mountaineering in general is a dangerous pastime that can lead to
+                serious injury or worse. You should not undertake these without proper training or
+                equipment.
+              </p>
+              <p>
+                By using this site you acknowledge that the information therein may be out of date
+                or inaccurate and you agree that the no one can be held liable for any damage that
+                may be caused by use of this website.
+              </p>
+            </div>
+          ) : null}
+          <a className="huskyRock__infoTitle" onClick={() => setExpandedInfo('new')}>
+            How to add new routes (expand)
+          </a>
+          {expandedInfo === 'new' ? (
+            <div className="huskyRock__infoContent">
+              <h4>If you know software engineering:</h4>
+              <p>First time instalation</p>
+              <ol>
+                <li>
+                  Go to{' '}
+                  <a href="https://github.com/bumbu/bumbu.github.io" target="_blank">
+                    github
+                  </a>
+                  , download a local copy of this website
+                </li>
+                <li>
+                  Run <code>npm install</code> to install required node modules. You must have NPM
+                  installed on your computer.
+                </li>
+                <li>
+                  Run <code>bundle install</code> to install required ruby modules. You must have
+                  Ruby installed on your computer.
+                </li>
+              </ol>
+              <p>Adding routes:</p>
+              <ol>
+                <li>
+                  Run <code>npm start</code>. This will start a local server.
+                </li>
+                <li>Visit the provided URI from console, you should see the local website.</li>
+                <li>Go to Husky Rock page, click on the wall you're interested to edit</li>
+                <li>
+                  In the browser tab add <code>&edit=1</code> to the URL (e.g.{' '}
+                  <code>localhost:4000/husky-rock/?wall=east-side-south-facing&edit=1</code>
+                </li>
+                <li>
+                  You should see something like this: <img src={getImageURI('editor.png')} alt="" />
+                </li>
+                <li>Clicking on an existing rock (grey rectangle) will select it</li>
+                <li>Clicking on the same rock again will unset it</li>
+                <li>
+                  Clicking 2 times outside the rocks will create a new one (think of it as top-left
+                  and bottom-right corner)
+                </li>
+                <li>
+                  After you finished creating the route, copy the contents of the textbox under the
+                  map. It contains the new route data.
+                </li>
+                <li>
+                  Open file <code>data.js</code> and replace the entire wall object with this new
+                  object
+                </li>
+                <li>Add a title and description if available</li>
+                <li>
+                  Add grade, route type and risk using existing object (e.g.{' '}
+                  <code>ROUTE_GRADES.HARD</code>)
+                </li>
+                <li>Save file. Wait for JS to regenerate. Now you can preview your route.</li>
+                <li>To add a new route, refresh the tab, and start again from point 5</li>
+              </ol>
+              <p>Submitting a PR:</p>
+              <ol>
+                <li>After you added all desired routes, stop the server</li>
+                <li>
+                  Run <code>npm run build</code> to generate new code
+                </li>
+                <li>Commit and submit a PR</li>
+              </ol>
+              <h4>Otherwise (works only for 1 route):</h4>
+              <ul>
+                <li>
+                  Open the wall page (e.g. <code>bumbu.me/husky-rock/?wall=north-roof</code>)
+                </li>
+                <li>
+                  In browser address bar add <code>&edit=1</code> at the end (e.g.{' '}
+                  <code>bumbu.me/husky-rock/?wall=north-roof&edit=1</code>
+                </li>
+                <li>See above section how to create a new route (points 6-9)</li>
+                <li>Bellow the map there's a text box with new data, you'll need it later.</li>
+                <li>
+                  After you've created the route, go to{' '}
+                  <a
+                    target="_blank"
+                    href="https://github.com/bumbu/bumbu.github.io/blob/master/_source/scripts/husky-rock/data.js">
+                    github
+                  </a>{' '}
+                  and click "edit the file" (you need to register first).
+                </li>
+                <li>Replace the correct variable with the content of the text box</li>
+                <li>Submit the pull request</li>
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      </div>
     </div>
   ) : (
     <WallPage wall={currentWall} />
