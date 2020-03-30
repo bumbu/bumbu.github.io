@@ -1340,9 +1340,6 @@ body.sidebar-open .trigger__lines:after {
   -webkit-transform: rotate3d(0, 0, 1, -45deg);
   transform: rotate3d(0, 0, 1, -45deg);
 }
-.main.main--husky-rock .post__header {
-  display: none;
-}
 .huskyRock__card {
   width: 50%;
   height: 130px;

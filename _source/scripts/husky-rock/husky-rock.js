@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as ReactDOM from 'react-dom'
 import { BrowserRouter as Router, useLocation, useHistory } from 'react-router-dom'
 import { ROUTE_TYPES, ROUTE_GRADES, ROUTE_RISKS, WALLS } from './data'
@@ -339,6 +339,10 @@ const Container = () => {
   const setCurrentWall = wallKey => {
     history.push(`?wall=${wallKey}`)
   }
+
+  useEffect(() => {
+    document.querySelector('.post__header').style.display = wallKey ? 'none' : 'block'
+  })
 
   return currentWall == null ? (
     <div>
