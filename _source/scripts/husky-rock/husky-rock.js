@@ -44,15 +44,18 @@ function stringifyWall(wall) {
 }
 
 const WallCard = props => {
-  const { wall, onClick } = props
+  const { wall, onClick, isEditMode } = props
+  const isEmpty = wall.isEmpty === true && !isEditMode
 
   return (
-    <div onClick={onClick} className="huskyRock__card">
+    <div onClick={isEmpty ? null : onClick} className="huskyRock__card">
       <div className="huskyRock__cardImage">
         <img src={getImageURI(wall.image)} alt={wall.name} />
       </div>
       <div className="huskyRock__cardTitle">{wall.name}</div>
-      <div className="huskyRock__cardCount">{Object.values(wall.routes).length}</div>
+      <div className="huskyRock__cardCount">
+        {isEmpty ? 'no routes' : Object.values(wall.routes).length}
+      </div>
     </div>
   )
 }
@@ -61,8 +64,7 @@ const WallPage = props => {
   const query = useQuery()
   const history = useHistory()
   const routeKey = query.get('route')
-  const isEditMode = !!query.get('edit')
-  let { wall } = props
+  let { wall, isEditMode } = props
   // Return selected route, or first otherwise
   const currentRouteKey = routeKey in wall.routes ? routeKey : Object.keys(wall.routes)[0]
   let currentRoute = wall.routes[currentRouteKey]
@@ -334,6 +336,7 @@ const Container = () => {
   const query = useQuery()
   const history = useHistory()
   const wallKey = query.get('wall')
+  const isEditMode = !!query.get('edit')
   const currentWall = wallKey in WALLS ? WALLS[wallKey] : null
   const [expandedInfo, setExpandedInfo] = useState(null)
 
@@ -349,7 +352,14 @@ const Container = () => {
     <div>
       <div className="huskyRock__cardsSection">
         {Object.entries(WALLS).map(([key, wall]) => {
-          return <WallCard wall={wall} key={key} onClick={() => setCurrentWall(key)} />
+          return (
+            <WallCard
+              wall={wall}
+              key={key}
+              isEditMode={isEditMode}
+              onClick={() => setCurrentWall(key)}
+            />
+          )
         })}
       </div>
       <div className="huskyRock__infoSectionWrapper">
@@ -468,7 +478,7 @@ const Container = () => {
       </div>
     </div>
   ) : (
-    <WallPage wall={currentWall} />
+    <WallPage wall={currentWall} isEditMode={isEditMode} />
   )
 }
 

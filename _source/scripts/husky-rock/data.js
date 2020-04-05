@@ -2603,486 +2603,592 @@ const northRoofInnerSide = {
   },
 }
 
-const eastSideSouthFacing = {
-  "key": "east-side-south-facing",
-  "name": "East Side, South Facing",
-  "image": "east-side-south-facing.png",
-  "width": 1000,
-  "height": 1016,
-  "rocks": {
-    "rock1": {
-      "top": 899,
-      "left": 946,
-      "width": 16,
-      "height": 54,
-      "label": "edge"
+const eastWallSouthFacing = {
+  key: 'east-wall-south-facing',
+  name: 'East Wall, South Facing',
+  image: 'east-wall-south-facing.png',
+  width: 1000,
+  height: 1016,
+  rocks: {
+    rock1: {
+      top: 899,
+      left: 946,
+      width: 16,
+      height: 54,
+      label: 'edge',
     },
-    "rock2": {
-      "top": 566,
-      "left": 922,
-      "width": 30,
-      "height": 54,
-      "label": "edge"
+    rock2: {
+      top: 566,
+      left: 922,
+      width: 30,
+      height: 54,
+      label: 'edge',
     },
-    "rock3": {
-      "top": 272,
-      "left": 748,
-      "width": 36,
-      "height": 49,
-      "label": "edge"
+    rock3: {
+      top: 272,
+      left: 748,
+      width: 36,
+      height: 49,
+      label: 'edge',
     },
-    "rock4": {
-      "top": 237,
-      "left": 642,
-      "width": 60,
-      "height": 21,
-      "label": "edge"
+    rock4: {
+      top: 237,
+      left: 642,
+      width: 60,
+      height: 21,
+      label: 'edge',
     },
-    "rock5": {
-      "top": 11,
-      "left": 191,
-      "width": 69,
-      "height": 39,
-      "label": "edge"
+    rock5: {
+      top: 11,
+      left: 191,
+      width: 69,
+      height: 39,
+      label: 'edge',
     },
-    "rock6": {
-      "top": 802,
-      "left": 889,
-      "width": 39,
-      "height": 31
+    rock6: {
+      top: 802,
+      left: 889,
+      width: 39,
+      height: 31,
     },
-    "rock7": {
-      "top": 667,
-      "left": 903,
-      "width": 33,
-      "height": 28
+    rock7: {
+      top: 667,
+      left: 903,
+      width: 33,
+      height: 28,
     },
-    "rock8": {
-      "top": 576,
-      "left": 874,
-      "width": 37,
-      "height": 31
+    rock8: {
+      top: 576,
+      left: 874,
+      width: 37,
+      height: 31,
     },
-    "rock9": {
-      "top": 419,
-      "left": 777,
-      "width": 35,
-      "height": 34
+    rock9: {
+      top: 419,
+      left: 777,
+      width: 35,
+      height: 34,
     },
-    "rock10": {
-      "top": 813,
-      "left": 330,
-      "width": 55,
-      "height": 45
+    rock10: {
+      top: 813,
+      left: 330,
+      width: 55,
+      height: 45,
     },
-    "rock11": {
-      "top": 709,
-      "left": 291,
-      "width": 39,
-      "height": 42
+    rock11: {
+      top: 709,
+      left: 291,
+      width: 39,
+      height: 42,
     },
-    "rock12": {
-      "top": 545,
-      "left": 296,
-      "width": 30,
-      "height": 31
+    rock12: {
+      top: 545,
+      left: 296,
+      width: 30,
+      height: 31,
     },
-    "rock13": {
-      "top": 380,
-      "left": 298,
-      "width": 28,
-      "height": 44
+    rock13: {
+      top: 380,
+      left: 298,
+      width: 28,
+      height: 44,
     },
-    "rock14": {
-      "top": 260,
-      "left": 433,
-      "width": 33,
-      "height": 28
+    rock14: {
+      top: 260,
+      left: 433,
+      width: 33,
+      height: 28,
     },
-    "rock15": {
-      "top": 131,
-      "left": 424,
-      "width": 39,
-      "height": 29,
-      "label": "edge"
+    rock15: {
+      top: 131,
+      left: 424,
+      width: 39,
+      height: 29,
+      label: 'edge',
     },
-    "rock16": {
-      "top": 611,
-      "left": 604,
-      "width": 80,
-      "height": 84
+    rock16: {
+      top: 611,
+      left: 604,
+      width: 80,
+      height: 84,
     },
-    "rock17": {
-      "top": 508,
-      "left": 547,
-      "width": 31,
-      "height": 26
+    rock17: {
+      top: 508,
+      left: 547,
+      width: 31,
+      height: 26,
     },
-    "rock18": {
-      "top": 405,
-      "left": 428,
-      "width": 44,
-      "height": 30
+    rock18: {
+      top: 405,
+      left: 428,
+      width: 44,
+      height: 30,
     },
-    "rock19": {
-      "top": 266,
-      "left": 255,
-      "width": 69,
-      "height": 60
+    rock19: {
+      top: 266,
+      left: 255,
+      width: 69,
+      height: 60,
     },
-    "rock20": {
-      "top": 67,
-      "left": 294,
-      "width": 52,
-      "height": 36,
-      "label": "edge"
+    rock20: {
+      top: 67,
+      left: 294,
+      width: 52,
+      height: 36,
+      label: 'edge',
     },
-    "rock21": {
-      "top": 586,
-      "left": 710,
-      "width": 22,
-      "height": 23
+    rock21: {
+      top: 586,
+      left: 710,
+      width: 22,
+      height: 23,
     },
-    "rock22": {
-      "top": 706,
-      "left": 477,
-      "width": 39,
-      "height": 29
+    rock22: {
+      top: 706,
+      left: 477,
+      width: 39,
+      height: 29,
     },
-    "rock23": {
-      "top": 562,
-      "left": 363,
-      "width": 31,
-      "height": 28
+    rock23: {
+      top: 562,
+      left: 363,
+      width: 31,
+      height: 28,
     },
-    "rock24": {
-      "top": 488,
-      "left": 206,
-      "width": 48,
-      "height": 46
+    rock24: {
+      top: 488,
+      left: 206,
+      width: 48,
+      height: 46,
     },
-    "rock25": {
-      "top": 333,
-      "left": 453,
-      "width": 28,
-      "height": 35
+    rock25: {
+      top: 333,
+      left: 453,
+      width: 28,
+      height: 35,
     },
-    "rock26": {
-      "top": 408,
-      "left": 505,
-      "width": 60,
-      "height": 58
+    rock26: {
+      top: 408,
+      left: 505,
+      width: 60,
+      height: 58,
     },
-    "rock27": {
-      "top": 363,
-      "left": 637,
-      "width": 39,
-      "height": 33
+    rock27: {
+      top: 363,
+      left: 637,
+      width: 39,
+      height: 33,
     },
-    "rock28": {
-      "top": 706,
-      "left": 846,
-      "width": 42,
-      "height": 31
+    rock28: {
+      top: 706,
+      left: 846,
+      width: 42,
+      height: 31,
     },
-    "rock29": {
-      "top": 631,
-      "left": 840,
-      "width": 34,
-      "height": 37
+    rock29: {
+      top: 631,
+      left: 840,
+      width: 34,
+      height: 37,
     },
-    "rock30": {
-      "top": 407,
-      "left": 650,
-      "width": 34,
-      "height": 24
+    rock30: {
+      top: 407,
+      left: 650,
+      width: 34,
+      height: 24,
     },
-    "rock31": {
-      "top": 276,
-      "left": 575,
-      "width": 51,
-      "height": 42
+    rock31: {
+      top: 276,
+      left: 575,
+      width: 51,
+      height: 42,
     },
-    "rock32": {
-      "top": 609,
-      "left": 497,
-      "width": 47,
-      "height": 39
+    rock32: {
+      top: 609,
+      left: 497,
+      width: 47,
+      height: 39,
     },
-    "rock33": {
-      "top": 458,
-      "left": 438,
-      "width": 29,
-      "height": 26
+    rock33: {
+      top: 458,
+      left: 438,
+      width: 29,
+      height: 26,
     },
-    "rock34": {
-      "top": 304,
-      "left": 441,
-      "width": 12,
-      "height": 14
+    rock34: {
+      top: 304,
+      left: 441,
+      width: 12,
+      height: 14,
     },
-    "rock35": {
-      "top": 597,
-      "left": 234,
-      "width": 37,
-      "height": 43
+    rock35: {
+      top: 597,
+      left: 234,
+      width: 37,
+      height: 43,
     },
-    "rock36": {
-      "top": 503,
-      "left": 442,
-      "width": 46,
-      "height": 39
+    rock36: {
+      top: 503,
+      left: 442,
+      width: 46,
+      height: 39,
     },
-    "rock37": {
-      "top": 374,
-      "left": 488,
-      "width": 35,
-      "height": 31
-    }
+    rock37: {
+      top: 374,
+      left: 488,
+      width: 35,
+      height: 31,
+    },
   },
-  "routes": {
-    "route1": {
-      "name": "Edge traverse",
-      "description": null,
-      "type": ROUTE_TYPES.ARF,
-      "grade": ROUTE_GRADES.EASY,
-      "risk": ROUTE_RISKS.MODERATE,
-      "sequence": [
+  routes: {
+    route1: {
+      name: 'Edge traverse',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
         {
-          "key": "rock1"
+          key: 'rock1',
         },
         {
-          "key": "rock2"
+          key: 'rock2',
         },
         {
-          "key": "rock3"
+          key: 'rock3',
         },
         {
-          "key": "rock4"
+          key: 'rock4',
         },
         {
-          "key": "rock5"
-        }
-      ]
+          key: 'rock5',
+        },
+      ],
     },
-    "route2": {
-      "name": "Crimper classic",
-      "description": "Sit start",
-      "type": ROUTE_TYPES.noF,
-      "grade": ROUTE_GRADES.VERY_HARD,
-      "risk": ROUTE_RISKS.LOW,
-      "sequence": [
+    route2: {
+      name: 'Crimper classic',
+      description: 'Sit start',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
         {
-          "key": "rock6"
+          key: 'rock6',
         },
         {
-          "key": "rock7"
+          key: 'rock7',
         },
         {
-          "key": "rock8"
+          key: 'rock8',
         },
         {
-          "key": "rock9"
+          key: 'rock9',
         },
         {
-          "key": "rock3"
-        }
-      ]
+          key: 'rock3',
+        },
+      ],
     },
-    "route3": {
-      "name": "The C-Clamp",
-      "description": null,
-      "type": ROUTE_TYPES.ENG,
-      "grade": ROUTE_GRADES.EXTREMELY_HARD,
-      "risk": ROUTE_RISKS.LOW,
-      "sequence": [
+    route3: {
+      name: 'The C-Clamp',
+      description: null,
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
         {
-          "key": "rock10"
+          key: 'rock10',
         },
         {
-          "key": "rock11"
+          key: 'rock11',
         },
         {
-          "key": "rock12"
+          key: 'rock12',
         },
         {
-          "key": "rock13"
+          key: 'rock13',
         },
         {
-          "key": "rock14"
+          key: 'rock14',
         },
         {
-          "key": "rock15"
-        }
-      ]
+          key: 'rock15',
+        },
+      ],
     },
-    "route4": {
-      "name": "Can't truss it",
-      "description": null,
-      "type": ROUTE_TYPES.noF,
-      "grade": ROUTE_GRADES.HARD,
-      "risk": ROUTE_RISKS.MODERATE,
-      "sequence": [
+    route4: {
+      name: "Can't truss it",
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
         {
-          "key": "rock16",
-          "label": "left side only"
+          key: 'rock16',
+          label: 'left side only',
         },
         {
-          "key": "rock17"
+          key: 'rock17',
         },
         {
-          "key": "rock18"
+          key: 'rock18',
         },
         {
-          "key": "rock19"
+          key: 'rock19',
         },
         {
-          "key": "rock20"
-        }
-      ]
+          key: 'rock20',
+        },
+      ],
     },
-    "route5": {
-      "name": "Cakewalk",
-      "description": "Stemming allowed",
-      "type": ROUTE_TYPES.ARF,
-      "grade": ROUTE_GRADES.HARD,
-      "risk": ROUTE_RISKS.LOW,
-      "sequence": [
+    route5: {
+      name: 'Cakewalk',
+      description: 'Stemming allowed',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
         {
-          "key": "rock8"
+          key: 'rock8',
         },
         {
-          "key": "rock21"
+          key: 'rock21',
         },
         {
-          "key": "rock16",
-          "label": "right side only"
+          key: 'rock16',
+          label: 'right side only',
         },
         {
-          "key": "rock22"
+          key: 'rock22',
         },
         {
-          "key": "rock23"
+          key: 'rock23',
         },
         {
-          "key": "rock12"
+          key: 'rock12',
         },
         {
-          "key": "rock24"
+          key: 'rock24',
         },
         {
-          "key": "rock13"
+          key: 'rock13',
         },
         {
-          "key": "rock25"
+          key: 'rock25',
         },
         {
-          "key": "rock26"
+          key: 'rock26',
         },
         {
-          "key": "rock27"
+          key: 'rock27',
         },
         {
-          "key": "rock3"
-        }
-      ]
+          key: 'rock3',
+        },
+      ],
     },
-    "route6": {
-      "name": "Pump & Circumstance",
-      "description": "Sit start",
-      "type": ROUTE_TYPES.noF,
-      "grade": ROUTE_GRADES.VERY_HARD,
-      "risk": ROUTE_RISKS.LOW,
-      "sequence": [
+    route6: {
+      name: 'Pump & Circumstance',
+      description: 'Sit start',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
         {
-          "key": "rock6"
+          key: 'rock6',
         },
         {
-          "key": "rock28"
+          key: 'rock28',
         },
         {
-          "key": "rock29"
+          key: 'rock29',
         },
         {
-          "key": "rock21"
+          key: 'rock21',
         },
         {
-          "key": "rock17"
+          key: 'rock17',
         },
         {
-          "key": "rock30"
+          key: 'rock30',
         },
         {
-          "key": "rock31"
+          key: 'rock31',
         },
         {
-          "key": "rock14"
+          key: 'rock14',
         },
         {
-          "key": "rock20",
-          "label": "End left of crack"
-        }
-      ]
+          key: 'rock20',
+          label: 'End left of crack',
+        },
+      ],
     },
-    "route7": {
-      "name": "The razor",
-      "description": null,
-      "type": ROUTE_TYPES.noF,
-      "grade": ROUTE_GRADES.EXTREMELY_HARD,
-      "risk": ROUTE_RISKS.LOW,
-      "sequence": [
+    route7: {
+      name: 'The razor',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
         {
-          "key": "rock32"
+          key: 'rock32',
         },
         {
-          "key": "rock33"
+          key: 'rock33',
         },
         {
-          "key": "rock34"
+          key: 'rock34',
         },
         {
-          "key": "rock14"
+          key: 'rock14',
         },
         {
-          "key": "rock15"
-        }
-      ]
+          key: 'rock15',
+        },
+      ],
     },
-    "route8": {
-      "name": "Bakers' dozen",
-      "description": "Stem start if short",
-      "type": ROUTE_TYPES.noF,
-      "grade": ROUTE_GRADES.HARD,
-      "risk": ROUTE_RISKS.LOW,
-      "sequence": [
+    route8: {
+      name: "Bakers' dozen",
+      description: 'Stem start if short',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
         {
-          "key": "rock35"
+          key: 'rock35',
         },
         {
-          "key": "rock12"
+          key: 'rock12',
         },
         {
-          "key": "rock36"
+          key: 'rock36',
         },
         {
-          "key": "rock37"
+          key: 'rock37',
         },
         {
-          "key": "rock14"
+          key: 'rock14',
         },
         {
-          "key": "rock15"
-        }
-      ]
-    }
-  }
+          key: 'rock15',
+        },
+      ],
+    },
+  },
+}
+
+const emptyRouteStub = {
+  isEmpty: true,
+  rocks: {
+    demo: {
+      top: 0,
+      left: 0,
+      width: 1,
+      height: 1,
+    },
+  },
+  routes: {
+    route0: {
+      name: 'empty',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'demo',
+        },
+      ],
+    },
+  },
+}
+
+const eastSideNorthWallEastFacing = {
+  key: 'east-side-north-wall-east-facing',
+  name: 'East Side, North Wall, East Facing',
+  image: 'east-side-north-wall-east-facing.png',
+  width: 1000,
+  height: 779,
+  ...emptyRouteStub,
+}
+
+const eastSideNorthWallWestFacing = {
+  key: 'east-side-north-wall-west-facing',
+  name: 'East Side, North Wall, West Facing',
+  image: 'east-side-north-wall-west-facing.png',
+  width: 1000,
+  height: 840,
+  ...emptyRouteStub,
+}
+
+const eastSideSouthWallEastFacing = {
+  key: 'east-side-south-wall-east-facing',
+  name: 'East Side, South Wall, East Facing',
+  image: 'east-side-south-wall-east-facing.png',
+  width: 1000,
+  height: 1082,
+  ...emptyRouteStub,
+}
+
+const eastSideSouthWallWestFacing = {
+  key: 'east-side-south-wall-west-facing',
+  name: 'East Side, South Wall, West Facing',
+  image: 'east-side-south-wall-west-facing.png',
+  width: 1000,
+  height: 1156,
+  ...emptyRouteStub,
+}
+
+const eastWallNorthFacing = {
+  key: 'east-wall-north-facing',
+  name: 'East Wall, North Facing',
+  image: 'east-wall-north-facing.png',
+  width: 1000,
+  height: 874,
+  ...emptyRouteStub,
+}
+
+const northTower = {
+  key: 'north-tower',
+  name: 'North Tower',
+  image: 'north-tower.png',
+  width: 1000,
+  height: 1540,
+  ...emptyRouteStub,
+}
+
+const westWallNorthFacing = {
+  key: 'west-wall-north-facing',
+  name: 'West Wall, North Facing',
+  image: 'west-wall-north-facing.png',
+  width: 1000,
+  height: 1053,
+  ...emptyRouteStub,
+}
+
+const westWallSouthFacing = {
+  key: 'west-wall-south-facing',
+  name: 'West Wall, South Facing',
+  image: 'west-wall-south-facing.png',
+  width: 1000,
+  height: 1180,
+  ...emptyRouteStub,
 }
 
 const WALLS = {
-  [southTowerWall.key]: southTowerWall,
   [northRoof.key]: northRoof,
   [northRoofInnerSide.key]: northRoofInnerSide,
-  [eastSideSouthFacing.key]: eastSideSouthFacing,
+  [eastWallSouthFacing.key]: eastWallSouthFacing,
+  [eastWallNorthFacing.key]: eastWallNorthFacing,
+  [southTowerWall.key]: southTowerWall,
+  [northTower.key]: northTower,
+  [eastSideNorthWallEastFacing.key]: eastSideNorthWallEastFacing,
+  [eastSideNorthWallWestFacing.key]: eastSideNorthWallWestFacing,
+  [eastSideSouthWallEastFacing.key]: eastSideSouthWallEastFacing,
+  [eastSideSouthWallWestFacing.key]: eastSideSouthWallWestFacing,
+  [westWallNorthFacing.key]: westWallNorthFacing,
+  [westWallSouthFacing.key]: westWallSouthFacing,
 }
 
 module.exports = {
