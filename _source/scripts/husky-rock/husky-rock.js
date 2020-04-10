@@ -182,9 +182,15 @@ const WallPage = props => {
           }}
           value={currentRouteKey}>
           {selectorRouteEntries.map(([key, route]) => {
+            const name =
+              route.name != null
+                ? route.name
+                : route.description != null
+                ? route.description.slice(0, 16) + '...'
+                : 'No name'
             return (
               <option value={key} key={key}>
-                [{route.grade.name}] {route.name || route.description || 'No name'}
+                [{route.grade.name}][{route.type.key}] {name}
               </option>
             )
           })}
