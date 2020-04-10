@@ -144,11 +144,11 @@ const southTowerWall = {
       left: 214,
     },
     rock6: {
-      width: 14,
-      height: 9,
-      left: 53,
-      top: 348,
-      label: 'bottom edge',
+      width: 20,
+      height: 5,
+      left: 56,
+      top: 354,
+      label: 'texture',
     },
     rock7: {
       width: 8,
