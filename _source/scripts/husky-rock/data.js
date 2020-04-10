@@ -3078,6 +3078,284 @@ const eastWallSouthFacing = {
   },
 }
 
+const eastSideNorthWallWestFacing = {
+  key: 'east-side-north-wall-west-facing',
+  name: 'East Side, North Wall, West Facing',
+  image: 'east-side-north-wall-west-facing.png',
+  width: 1000,
+  height: 840,
+  isEmpty: true,
+  rocks: {
+    rock0: {
+      top: 495,
+      left: 243,
+      width: 45,
+      height: 49,
+    },
+    rock1: {
+      top: 413,
+      left: 204,
+      width: 70,
+      height: 45,
+    },
+    rock2: {
+      top: 307,
+      left: 109,
+      width: 51,
+      height: 42,
+      label: 'edge',
+    },
+    rock3: {
+      top: 441,
+      left: 357,
+      width: 84,
+      height: 60,
+    },
+    rock4: {
+      top: 388,
+      left: 530,
+      width: 71,
+      height: 53,
+    },
+    rock5: {
+      top: 296,
+      left: 538,
+      width: 27,
+      height: 41,
+    },
+    rock6: {
+      top: 145,
+      left: 665,
+      width: 23,
+      height: 22,
+    },
+    rock7: {
+      top: 47,
+      left: 641,
+      width: 41,
+      height: 28,
+      label: 'edge',
+    },
+    rock8: {
+      top: 303,
+      left: 290,
+      width: 50,
+      height: 31,
+    },
+    rock9: {
+      top: 282,
+      left: 370,
+      width: 25,
+      height: 19,
+    },
+    rock10: {
+      top: 20,
+      left: 705,
+      width: 30,
+      height: 28,
+      label: 'loop',
+    },
+    rock11: {
+      top: 565,
+      left: 105,
+      width: 21,
+      height: 14,
+    },
+    rock12: {
+      top: 518,
+      left: 106,
+      width: 36,
+      height: 37,
+    },
+    rock13: {
+      top: 418,
+      left: 83,
+      width: 36,
+      height: 27,
+    },
+    rock14: {
+      top: 340,
+      left: 61,
+      width: 36,
+      height: 31,
+      label: 'edge',
+    },
+    rock15: {
+      top: 401,
+      left: 296,
+      width: 49,
+      height: 31,
+    },
+    rock16: {
+      top: 363,
+      left: 385,
+      width: 30,
+      height: 24,
+    },
+    rock17: {
+      top: 329,
+      left: 493,
+      width: 33,
+      height: 38,
+    },
+    rock18: {
+      top: 136,
+      left: 466,
+      width: 44,
+      height: 32,
+    },
+  },
+  routes: {
+    route1: {
+      name: null,
+      description: 'End at top of crack',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock0',
+        },
+        {
+          key: 'rock1',
+        },
+        {
+          key: 'rock2',
+        },
+      ],
+    },
+    route2: {
+      name: 'Heel or Peel',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
+        {
+          key: 'rock0',
+        },
+        {
+          key: 'rock3',
+        },
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock5',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock7',
+        },
+      ],
+    },
+    route3: {
+      name: 'Rude flys',
+      description: 'Gripper finish',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
+        {
+          key: 'rock1',
+        },
+        {
+          key: 'rock8',
+        },
+        {
+          key: 'rock9',
+        },
+        {
+          key: 'rock5',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock10',
+        },
+      ],
+    },
+    route4: {
+      name: null,
+      description: 'All rocks to right top',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock11',
+        },
+        {
+          key: 'rock10',
+        },
+      ],
+    },
+    route5: {
+      name: null,
+      description: 'Feet left of crack',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock12',
+        },
+        {
+          key: 'rock13',
+        },
+        {
+          key: 'rock14',
+        },
+      ],
+    },
+    route6: {
+      name: null,
+      description: 'Sitstart',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock12',
+        },
+        {
+          key: 'rock13',
+        },
+        {
+          key: 'rock14',
+        },
+      ],
+    },
+    route7: {
+      name: 'Kriss Kross',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock0',
+        },
+        {
+          key: 'rock15',
+        },
+        {
+          key: 'rock16',
+        },
+        {
+          key: 'rock17',
+        },
+        {
+          key: 'rock18',
+        },
+      ],
+    },
+  },
+}
+
 const emptyRouteStub = {
   isEmpty: true,
   rocks: {
@@ -3110,15 +3388,6 @@ const eastSideNorthWallEastFacing = {
   image: 'east-side-north-wall-east-facing.png',
   width: 1000,
   height: 779,
-  ...emptyRouteStub,
-}
-
-const eastSideNorthWallWestFacing = {
-  key: 'east-side-north-wall-west-facing',
-  name: 'East Side, North Wall, West Facing',
-  image: 'east-side-north-wall-west-facing.png',
-  width: 1000,
-  height: 840,
   ...emptyRouteStub,
 }
 
