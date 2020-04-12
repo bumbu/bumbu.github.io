@@ -3084,7 +3084,6 @@ const eastSideNorthWallWestFacing = {
   image: 'east-side-north-wall-west-facing.png',
   width: 1000,
   height: 840,
-  isEmpty: true,
   rocks: {
     rock0: {
       top: 495,
