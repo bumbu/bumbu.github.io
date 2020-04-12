@@ -3388,7 +3388,6 @@ const eastSideNorthWallEastFacing = {
   image: 'east-side-north-wall-east-facing.png',
   width: 1000,
   height: 779,
-  isEmpty: true,
   rocks: {
     rock0: {
       top: 727,
@@ -3720,7 +3719,6 @@ const eastSideSouthWallEastFacing = {
   image: 'east-side-south-wall-east-facing.png',
   width: 1000,
   height: 1082,
-  isEmpty: true,
   rocks: {
     rock0: {
       top: 621,
