@@ -2839,6 +2839,43 @@ const eastWallSouthFacing = {
       width: 35,
       height: 31,
     },
+    rock38: {
+      top: 235,
+      left: 582,
+      width: 36,
+      height: 25,
+    },
+    rock39: {
+      top: 718,
+      left: 568,
+      width: 43,
+      height: 51,
+    },
+    rock40: {
+      top: 654,
+      left: 505,
+      width: 49,
+      height: 36,
+    },
+    rock41: {
+      top: 157,
+      left: 490,
+      width: 51,
+      height: 36,
+      label: 'edge',
+    },
+    rock42: {
+      top: 466,
+      left: 671,
+      width: 46,
+      height: 29,
+    },
+    rock43: {
+      top: 371,
+      left: 770,
+      width: 44,
+      height: 39,
+    },
   },
   routes: {
     route1: {
@@ -3072,6 +3109,83 @@ const eastWallSouthFacing = {
         },
         {
           key: 'rock15',
+        },
+      ],
+    },
+    route9: {
+      name: 'Toecutter',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.HIGH,
+      sequence: [
+        {
+          key: 'rock16',
+          label: 'right side only',
+        },
+        {
+          key: 'rock21',
+        },
+        {
+          key: 'rock30',
+        },
+        {
+          key: 'rock38',
+        },
+        {
+          key: 'rock4',
+        },
+      ],
+    },
+    route10: {
+      name: 'The enigma',
+      description: "'Nuf said",
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock39',
+          label: 'start with either first 3',
+        },
+        {
+          key: 'rock22',
+        },
+        {
+          key: 'rock40',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock41',
+        },
+      ],
+    },
+    route11: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock10',
+        },
+        {
+          key: 'rock22',
+        },
+        {
+          key: 'rock17',
+        },
+        {
+          key: 'rock42',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'rock4',
         },
       ],
     },
