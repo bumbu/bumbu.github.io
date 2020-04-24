@@ -334,6 +334,12 @@ const WallPage = props => {
           style={{ width: '80%', height: '500px' }}
         />
       ) : null}
+      <a
+        className="huskyRock__infoTitle"
+        href="https://github.com/bumbu/bumbu.github.io/issues"
+        target="_blank">
+        Submit feedback
+      </a>
     </div>
   )
 }
@@ -480,6 +486,12 @@ const Container = () => {
               </ul>
             </div>
           ) : null}
+          <a
+            className="huskyRock__infoTitle"
+            href="https://github.com/bumbu/bumbu.github.io/issues"
+            target="_blank">
+            Submit feedback
+          </a>
         </div>
       </div>
     </div>
