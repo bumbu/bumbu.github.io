@@ -2839,6 +2839,135 @@ const eastWallSouthFacing = {
       width: 35,
       height: 31,
     },
+    rock38: {
+      top: 236,
+      left: 582,
+      width: 31,
+      height: 29,
+    },
+    rock39: {
+      top: 719,
+      left: 571,
+      width: 37,
+      height: 50,
+    },
+    rock40: {
+      top: 655,
+      left: 512,
+      width: 36,
+      height: 36,
+    },
+    rock41: {
+      top: 145,
+      left: 488,
+      width: 27,
+      height: 32,
+      label: 'edge',
+    },
+    rock42: {
+      top: 467,
+      left: 676,
+      width: 36,
+      height: 26,
+    },
+    rock43: {
+      top: 374,
+      left: 771,
+      width: 40,
+      height: 36,
+    },
+    rock44: {
+      top: 244,
+      left: 704,
+      width: 28,
+      height: 47,
+      label: 'edge',
+    },
+    rock45: {
+      top: 961,
+      left: 751,
+      width: 195,
+      height: 15,
+    },
+    rock46: {
+      top: 972,
+      left: 403,
+      width: 324,
+      height: 15,
+    },
+    rock47: {
+      top: 176,
+      left: 566,
+      width: 32,
+      height: 44,
+      label: 'edge',
+    },
+    rock48: {
+      top: 963,
+      left: 268,
+      width: 127,
+      height: 22,
+    },
+    rock49: {
+      top: 605,
+      left: 429,
+      width: 31,
+      height: 29,
+    },
+    rock50: {
+      top: 364,
+      left: 689,
+      width: 38,
+      height: 29,
+    },
+    rock51: {
+      top: 218,
+      left: 545,
+      width: 26,
+      height: 26,
+    },
+    rock52: {
+      top: 511,
+      left: 766,
+      width: 63,
+      height: 65,
+    },
+    rock53: {
+      top: 379,
+      left: 351,
+      width: 33,
+      height: 26,
+    },
+    rock54: {
+      top: 431,
+      left: 203,
+      width: 28,
+      height: 29,
+    },
+    rock55: {
+      top: 306,
+      left: 358,
+      width: 27,
+      height: 29,
+    },
+    rock56: {
+      top: 164,
+      left: 273,
+      width: 42,
+      height: 38,
+    },
+    rock57: {
+      top: 538,
+      left: 875,
+      width: 19,
+      height: 26,
+    },
+    rock58: {
+      top: 820,
+      left: 459,
+      width: 35,
+      height: 34,
+    },
   },
   routes: {
     route1: {
@@ -3072,6 +3201,394 @@ const eastWallSouthFacing = {
         },
         {
           key: 'rock15',
+        },
+      ],
+    },
+    route9: {
+      name: 'Toecutter',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.HIGH,
+      sequence: [
+        {
+          key: 'rock16',
+          label: 'right side only',
+        },
+        {
+          key: 'rock21',
+        },
+        {
+          key: 'rock30',
+        },
+        {
+          key: 'rock38',
+        },
+        {
+          key: 'rock4',
+        },
+      ],
+    },
+    route10: {
+      name: 'The Enigma',
+      description: null,
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock39',
+        },
+        {
+          key: 'rock22',
+        },
+        {
+          key: 'rock40',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock41',
+        },
+      ],
+    },
+    route11: {
+      name: 'Mission impossible',
+      description: 'Project sit start with stem',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREME,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
+        {
+          key: 'rock10',
+        },
+        {
+          key: 'rock22',
+        },
+        {
+          key: 'rock17',
+        },
+        {
+          key: 'rock42',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'rock44',
+        },
+      ],
+    },
+    route12: {
+      name: 'All rocks to top',
+      description: 'In between crack and edge',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.EASY_MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock45',
+        },
+        {
+          key: 'rock3',
+        },
+      ],
+    },
+    route13: {
+      name: 'All Rocks To Top',
+      description: 'In between cracks',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock46',
+        },
+        {
+          key: 'rock47',
+        },
+      ],
+    },
+    route14: {
+      name: 'All Rocks To Top',
+      description: 'In between edge and crack',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
+        {
+          key: 'rock48',
+        },
+        {
+          key: 'rock20',
+        },
+      ],
+    },
+    route15: {
+      name: '4-rock classic',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock32',
+        },
+        {
+          key: 'rock17',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock14',
+        },
+        {
+          key: 'rock41',
+        },
+      ],
+    },
+    route16: {
+      name: 'Spirolina highball',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock49',
+        },
+        {
+          key: 'rock36',
+        },
+        {
+          key: 'rock18',
+        },
+        {
+          key: 'rock14',
+        },
+        {
+          key: 'rock15',
+        },
+      ],
+    },
+    route17: {
+      name: 'AX Murderer',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock21',
+        },
+        {
+          key: 'rock42',
+        },
+        {
+          key: 'rock50',
+        },
+        {
+          key: 'rock44',
+        },
+      ],
+    },
+    route18: {
+      name: 'Pizza pocket',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock40',
+        },
+        {
+          key: 'rock36',
+        },
+        {
+          key: 'rock26',
+        },
+        {
+          key: 'rock34',
+        },
+        {
+          key: 'rock51',
+        },
+        {
+          key: 'rock41',
+        },
+      ],
+    },
+    route19: {
+      name: 'Clampdown',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock16',
+          label: 'right side only',
+        },
+        {
+          key: 'rock52',
+          label: 'under side only',
+        },
+        {
+          key: 'rock50',
+        },
+        {
+          key: 'rock44',
+        },
+      ],
+    },
+    route20: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.EXTREME,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock10',
+          label: 'feet only',
+        },
+        {
+          key: 'rock23',
+        },
+        {
+          key: 'rock53',
+        },
+        {
+          key: 'rock14',
+        },
+        {
+          key: 'rock15',
+        },
+      ],
+    },
+    route21: {
+      name: 'Rejuvenation Generation',
+      description: 'Stem start to 1st hold. Aarghh!',
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock35',
+        },
+        {
+          key: 'rock54',
+        },
+        {
+          key: 'rock55',
+        },
+        {
+          key: 'rock56',
+        },
+        {
+          key: 'rock20',
+        },
+      ],
+    },
+    route22: {
+      name: 'Balance Test',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock16',
+        },
+        {
+          key: 'rock52',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock19',
+        },
+        {
+          key: 'rock20',
+        },
+      ],
+    },
+    route23: {
+      name: 'The incisor',
+      description: 'Sit start; stay right of crack',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock29',
+        },
+        {
+          key: 'rock57',
+        },
+        {
+          key: 'rock9',
+        },
+        {
+          key: 'rock3',
+        },
+      ],
+    },
+    route24: {
+      name: null,
+      description: 'Classic high-step',
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock32',
+        },
+        {
+          key: 'rock12',
+        },
+        {
+          key: 'rock53',
+        },
+        {
+          key: 'rock14',
+        },
+        {
+          key: 'rock41',
+        },
+      ],
+    },
+    route25: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock58',
+        },
+        {
+          key: 'rock22',
+        },
+        {
+          key: 'rock36',
+        },
+        {
+          key: 'rock25',
+        },
+        {
+          key: 'rock31',
+        },
+        {
+          key: 'rock47',
         },
       ],
     },
