@@ -20,7 +20,7 @@ const ROUTE_GRADES = {
 const ROUTE_RISKS = {
   LOW: { key: 'LOW', name: 'Low risk of injury' },
   MODERATE: { key: 'MODERATE', name: 'Risk of injury' },
-  HIGH: { key: 'HIGH', name: 'Risk of serious injury.' },
+  HIGH: { key: 'HIGH', name: 'Risk of serious injury' },
 }
 
 const southTowerWall = {

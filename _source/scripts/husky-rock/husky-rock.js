@@ -208,6 +208,9 @@ const WallPage = props => {
             <li>
               Type: {currentRoute.type.key} ({currentRoute.type.name})
             </li>
+            {currentRoute.risk.key !== ROUTE_RISKS.LOW.key ? (
+              <li>{currentRoute.risk.name}</li>
+            ) : null}
           </ul>
         </div>
       ) : null}
