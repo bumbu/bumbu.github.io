@@ -6452,6 +6452,120 @@ const westWallSouthFacing = {
       width: 27,
       height: 34,
     },
+    rock41: {
+      top: 661,
+      left: 682,
+      width: 15,
+      height: 2,
+    },
+    rock42: {
+      top: 646,
+      left: 665,
+      width: 17,
+      height: 19,
+    },
+    rock43: {
+      top: 390,
+      left: 702,
+      width: 104,
+      height: 51,
+    },
+    rock44: {
+      top: 96,
+      left: 829,
+      width: 18,
+      height: 23,
+    },
+    rock45: {
+      top: 608,
+      left: 337,
+      width: 72,
+      height: 53,
+    },
+    rock46: {
+      top: 606,
+      left: 292,
+      width: 38,
+      height: 38,
+    },
+    rock47: {
+      top: 546,
+      left: 335,
+      width: 57,
+      height: 57,
+    },
+    rock48: {
+      top: 488,
+      left: 121,
+      width: 64,
+      height: 62,
+    },
+    rock49: {
+      top: 281,
+      left: 100,
+      width: 53,
+      height: 50,
+    },
+    rock50: {
+      top: 1115,
+      left: 316,
+      width: 285,
+      height: 13,
+    },
+    rock51: {
+      top: 298,
+      left: 188,
+      width: 38,
+      height: 49,
+    },
+    rock52: {
+      top: 326,
+      left: 64,
+      width: 26,
+      height: 34,
+    },
+    rock53: {
+      top: 435,
+      left: 471,
+      width: 37,
+      height: 28,
+    },
+    rock54: {
+      top: 260,
+      left: 429,
+      width: 61,
+      height: 60,
+    },
+    rock55: {
+      top: 252,
+      left: 729,
+      width: 47,
+      height: 34,
+    },
+    rock56: {
+      top: 185,
+      left: 571,
+      width: 20,
+      height: 24,
+    },
+    rock57: {
+      top: 51,
+      left: 563,
+      width: 21,
+      height: 26,
+    },
+    rock58: {
+      top: 1105,
+      left: 603,
+      width: 37,
+      height: 23,
+    },
+    rock59: {
+      top: 8,
+      left: 689,
+      width: 27,
+      height: 43,
+    },
   },
   routes: {
     route1: {
@@ -6727,6 +6841,375 @@ const westWallSouthFacing = {
       sequence: [
         {
           key: 'rock14',
+        },
+        {
+          key: 'rock18',
+        },
+      ],
+    },
+    route12: {
+      name: null,
+      description: '5th hold: 1/4" edge on rib',
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.EASY_MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock35',
+          label: 'feet',
+        },
+        {
+          key: 'rock12',
+          label: 'feet',
+        },
+        {
+          key: 'rock20',
+        },
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock41',
+        },
+        {
+          key: 'rock42',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'rock44',
+        },
+      ],
+    },
+    route13: {
+      name: 'Climbing 101',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock10',
+          label: 'feet',
+        },
+        {
+          key: 'rock21',
+          label: 'feet',
+        },
+        {
+          key: 'rock22',
+          label: 'feet',
+        },
+        {
+          key: 'rock23',
+        },
+        {
+          key: 'rock45',
+        },
+        {
+          key: 'rock46',
+        },
+        {
+          key: 'rock47',
+        },
+        {
+          key: 'rock28',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock7',
+        },
+        {
+          key: 'rock34',
+        },
+        {
+          key: 'rock33',
+        },
+      ],
+    },
+    route14: {
+      name: null,
+      description: 'Platform out',
+      type: ROUTE_TYPES.ENG,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.MODERATE,
+      sequence: [
+        {
+          key: 'rock24',
+        },
+        {
+          key: 'rock48',
+        },
+        {
+          key: 'rock49',
+        },
+        {
+          key: 'rock30',
+        },
+      ],
+    },
+    route15: {
+      name: null,
+      description: 'Left hand in left crack, right in right',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock50',
+          label: 'start',
+        },
+        {
+          key: 'rock33',
+          label: 'end',
+        },
+      ],
+    },
+    route16: {
+      name: null,
+      description: 'Left hand in left crack, right in right',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock50',
+          label: 'start',
+        },
+        {
+          key: 'rock33',
+          label: 'end',
+        },
+      ],
+    },
+    route17: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.EASY_MODERATE,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock13',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'rock8',
+        },
+        {
+          key: 'rock34',
+        },
+        {
+          key: 'rock51',
+        },
+        {
+          key: 'rock49',
+        },
+        {
+          key: 'rock52',
+        },
+      ],
+    },
+    route18: {
+      name: null,
+      description: 'Use rocks and texcture only',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock24',
+        },
+        {
+          key: 'rock45',
+        },
+        {
+          key: 'rock14',
+        },
+        {
+          key: 'rock13',
+        },
+      ],
+    },
+    route19: {
+      name: null,
+      description: 'Use rocks and texcture only',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock24',
+        },
+        {
+          key: 'rock45',
+        },
+        {
+          key: 'rock14',
+        },
+        {
+          key: 'rock13',
+        },
+      ],
+    },
+    route20: {
+      name: null,
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock10',
+          label: 'feet',
+        },
+        {
+          key: 'rock5',
+        },
+        {
+          key: 'rock53',
+        },
+        {
+          key: 'rock54',
+        },
+        {
+          key: 'rock18',
+        },
+      ],
+    },
+    route21: {
+      name: "Walkin' the park",
+      description: null,
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock35',
+          label: 'feet',
+        },
+        {
+          key: 'rock12',
+          label: 'feet',
+        },
+        {
+          key: 'rock20',
+        },
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock13',
+        },
+        {
+          key: 'rock36',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock55',
+        },
+        {
+          key: 'rock39',
+        },
+        {
+          key: 'rock40',
+        },
+      ],
+    },
+    route22: {
+      name: null,
+      description: 'Starter rock for feet',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock10',
+          label: 'feet',
+        },
+        {
+          key: 'rock5',
+        },
+        {
+          key: 'rock14',
+        },
+        {
+          key: 'rock8',
+        },
+        {
+          key: 'rock56',
+        },
+        {
+          key: 'rock57',
+        },
+      ],
+    },
+    route23: {
+      name: 'Vice grip',
+      description: 'Pinch rib to top, no layback',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock58',
+          label: 'start',
+        },
+        {
+          key: 'rock59',
+          label: 'end',
+        },
+      ],
+    },
+    route24: {
+      name: 'Amphetamine grip',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock24',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock54',
+        },
+        {
+          key: 'rock18',
+        },
+      ],
+    },
+    route25: {
+      name: 'Amphetamine grip (variation)',
+      description: null,
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock24',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock54',
         },
         {
           key: 'rock18',
