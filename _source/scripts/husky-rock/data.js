@@ -6173,7 +6173,6 @@ const westWallNorthFacing = {
   image: 'west-wall-north-facing.png',
   width: 1000,
   height: 1053,
-  isEmpty: true,
   rocks: {
     rock0: {
       top: 670,
