@@ -6420,6 +6420,102 @@ const westWallNorthFacing = {
       width: 24,
       height: 38,
     },
+    rock35: {
+      top: 757,
+      left: 429,
+      width: 23,
+      height: 41,
+    },
+    rock36: {
+      top: 677,
+      left: 268,
+      width: 40,
+      height: 29,
+    },
+    rock37: {
+      top: 568,
+      left: 301,
+      width: 41,
+      height: 41,
+    },
+    rock38: {
+      top: 820,
+      left: 746,
+      width: 38,
+      height: 38,
+    },
+    rock39: {
+      top: 319,
+      left: 714,
+      width: 16,
+      height: 14,
+    },
+    rock40: {
+      top: 189,
+      left: 710,
+      width: 27,
+      height: 40,
+    },
+    rock41: {
+      top: 748,
+      left: 915,
+      width: 51,
+      height: 355,
+    },
+    rock42: {
+      top: 733,
+      left: 124,
+      width: 54,
+      height: 341,
+    },
+    rock43: {
+      top: 452,
+      left: 472,
+      width: 51,
+      height: 45,
+    },
+    rock44: {
+      top: 321,
+      left: 578,
+      width: 58,
+      height: 47,
+    },
+    rock45: {
+      top: 681,
+      left: 649,
+      width: 36,
+      height: 33,
+    },
+    rock46: {
+      top: 339,
+      left: 764,
+      width: 32,
+      height: 32,
+    },
+    rock47: {
+      top: 209,
+      left: 753,
+      width: 20,
+      height: 38,
+    },
+    rock48: {
+      top: 1072,
+      left: 384,
+      width: 519,
+      height: 51,
+    },
+    rock49: {
+      top: 337,
+      left: 366,
+      width: 21,
+      height: 27,
+    },
+    rock50: {
+      top: 76,
+      left: 456,
+      width: 34,
+      height: 43,
+    },
   },
   routes: {
     route1: {
@@ -6709,6 +6805,240 @@ const westWallNorthFacing = {
         },
         {
           key: 'rock8',
+        },
+      ],
+    },
+    route12: {
+      name: 'Beat the clock',
+      description: 'Big block out (variation: 2 loops - Hard)',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock35',
+          label: 'start',
+        },
+        {
+          key: 'rock36',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock29',
+        },
+        {
+          key: 'rock12',
+        },
+        {
+          key: 'rock1',
+        },
+        {
+          key: 'rock5',
+        },
+        {
+          key: 'rock0',
+        },
+        {
+          key: 'rock9',
+          label: 'end',
+        },
+      ],
+    },
+    route13: {
+      name: 'Gong show',
+      description: "Feet can't touch wall",
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock10',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock29',
+        },
+        {
+          key: 'rock18',
+        },
+        {
+          key: 'rock30',
+        },
+        {
+          key: 'rock16',
+        },
+        {
+          key: 'rock17',
+        },
+        {
+          key: 'rock3',
+        },
+      ],
+    },
+    route14: {
+      name: 'Local only',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.EXTREMELY_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock38',
+        },
+        {
+          key: 'rock31',
+        },
+        {
+          key: 'rock32',
+        },
+        {
+          key: 'rock6',
+        },
+        {
+          key: 'rock39',
+          label: 'pocket',
+        },
+        {
+          key: 'rock40',
+        },
+      ],
+    },
+    route15: {
+      name: null,
+      description: 'All rocks under big block',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock41',
+          label: 'start',
+        },
+        {
+          key: 'rock42',
+        },
+      ],
+    },
+    route16: {
+      name: null,
+      description: 'Reachy',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock35',
+        },
+        {
+          key: 'rock0',
+        },
+        {
+          key: 'rock43',
+        },
+        {
+          key: 'rock44',
+        },
+        {
+          key: 'rock8',
+        },
+      ],
+    },
+    route17: {
+      name: 'Hammerhead',
+      description: 'Beware last move',
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.VERY_HARD,
+      risk: ROUTE_RISKS.HIGH,
+      sequence: [
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock45',
+        },
+        {
+          key: 'rock32',
+        },
+        {
+          key: 'rock33',
+        },
+        {
+          key: 'rock46',
+        },
+        {
+          key: 'rock47',
+        },
+      ],
+    },
+    route18: {
+      name: null,
+      description: 'All rocks to top',
+      type: ROUTE_TYPES.AR,
+      grade: ROUTE_GRADES.EASY,
+      risk: ROUTE_RISKS.LOW,
+      sequence: [
+        {
+          key: 'rock48',
+          label: 'start',
+        },
+        {
+          key: 'rock8',
+          label: 'end',
+        },
+      ],
+    },
+    route19: {
+      name: 'Jello Angst',
+      description: 'Microedges - 3rd hold',
+      type: ROUTE_TYPES.ARF,
+      grade: ROUTE_GRADES.MODERATE_HARD,
+      risk: ROUTE_RISKS.HIGH,
+      sequence: [
+        {
+          key: 'rock36',
+        },
+        {
+          key: 'rock37',
+        },
+        {
+          key: 'rock49',
+        },
+        {
+          key: 'rock17',
+        },
+        {
+          key: 'rock50',
+        },
+      ],
+    },
+    route20: {
+      name: 'Run amok',
+      description: null,
+      type: ROUTE_TYPES.noF,
+      grade: ROUTE_GRADES.HARD,
+      risk: ROUTE_RISKS.HIGH,
+      sequence: [
+        {
+          key: 'rock4',
+        },
+        {
+          key: 'rock45',
+        },
+        {
+          key: 'rock15',
+        },
+        {
+          key: 'rock1',
+        },
+        {
+          key: 'rock17',
+        },
+        {
+          key: 'rock3',
         },
       ],
     },
