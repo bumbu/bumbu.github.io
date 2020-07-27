@@ -1372,6 +1372,9 @@ body.sidebar-open .trigger__lines:after {
   padding: 2px;
   border-bottom-left-radius: 12px;
 }
+.huskyRock__infoHeader {
+  padding: 0 0 12px;
+}
 .huskyRock__infoSectionWrapper {
   clear: both;
 }

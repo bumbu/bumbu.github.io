@@ -67,12 +67,23 @@ const WallPage = props => {
   let { wall, isEditMode } = props
   // Return selected route, or first otherwise
   const currentRouteKey = routeKey in wall.routes ? routeKey : Object.keys(wall.routes)[0]
+  const currentRouteIndex = Object.keys(wall.routes).indexOf(currentRouteKey);
   let currentRoute = wall.routes[currentRouteKey]
   const setRoute = routeKey => {
     history.push(`?wall=${wall.key}&route=${routeKey}`)
   }
   const goBack = () => {
     history.push('?')
+  }
+  const goPrevious = () => {
+    const routeKeys = Object.keys(wall.routes);
+    const nextKey = ((currentRouteIndex - 1) + routeKeys.length) % routeKeys.length;
+    setRoute(routeKeys[nextKey]);
+  }
+  const goNext = () => {
+    const routeKeys = Object.keys(wall.routes);
+    const nextKey = ((currentRouteIndex + 1) + routeKeys.length) % routeKeys.length;
+    setRoute(routeKeys[nextKey]);
   }
 
   const selectorRouteEntries = Object.entries(wall.routes).sort((a, b) => {
@@ -337,6 +348,10 @@ const WallPage = props => {
           style={{ width: '80%', height: '500px' }}
         />
       ) : null}
+      <div>
+        <button onClick={goPrevious}>Previous</button>
+        <button onClick={goNext}>Next</button>
+      </div>
       <a
         className="huskyRock__infoTitle"
         href="https://github.com/bumbu/bumbu.github.io/issues"
@@ -365,6 +380,10 @@ const Container = () => {
 
   return currentWall == null ? (
     <div>
+      <div className="huskyRock__infoHeader">
+        Climbing map for Husky Rock (also known as UW Rock).
+        Click on any pictogram to view each wall's routes.
+      </div>
       <div className="huskyRock__cardsSection">
         {Object.entries(WALLS).map(([key, wall]) => {
           return (
