@@ -1433,3 +1433,13 @@ body.sidebar-open .trigger__lines:after {
   width: 100%;
   height: 100%;
 }
+.huskyRock__mapFooter {
+  margin: 12px 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  justify-content: space-between;
+}

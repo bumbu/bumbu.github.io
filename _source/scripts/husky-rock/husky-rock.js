@@ -348,16 +348,18 @@ const WallPage = props => {
           style={{ width: '80%', height: '500px' }}
         />
       ) : null}
-      <div>
-        <button onClick={goPrevious}>Previous</button>
-        <button onClick={goNext}>Next</button>
+      <div className="huskyRock__mapFooter">
+        <div>
+          <button onClick={goPrevious}>Previous</button>
+          <button onClick={goNext}>Next</button>
+        </div>
+        <a
+          className="huskyRock__infoTitle"
+          href="https://github.com/bumbu/bumbu.github.io/issues"
+          target="_blank">
+          Submit feedback
+        </a>
       </div>
-      <a
-        className="huskyRock__infoTitle"
-        href="https://github.com/bumbu/bumbu.github.io/issues"
-        target="_blank">
-        Submit feedback
-      </a>
     </div>
   )
 }
