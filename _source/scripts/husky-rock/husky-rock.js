@@ -67,28 +67,30 @@ const WallPage = props => {
   let { wall, isEditMode } = props
   // Return selected route, or first otherwise
   const currentRouteKey = routeKey in wall.routes ? routeKey : Object.keys(wall.routes)[0]
-  const currentRouteIndex = Object.keys(wall.routes).indexOf(currentRouteKey);
   let currentRoute = wall.routes[currentRouteKey]
   const setRoute = routeKey => {
     history.push(`?wall=${wall.key}&route=${routeKey}`)
   }
+  // Sorted
+  const sortedRouteEntries = Object.entries(wall.routes).sort((a, b) => {
+    return a[1].grade.order - b[1].grade.order
+  })
+  const sortedRountIndex = sortedRouteEntries.map(entry => entry[0]).indexOf(currentRouteKey);
   const goBack = () => {
     history.push('?')
   }
   const goPrevious = () => {
-    const routeKeys = Object.keys(wall.routes);
-    const nextKey = ((currentRouteIndex - 1) + routeKeys.length) % routeKeys.length;
+    const routeKeys = sortedRouteEntries.map(entry => entry[0]);
+    const nextKey = ((sortedRountIndex - 1) + routeKeys.length) % routeKeys.length;
     setRoute(routeKeys[nextKey]);
   }
   const goNext = () => {
-    const routeKeys = Object.keys(wall.routes);
-    const nextKey = ((currentRouteIndex + 1) + routeKeys.length) % routeKeys.length;
+    const routeKeys = sortedRouteEntries.map(entry => entry[0]);
+    const nextKey = ((sortedRountIndex + 1) + routeKeys.length) % routeKeys.length;
     setRoute(routeKeys[nextKey]);
   }
 
-  const selectorRouteEntries = Object.entries(wall.routes).sort((a, b) => {
-    return a[1].grade.order - b[1].grade.order
-  })
+
   const mapWidth = CONTAINER_WIDTH
   const scale = mapWidth / wall.width
   const mapHeight = wall.height * scale
@@ -124,7 +126,7 @@ const WallPage = props => {
       rocks: { ...wall.rocks, ...tempRocks },
       routes: {
         ...wall.routes,
-        // Att temp route to wall
+        // Add temp route to wall
         [newRouteKey]: currentRoute,
       },
     }
@@ -192,7 +194,7 @@ const WallPage = props => {
             setRoute(ev.target.value)
           }}
           value={currentRouteKey}>
-          {selectorRouteEntries.map(([key, route]) => {
+          {sortedRouteEntries.map(([key, route]) => {
             const name =
               route.name != null
                 ? route.name
