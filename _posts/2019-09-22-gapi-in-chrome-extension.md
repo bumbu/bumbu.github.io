@@ -111,7 +111,8 @@ To get the extension key, you'll need to:
     * Click **Add new item**
     * Click **Choose file** and select the `.zip` file you created previously and upload it
     * Without filling in additional fields, select *Save Draft and return to dashboard*
-1. Find the extension under **Your Listings** and click on more info
+1. Find the extension under **Items** and click on it
+1. On left-side pannel - choose **Package** and then **View public key**. Click on it.
 1. From the pop-up, copy the public key and add it to the manifest inside the unzipped directory under the `key` field. You'll need to remove the comments and edit it as to get a single-line string
 
 ```json
