@@ -9,8 +9,8 @@ categories: development
 {% capture assets_path %}{{site.assets_path}}{{page.date | date: "%Y/%m"}}{% endcapture %}
 
 I often meditate for a preset amount of time.
-This helps with not thinking about how long I've been meditating.
-Also often I only have a limited amount of time for that.
+This helps with not thinking about how long I've been meditating (aka Timer Anxiety).
+I also often only have a limited amount of time for that.
 
 ## Requirements
 
@@ -28,13 +28,13 @@ Generally I found 3 possible solutions to this:
 
 ## iOS meditation shortcut
 
-Given the above, I decided to go with a shortcut, and found [this shortcut](https://www.reddit.com/r/shortcuts/comments/sie1oa/simple_meditation_timer_with_ios_shortcuts/) which does the above things (and some more).
+Given the above, I decided to go with a shortcut, and found [this shortcut](https://www.reddit.com/r/shortcuts/comments/sie1oa/simple_meditation_timer_with_ios_shortcuts/){: target="_blank"} which does the above things (and some more).
 
 I used it for about 1 month, but I had 2 issues with it.
 
 First - shortcut would sometimes log 14 minutes of meditation instead of 15 (aka 1 less). I found the bug and updated the shortcut (see shortcut link bellow).
 
-Second - I wanted to have a bell sound both at the beginning and before the timer would ring. That's because I always have my phone on silent, including alarm having only vibration and no sound. And I found it very jaring to end the meditation with a vibrating phone. So I wanted the same bell sound to play 20-30 seconds before the timer to have time to end the meditation.
+Second - I wanted to have a bell sound both at the beginning and before the timer would ring. That's because I always have my phone on silent, including my alarm app having only vibration and no sound. But I found it very jaring to end the meditation with a vibrating phone. So I wanted the same bell sound to play 20-30 seconds before the timer would end to be able to exist the meditation "softly".
 
 And I stil wanted to keep the alarm as a back-up if sound wouldn't play.
 
@@ -54,16 +54,16 @@ So the sequence would be:
 
 ![Music Meditation Playlist]({{ assets_path }}/music-meditation-playlist.jpeg)
 
-For the bell sound I used [this track](https://notification-sounds.com/1498-meditation-bell-sound.html) which is 17 seconds long.
+For the bell sound I used [this track](https://notification-sounds.com/1498-meditation-bell-sound.html){: target="_blank"} which is 17 seconds long.
 
-For the "blank" sound I used [this track](https://github.com/anars/blank-audio/blob/master/1-minute-of-silence.mp3) which is 1 minute long. I chose 1 minute because it allows me to create dynamic playlists of any duration.
+For the "blank" sound I used [this track](https://github.com/anars/blank-audio/blob/master/1-minute-of-silence.mp3){: target="_blank"} which is 1 minute long. I chose 1 minute because it allows me to create dynamic playlists of any duration.
 
 ## How to use the shortcut
 
-1. First you need to download the [bell sound](https://notification-sounds.com/1498-meditation-bell-sound.html) and [blank sound](https://github.com/anars/blank-audio/blob/master/1-minute-of-silence.mp3).
+1. First you need to download the [bell sound](https://notification-sounds.com/1498-meditation-bell-sound.html){: target="_blank"} and [blank sound](https://github.com/anars/blank-audio/blob/master/1-minute-of-silence.mp3){: target="_blank"}.
 1. You need to import these to your Music app
 1. Rename them to "meditation-bell-sound" and "1-minute-of-silence". Alternativelly you can change these in the shortcut itself
-1. Get the shortcut [here](https://www.icloud.com/shortcuts/33f386b032e248548ebd8136c025d4fa)
+1. Get the shortcut [here](https://www.icloud.com/shortcuts/33f386b032e248548ebd8136c025d4fa){: target="_blank"}
 
 You can use any sound instead of the bell if you wish.
 You can also have a different sound for the beggining and the end of the session. For that you'll have to change track name in the shortcut.
