@@ -17,7 +17,7 @@ When you practice a phisycal exercise routine, it is quite easy to figure out a 
 There is research and guidelines on how to build an optimal schedule/routine around more specific cognitive skills (like reading, maths, IQ, chess, language learning, programming...) but a mindfulness practice is more like a general fitness level rather than a specific skill.
 
 So how often should you meditate?
-If you're still at the beginning of your journey (usually weeks or months, but can even be years, depending on the practice) then you want to prioritize frequency oven duration. It is better to spend 5 minutes every day instead of doing it once a week for 30 minutes long.
+If you're still at the beginning of your journey (usually weeks or months, but can even be years, depending on the practice) then you want to prioritize frequency over duration. It is better to spend 5 minutes every day instead of doing it once a week for 30 minutes long.
 
 That was for starters. Say that you now built a habit and are meditating few minutes almost every single day. How do you take it to the next level?
 There's no one answer that will fit most, as it all depends on the practice you're doing, but you want to **strive to complete your set on most days.**
