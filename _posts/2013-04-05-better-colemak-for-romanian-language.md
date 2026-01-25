@@ -31,14 +31,14 @@ The idea behind such positioning is:
 <h2>Windows version</h2>
 Version for Windows was created using <em>Microsoft Keyboard Layout Creator.</em>
 
-Source file and installation executables can be downloaded from <a href="http://goo.gl/IE2Iz">my drive</a>. The source file has <em>.klc</em> extension.
+Source file and installation executables can be downloaded from <a href="https://mega.nz/file/cZQ2iTjR#FNTGC-oQm4Oq0Cpo5ODR2Y2MbYgOEjtI-V94cfIrfzQ">here</a>. The source file has <em>.klc</em> extension.
 
 In order to type letters with diacritics press AltGr key + [mapped letter].
 
 <h2>OS X version</h2>
 First versions for OS X were created using <em>Ukelele</em>, later it was edited using standard text editor.
 
-Keyboard layout and icon files can be downloaded from <a href="http://goo.gl/9Q5uiu" target="_blank">my drive</a>. You can install layout using one of 2 ways:
+Keyboard layout and icon files can be downloaded from <a href="https://mega.nz/file/JdgXyZJL#fgl9NcMPrRuxNexjr542TTGR-ApD7Sm0odo_1LnR178" target="_blank">here</a>. You can install layout using one of 2 ways:
 <ol>
 	<li>Copy keyboard layout (ColemaRo) and icon (ColemaRo.icns) to <em>/Library/Keyboard Layouts/</em> or <em>~/Library/Keyboard Layouts/</em></li>
 	<li>Create a bundle using Ukelele (it didn't work for me on OS X 10.8 and 10.9)</li>
