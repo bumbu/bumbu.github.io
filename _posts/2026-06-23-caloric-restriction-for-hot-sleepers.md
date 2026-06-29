@@ -26,3 +26,5 @@ Aka my body happily tunes down thermogenesis when there's no excess of calories.
 
 So far I worked on multiple days with bedroom temperatures of up to 26C, so it is a great success.
 Maybe it helps someone else as well.
+
+Update: This worked up to 28.2C/83F with relative humidity of 55%. I wasn't able to sleep when the temperature got above that.
